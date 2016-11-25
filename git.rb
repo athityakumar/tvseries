@@ -66,7 +66,7 @@ begin
     end
   end
 
-  if `git status`.include? "nothing to commit, working directory clean"
+  if `git status`.include? "nothing to commit"
     `git push origin #{branch}`
     puts "Git push - done."  
   else
