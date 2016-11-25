@@ -16,7 +16,8 @@ TO-DO LIST
 - [x] Add HTML pages generator script
     - [x] [Auto-generated Home page] (https://athityakumar.github.io/tvseries/index.html)
     - [x] [Auto-generated Series page] (https://athityakumar.github.io/tvseries/flash.html) 
-- [ ] Add master shell-script that runs all scripts, and pushes changes into this repository
+- [x] Add master shell-script that runs all scripts, and pushes changes into this repository
+    - [x] [deploy.sh] (https://athityakumar.github.io/tvseries/blob/master/deploy.sh)
 - [ ] Add a cron job for the master shell-script
 
 LIST OF TV SERIES' SUPPORTED 
