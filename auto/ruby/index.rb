@@ -38,15 +38,53 @@ def generate_resources
 
 end
 
+def generate_sitemap_sort array
+    files , dirs = [] , []
+    array.delete(".")
+    array.delete("..")
+    array.delete(".git")
+    array.each do |a|
+        if a.include? "."
+            files.push(a)
+        else
+            dirs.push(a)
+        end
+    end
+    files , dirs = files.sort , dirs.sort
+    return dirs+files
+end
+
+def generate_sitemap_travel repo , spacing , extra_spacing, text
+    list = generate_sitemap_sort(Dir.entries(repo))
+    list.each do |l|
+        if l.include? "."
+            text = text + "\n" + spacing + l
+            puts l
+        else
+            text = text + "\n" + spacing + l +"/"
+            puts l
+            text = generate_sitemap_travel(repo+"/"+l,spacing+extra_spacing,extra_spacing,text)
+        end
+    end
+    return text
+end
+
 def generate_sitemap
+    text = (File.exists? $sitemap_segment[0]) ? File.read($sitemap_segment[0]) : ''
+    Dir.chdir("../../")
+    text = text + generate_sitemap_travel(".","","      ","")
+    Dir.chdir("auto/ruby")
+    text = text + ((File.exists? $sitemap_segment[1]) ? File.read($sitemap_segment[1]) : '')
+    File.open($sitemap, "w") { |file| file.write(text) }
 end
 
 $master_json = "../data/index.json"
 $master_html = "../../index.html"
 $master_html_segment = ["../segments/html/index/1.html","../segments/html/index/2.html"]
 $series_html_segment = ["../segments/html/series/1.html","../segments/html/series/2.html","../segments/html/series/3.html","../segments/html/series/4.html"]
-
+$sitemap_segment = ["../segments/md/sitemap/1.md","../segments/md/sitemap/2.md"]
+$sitemap = "../../SITEMAP.md"
 # assign_scraper()
-generate_html()
+#generate_html()
 # generate_resources()
-# generate_sitemap()
+generate_sitemap()
