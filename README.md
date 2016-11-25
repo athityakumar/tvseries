@@ -8,16 +8,16 @@ TO-DO LIST
     - [x] [Sample Home page] (https://athityakumar.github.io/tvseries/sample_homepage.html)
     - [x] [Sample Series page] (https://athityakumar.github.io/tvseries/sample_series.html) 
 - [x] Generate SITEMAP markup file automatically with ruby script
-    - [x] [SITEMAP] (https://athityakumar.github.io/tvseries/blob/master/SITEMAP.md)
+    - [x] [SITEMAP] (https://github.com/athityakumar/tvseries/blob/master/SITEMAP.md)
 - [x] Generate RESOURCES markup file automatically with ruby script
-    - [x] [RESOURCES] (https://athityakumar.github.io/tvseries/blob/master/RESOURCES.md)
+    - [x] [RESOURCES] (https://github.com/athityakumar/tvseries/blob/master/RESOURCES.md)
 - [x] Add JSON files with proper structure
 - [ ] Add scraping script
 - [x] Add HTML pages generator script
     - [x] [Auto-generated Home page] (https://athityakumar.github.io/tvseries/index.html)
     - [x] [Auto-generated Series page] (https://athityakumar.github.io/tvseries/flash.html) 
 - [x] Add master shell-script that runs all scripts, and pushes changes into this repository
-    - [x] [deploy.sh] (https://athityakumar.github.io/tvseries/blob/master/deploy.sh)
+    - [x] [deploy.sh] (https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
 - [ ] Add a cron job for the master shell-script
 
 LIST OF TV SERIES' SUPPORTED 
