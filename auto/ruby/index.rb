@@ -58,11 +58,19 @@ def generate_sitemap_travel repo , spacing , extra_spacing, text
     list = generate_sitemap_sort(Dir.entries(repo))
     list.each do |l|
         if l.include? "."
-            text = text + "\n" + spacing + l
-            puts l
+            if l == list.last
+                text = text + "\n" + spacing + l + "\n"
+            elsif l == list.first
+                text = text + "\n\n" + spacing + l
+            else
+                text = text + "\n" + spacing + l
+            end    
         else
-            text = text + "\n" + spacing + l +"/"
-            puts l
+            if l == list.first
+                text = text + "\n\n" + spacing + l +"/"
+            else
+                text = text + "\n" + spacing + l +"/"
+            end
             text = generate_sitemap_travel(repo+"/"+l,spacing+extra_spacing,extra_spacing,text)
         end
     end
