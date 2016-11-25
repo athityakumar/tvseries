@@ -5,15 +5,17 @@ TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from we
 TO-DO LIST
 ----------
 - [x] Add UI Sample Templates
-    - [x] Sample Homepage : https://athityakumar.github.io/tvseries/sample_homepage.html
-    - [x] Sample Series Page : https://athityakumar.github.io/tvseries/sample_series.html 
+    - [x] [Sample Home page] (https://athityakumar.github.io/tvseries/sample_homepage.html)
+    - [x] [Sample Series page] (https://athityakumar.github.io/tvseries/sample_series.html) 
 - [ ] Make SITEMAP markup file
+- [ ] Add RESOURCES markup file
+- [ ] Add JSON files with proper structure
 - [ ] Add scraping script
 - [ ] Add HTML pages generator script
-- [ ] Add master shell script that runs all scraping & HTML generating scripts, and pushes changes into this repository
+- [ ] Add master shell-script that runs all scraping & HTML generating scripts, and pushes changes into this repository
 - [ ] Add a cron job for the master shell-script
 
-LIST OF TV SERIES' SUPPORTED
+LIST OF TV SERIES' SUPPORTED 
 ----------------------------
 - [ ] Arrow
 - [ ] Breaking Bad
@@ -35,6 +37,8 @@ LIST OF TV SERIES' SUPPORTED
 - [ ] The Flash
 - [ ] The Walking Dead
 - [ ] Vixen
+
+<br>Feel free to add more series' to the list by sending Pull Requests.
 
 
 CONTRIBUTION
