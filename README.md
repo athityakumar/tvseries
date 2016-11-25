@@ -7,12 +7,12 @@ TO-DO LIST
 - [x] Add UI Sample Templates
     - [x] [Sample Home page] (https://athityakumar.github.io/tvseries/sample_homepage.html)
     - [x] [Sample Series page] (https://athityakumar.github.io/tvseries/sample_series.html) 
-- [ ] Make SITEMAP markup file
-- [ ] Add RESOURCES markup file
-- [ ] Add JSON files with proper structure
+- [ ] Generate SITEMAP markup file automatically with ruby script
+- [ ] Generate RESOURCES markup file automatically with ruby script
+- [x] Add JSON files with proper structure
 - [ ] Add scraping script
-- [ ] Add HTML pages generator script
-- [ ] Add master shell-script that runs all scraping & HTML generating scripts, and pushes changes into this repository
+- [x] Add HTML pages generator script
+- [ ] Add master shell-script that runs all scripts, and pushes changes into this repository
 - [ ] Add a cron job for the master shell-script
 
 LIST OF TV SERIES' SUPPORTED 
