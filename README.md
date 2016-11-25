@@ -5,11 +5,37 @@ TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from we
 TO-DO LIST
 ----------
 - [x] Add UI Sample Templates
+    - [x] Sample Homepage : https://athityakumar.github.io/tvseries/sample_homepage.html
+    - [x] Sample Series Page : https://athityakumar.github.io/tvseries/sample_series.html 
 - [ ] Make SITEMAP markup file
 - [ ] Add scraping script
 - [ ] Add HTML pages generator script
 - [ ] Add master shell script that runs all scraping & HTML generating scripts, and pushes changes into this repository
 - [ ] Add a cron job for the master shell-script
+
+LIST OF TV SERIES' SUPPORTED
+----------------------------
+- [ ] Arrow
+- [ ] Breaking Bad
+- [ ] Castle
+- [ ] DC's Legends of Tomorrow
+- [ ] Friends
+- [ ] Game of Thrones
+- [ ] Gotham
+- [ ] How I Met your Mother
+- [ ] Marvel's Agents of S.H.I.E.L.D
+- [ ] Modern Family
+- [ ] Narcos
+- [ ] Person of Interest
+- [ ] Prisonbreak
+- [ ] Suits
+- [ ] Supergirl
+- [ ] Supernatural
+- [ ] The Big Bang Theory
+- [ ] The Flash
+- [ ] The Walking Dead
+- [ ] Vixen
+
 
 CONTRIBUTION
 ------------
