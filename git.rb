@@ -27,8 +27,11 @@ begin
     message = gets.chomp
     if message.empty?
       message = `git status`.split('(use "git reset HEAD <file>..." to unstage)')[1].strip.gsub("\n",",")+"."
+      `git commit -m "Ruby-git commit - #{message}"`
+    else
+      `git commit -m "#{message}"`
     end  
-    `git commit -m "Ruby-git commit - #{message}"`
+    
     puts "Git commit - done."  
   else
     puts "Git commit - checked."  
