@@ -15,7 +15,7 @@ def generate_html
         series_text = (File.exists? $series_html_segment[0]) ? File.read($series_html_segment[0]) : ''
         series_text = series_text + series["name"]
         series_text = series_text + ((File.exists? $series_html_segment[1]) ? File.read($series_html_segment[1]) : '')
-        series_text = series_text + series["name"] + '</h1><div class="ui hidden divider"></div><a href="'+series["wiki_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">Wiki</div><div class="visible content"><i class="wikipedia icon"></i></div></div></a><a href="'+series["imdb_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">IMDb</div><div class="visible content"><i class="info icon"></i></div></div></a><div class="ui floating theme basic button">IMDb rating : '+series["imdb_rating"]+' / 10</div><br><p>'+series["description"]+'</p></div><div class="advertisement"><div class="ui massive centered rounded bordered image"><img src="'+series["image"]+'">'
+        series_text = series_text + series["name"] + '</h1><div class="ui hidden divider"></div><a href="'+series["wiki_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">Wiki</div><div class="visible content"><i class="wikipedia icon"></i></div></div></a><a href="'+series["imdb_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">IMDb</div><div class="visible content"><i class="info icon"></i></div></div></a><div class="ui floating theme basic button">IMDb rating : '+series["imdb_rating"]+' / 10</div><br><p>'+series["description"]+'</p></div><div class="advertisement"><div class="ui small centered rounded bordered image"><img src="'+series["image"]+'">'
         series_text = series_text + ((File.exists? $series_html_segment[2]) ? File.read($series_html_segment[2]) : '')        
         series_json = "../data/" + series["filename"] + ".json"
         series_html = "../../" + series["filename"] + ".html"
@@ -35,7 +35,12 @@ def generate_html
 end
 
 def generate_resources
-
+    series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    text = (File.exists? $resources_segment[0]) ? File.read($resources_segment[0]) : ''
+    series_list.each do |series|
+        text = text + "\n \n###" + series["name"] + " \n- [ ] [Wikipedia Link] (" + series["wiki_link"] + ")\n- [ ] [IMDb Link] (" + series["imdb_link"] + ")\n- [ ] [Episode Synopsis Link] (" + series["scrape_link"] + ")\n"
+    end
+    File.open($resources, "w") { |file| file.write(text) }
 end
 
 def generate_sitemap_sort array
@@ -92,7 +97,9 @@ $master_html_segment = ["../segments/html/index/1.html","../segments/html/index/
 $series_html_segment = ["../segments/html/series/1.html","../segments/html/series/2.html","../segments/html/series/3.html","../segments/html/series/4.html"]
 $sitemap_segment = ["../segments/md/sitemap/1.md","../segments/md/sitemap/2.md"]
 $sitemap = "../../SITEMAP.md"
+$resources_segment = ["../segments/md/resources/1.md"]
+$resources = "../../RESOURCES.md"
 # assign_scraper()
-#generate_html()
-# generate_resources()
+generate_html()
+generate_resources()
 generate_sitemap()

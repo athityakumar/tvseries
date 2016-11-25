@@ -8,6 +8,7 @@ auto/
 
       data/
 
+            arrow.json
             flash.json
             index.json
 
@@ -34,6 +35,8 @@ auto/
 
                   readme/
                   resources/
+                        1.md
+
                   sitemap/
 
                         1.md
@@ -103,6 +106,8 @@ dist/
 images/
 
       series/
+
+            arrow.png
             flash.png
 
       logo.png
@@ -223,7 +228,9 @@ stylesheets/
 
 LICENSE.md
 README.md
+RESOURCES.md
 SITEMAP.md
+arrow.html
 flash.html
 index.html
 sample_homepage.html
