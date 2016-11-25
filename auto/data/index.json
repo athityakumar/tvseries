@@ -1,0 +1,16 @@
+[
+    {
+        "name" : "The Flash",
+        "description" : "",
+        "filename" :  "flash",
+        "imdb_rating" : "",
+        "imdb_link" : "",
+        "wiki_link" : "s",
+        "scrape_link" : "s",
+        "scrape_script" : "s",
+        "seasons" : "4",
+        "episodes" : "74",
+        "image" : "images/series/flash.png",
+        "time" : "2011 - 2017"
+    }
+]
