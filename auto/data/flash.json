@@ -1,23 +1,479 @@
 [
-    {
-        "date" : "",
-        "title" : "One",
-        "description" : "Barry Allen, a forensic crime scene assistant for Central City Police Department, is struck by lightning during a storm that is created after a particle accelerator from S.T.A.R. Labs explodes. In a coma for nine months, Barry awakens in S.T.A.R. Labs, having been placed in the care of Dr. Harrison Wells and his assistants Dr. Caitlin Snow and Cisco Ramon. Barry learns that he can move at extraordinary speeds, and that there were other `metahumans` created from the explosion. One of them, Clyde Mardon, is robbing banks with his ability to control the weather. In order to stop Mardon, Barry is outfitted with a suit, designed by Cisco, that can withstand his high speed. He tracks down Mardon and with Detective Joe West, who learns of Barry's abilities, Barry is able to stop Mardon, who is killed by Joe. With his new powers, Barry vows to exonerate his father, Henry, who is incarcerated for the accusation of murdering his wife, Nora, whom Barry witnessed being killed by another metahuman. He chooses the alias `Flash` for his alter ego. Wells, secretly revealed to be neither paraplegic nor needing glasses, reads a newspaper from 2024 stating the missing status of the Flash.",
-        "season" : "S01",
-        "episode" : "E01"
-    },
-    {
-        "date" : "",
-        "title" : "Two",
-        "description" : "Barry Allen, a forensic crime scene assistant for Central City Police Department, is struck by lightning during a storm that is created after a particle accelerator from S.T.A.R. Labs explodes. In a coma for nine months, Barry awakens in S.T.A.R. Labs, having been placed in the care of Dr. Harrison Wells and his assistants Dr. Caitlin Snow and Cisco Ramon. Barry learns that he can move at extraordinary speeds, and that there were other `metahumans` created from the explosion. One of them, Clyde Mardon, is robbing banks with his ability to control the weather. In order to stop Mardon, Barry is outfitted with a suit, designed by Cisco, that can withstand his high speed. He tracks down Mardon and with Detective Joe West, who learns of Barry's abilities, Barry is able to stop Mardon, who is killed by Joe. With his new powers, Barry vows to exonerate his father, Henry, who is incarcerated for the accusation of murdering his wife, Nora, whom Barry witnessed being killed by another metahuman. He chooses the alias `Flash` for his alter ego. Wells, secretly revealed to be neither paraplegic nor needing glasses, reads a newspaper from 2024 stating the missing status of the Flash.",
-        "season" : "",
-        "episode" : "E02"
-    },
-    {
-        "date" : "",
-        "title" : "Three",
-        "description" : "Barry Allen, a forensic crime scene assistant for Central City Police Department, is struck by lightning during a storm that is created after a particle accelerator from S.T.A.R. Labs explodes. In a coma for nine months, Barry awakens in S.T.A.R. Labs, having been placed in the care of Dr. Harrison Wells and his assistants Dr. Caitlin Snow and Cisco Ramon. Barry learns that he can move at extraordinary speeds, and that there were other `metahumans` created from the explosion. One of them, Clyde Mardon, is robbing banks with his ability to control the weather. In order to stop Mardon, Barry is outfitted with a suit, designed by Cisco, that can withstand his high speed. He tracks down Mardon and with Detective Joe West, who learns of Barry's abilities, Barry is able to stop Mardon, who is killed by Joe. With his new powers, Barry vows to exonerate his father, Henry, who is incarcerated for the accusation of murdering his wife, Nora, whom Barry witnessed being killed by another metahuman. He chooses the alias `Flash` for his alter ego. Wells, secretly revealed to be neither paraplegic nor needing glasses, reads a newspaper from 2024 stating the missing status of the Flash.",
-        "season" : "S02",
-        "episode" : "E01"
-    }
+  {
+    "description": "Barry Allen, a forensic crime scene assistant for Central City Police Department, is struck by lightning during a storm that is created after a particle accelerator from S.T.A.R. Labs explodes. In a coma for nine months, Barry awakens in S.T.A.R. Labs, having been placed in the care of Dr. Harrison Wells and his assistants Dr. Caitlin Snow and Cisco Ramon. Barry learns that he can move at extraordinary speeds, and that there were other \"metahumans\" created from the explosion. One of them, Clyde Mardon, is robbing banks with his ability to control the weather. In order to stop Mardon, Barry is outfitted with a suit, designed by Cisco, that can withstand his high speed. He tracks down Mardon and with Detective Joe West, who learns of Barry's abilities, Barry is able to stop Mardon, who is killed by Joe. With his new powers, Barry vows to exonerate his father, Henry, who is incarcerated for the accusation of murdering his wife, Nora, whom Barry witnessed being killed by another metahuman. He chooses the alias \"Flash\" for his alter ego. Wells, secretly revealed to be neither paraplegic nor needing glasses, reads a newspaper from 2024 stating the missing status of the Flash.",
+    "title": "Pilot",
+    "date": "October 7, 2014 ",
+    "directed_by": "David Nutter",
+    "views": "4.83",
+    "season": "S01",
+    "episode": "E01"
+  },
+  {
+    "description": "In flashbacks, Joe is revealed to have adopted Barry and not letting him visit Henry on the latter's request. Barry begins using his abilities to stop minor crimes and help citizens across the city while starting to develop debilitating side effects. While assisting Iris West on a school assignment, Barry witnesses a robbery by a crew of men, but faints while trying to stop them. The S.T.A.R. Labs team determines that Barry becomes hypoglycemic from the use of his abilities due to a sped-up metabolism and needs to ingest more calories to maintain his energy level. The team eventually learns that the there is actually one robber, Danton Black, who has the ability to create clones of himself. Black intends to kill his former employer Simon Stagg, who stole Black's cloning research. With encouragement from Joe, Barry goes after Black and successfully stops him. However, Black commits suicide. Afterward, Barry accepts Joe's help in investigation Nora's murder. Later, Wells visits Stagg, who has already become obsessed with the Flash and plans to exploit them as he did to Black. Wells then kills Stagg.",
+    "title": "Fastest Man Alive",
+    "date": "October 14, 2014 ",
+    "directed_by": "David Nutter",
+    "views": "4.27",
+    "episode": "E02",
+    "season": ""
+  },
+  {
+    "description": "As the police investigate the murder of one of the city's crime families, Barry suspects that the killer may be a metahuman who can control poison gases. As Barry and Joe work to discover the killer's identity, Wells and his team work to retrofit the particle accelerator into a prison for metahumans where they can begin to find a way of reversing their mutations. This brings up difficult feelings and memories for Snow, whose fiancé, Ronnie Raymond, was killed by the explosion. The team identifies the killer as Kyle Nimbus, discovering that Nimbus does not control gases, but transforms his body into them. The team learns that Joe, the lead detective in the original case, is Nimbus' next target. Barry races to Iron Heights Prison to save Joe's life, forcing Nimbus to overexert himself so that he can apprehend him. The team locks Nimbus into a cell they have made. In a flashback to when the accelerator explodes, Wells is seen going into his hidden room and viewing a surveillance video of Barry getting struck by lightning in his lab.",
+    "title": "Things You Can't Outrun",
+    "date": "October 21, 2014 ",
+    "directed_by": "Jesse Warn",
+    "views": "3.59",
+    "episode": "E03",
+    "season": ""
+  },
+  {
+    "description": "Wells begins testing Barry's powers by having him perform multiple tasks at superspeed. In the middle of the tests, a group of men attempt to hijack an armored truck carrying a diamond. Barry races over and stops the crime, as well as identifying Leonard Snart from a set of police mugshots. Felicity Smoak arrives to check on Barry, after learning that he woke from his coma. Barry introduces her to his friends at S.T.A.R. Labs. To combat the Flash, also known as the \"Streak\", Snart acquires stolen tech from S.T.A.R. Labs, which includes a cryonic gun. Cisco reveals to Barry that he created the gun as a fail-safe against Barry should he become a villain like the other metahumans they have encountered. Felicity helps the team locate Snart, who sets a trap for Barry. Cisco, Caitlin, and Felicity arrive in time to save Barry, and Snart is able to escape. Joe finally accepts Iris's relationship with Eddie Thawne, his partner. Wells demands Cisco not to build another fail-safe against Barry again. Later, Snart tracks down his former partner, who has an affinity for fire, and offers him a place by Snart's side taking back Central City from the Flash.",
+    "title": "Going Rogue",
+    "date": "October 28, 2014 ",
+    "directed_by": "Glen Winter",
+    "views": "3.53",
+    "episode": "E04",
+    "season": ""
+  },
+  {
+    "description": "Bette Sans Souci, a metahuman with the ability to turn anything she touches into an explosive, appears in Central City. She is being hunted by General Wade Eiling, and is a former military explosives expert. Barry brings her to S.T.A.R. Labs where the team explains to her that she was changed by the particle accelerator, which bonded bomb shrapnel to her body on a cellular level; and they cannot reverse the process. Secretly, Wells convinces Bette to kill Eiling. Barry races to stop her, and Eiling shoots her, who dies after mentioning Wells' name. Her body turns into a bomb. Barry speeds off with the body and drops it in the river to save the city from the massive explosion. Eiling visits Wells, demanding that they work together once again, this time to collect metahumans. Wells refuses and warns Eiling to never return to S.T.A.R. Labs. Meanwhile, Barry ends his friendship with Iris after she refuses his advice not to write about the \"Streak\". In a flashback set five years previously, Wells tells Eiling he is ending their experiments. After Eiling leaves, Wells walks to a cage and tells Gorilla Grodd that he has plans for him.",
+    "title": "Plastique",
+    "date": "November 11, 2014 ",
+    "directed_by": "Dermott Downs",
+    "views": "3.46",
+    "episode": "E05",
+    "season": ""
+  },
+  {
+    "description": "Barry speeds off to stop a car thief; but the thief's skin turns to steel and Barry breaks his hand while punching. He runs back to the lab before he can be hurt further. The thief is identified as Tony Woodward, Barry's childhood bully. Back at the lab, Cisco determines that if Barry can hit Woodware with a specific velocity at right angle, then he can create enough force to compromise Woodware's metal structure. Woodward kidnaps Iris and demands that she write about him. Barry arrives and manages to temporarily disable Woodware's abilities. Afterward, Woodware is locked away at S.T.A.R. Labs and finds out that Barry is the Flash, the name Iris also uses in her blog on the advice of Barry, who reconciles with her. Meanwhile, Joe continues investigating Nora's murder and gets suspicious of Wells, who opened S.T.A.R. Labs one month after Nora's murder; but Wells states that he came to Central City because of his wife's death. Joe, convinced that Wells is not involved, is visited by the metahuman that killed Nora, stealing the case file and threatening Iris's life if Joe does not drop his investigation.",
+    "title": "The Flash Is Born",
+    "date": "November 18, 2014 ",
+    "directed_by": "Millicent Shelton",
+    "views": "3.73",
+    "episode": "E06",
+    "season": ""
+  },
+  {
+    "description": "Wells returns to his secret room, where it is revealed that he has been documenting Barry's abilities, and using his artificial intelligence, Gideon, to look at events in the future. Barry arrives at a crime scene where the victim was murdered via electrocution, and charred beyond recognition, suggesting a metahuman was involved. While investigating the victim's identity, the team identifies a power drain in the city. When Barry arrives, he is attacked by Farooq Gibran, a man who has the ability to siphon electrical energy. The attack drains Barry of his speed, and Gideon reveals to Wells that there are currently no references to the Flash in the future. Wells realizes that Barry's problem is psychological. Gibran attacks S.T.A.R. Labs , kills Woodware and Wells' life gets in danger, forcing Barry to overcome his fear, connect to his speed and kill Gibran. Meanwhile, Tockman starts a hostage crisis at a police station and critically shoots Eddie; but Iris manages to stop him and he is rearrested. Later, Wells sees that the timeline is safe, and takes a sample of Gibran's blood to determine how he was able to drain Barry's abilities.",
+    "title": "Power Outage",
+    "date": "November 25, 2014 ",
+    "directed_by": "Larry Shaw",
+    "views": "3.47",
+    "episode": "E07",
+    "season": ""
+  },
+  {
+    "description": "\nEddie proposes a task force to hunt down the Flash. A new metahuman, Roy Bivolo, shows up with the ability to send people into an uncontrollable rage, and uses his ability to rob a bank. Oliver Queen informs Barry that he and his team are tracking a killer who uses lethal boomerangs. Barry and Oliver agree to team-up and catch each other's targets. Barry decides to go after Bivolo by himself. Bivolo uses his abilities on Barry; but because of Barry's powers it makes the effects last longer. Oliver tries to stop Barry, and the two engage in a fight until Wells and Joe use colored strobe light to reset Barry's emotional state. Afterward, Barry and Oliver capture Bivolo and place him in the prison at S.T.A.R. Labs. Eddie's task force is established after he was beaten by an enraged Flash. Barry confirms Oliver's belief that the former has a lot to learn. Oliver advises him to stay away from Iris, whom Barry is in love with. Iris decides to end her support of the Flash. Oliver asks Barry's team to keep his alter ego a secret. A new metahuman able to manipulate fire appears in Central City.\n\nThis episode is the first part of a two-episode crossover that concludes with the Arrow episode \"The Brave and the Bold\".",
+    "title": "Flash vs. Arrow",
+    "date": "December 2, 2014 ",
+    "directed_by": "Glen Winter",
+    "views": "4.34",
+    "episode": "E08",
+    "season": ""
+  },
+  {
+    "description": "The yellow-wearing metahuman that killed Nora, the Reverse-Flash, returns, revealed to be in search of Mercury Lab's work in tachyon particles. Barry encounters Reverse-Flash and engages him but is swiftly defeated. Reverse-Flash also insinuates to Barry that they know each other before speeding off. Meanwhile, Eddie asks Iris to move in with him and Ronnie is revealed to have survived the explosion, but does not remember who he is and is the metahuman controlling flames. On Henry's advice, Barry confesses his love for Iris before the police and S.T.A.R. Labs use the tachyon particle technology as bait to lure Reverse-Flash into a trap. Reverse-Flash escapes as the result of an abnormal malfunction and attacks Wells and the police, but mysteriously spares Eddie, before engaging in a second fight with Barry. Ronnie appears and attacks Reverse-Flash before they both flee the scene. Joe tells Eddie about metahumans and asks him to keep it a secret. Cisco realizes based on Barry's accounts as an 11 year old and witnessing his own fight with Reverse-Flash, there were two speedsters in Barry's house the night Nora died. Later, Wells enters his secret room and reveals the Reverse-Flash suit and places the tachyon device on it, revealing himself to be Reverse-Flash.",
+    "title": "The Man in the Yellow Suit",
+    "date": "December 9, 2014 ",
+    "directed_by": "Ralph Hemecker",
+    "views": "4.66",
+    "episode": "E09",
+    "season": ""
+  },
+  {
+    "description": "As Barry works on improving his speed through various training exercises, Leonard Snart returns to Central City with the cold gun and a new partner, Mick Rory, to set a trap for the Flash. Barry discovers his plan, and agrees with Wells not to engage Snart in the hope that he goes away and no one gets hurt like the last time. Snart and Rory, who now has a gun that can emit absolute hot temperatures, kidnap Caitlin to force Barry out of hiding. Cisco and Barry find a way to defeat Snart and Rory. The Flash faces the duo in the city for a showdown, exposing himself to the public. Barry eventually gets them to cross their streams with Eddie's help, successfully damaging the weapons and disabling the pair, who are arrested and the guns delivered to S.T.A.R. Labs. While in transport to Iron Heights, Snart and Rory are broken out by Snart's sister. Meanwhile, Caitlin investigates the cause of Ronnie's transformation and finds out that the Army is covering up the incident. After Iris moves in with Eddie, Barry decides to move back in with Joe.",
+    "title": "Revenge of the Rogues",
+    "date": "January 20, 2015 ",
+    "directed_by": "Nick Copus",
+    "views": "3.87",
+    "episode": "E10",
+    "season": ""
+  },
+  {
+    "description": "While home, Wells receives a threatening call from an unidentified person before using his super speed to save his life from an attempt. Wells informs Barry and the team that the caller was Hartley Rathaway, a former protégé. Rathaway begins attacking his family's business with sonic blasts, and after Barry stops him, Rathaway reveals that he knows a secret of Wells', who states that Rathaway warned him that the particle accelerator could explode, but Wells chose to risk it for the rewards. Cisco discovers that Rathaway intentionally got caught so he could steal information from S.T.A.R. Labs that would allow him to identify the frequency of Barry's molecules so he can kill him. A trap set by Rathaway starts shredding Barry's organs. Wells manages to disable Rathaway's weapons. Later, Joe has Eddie start an investigation into Wells. Rathaway, imprisoned back in the particle accelerator, reveals to Cisco that he knows where Ronnie is and how to save him. In his secret room, Wells uses the tachyon technology to temporarily recharge his speed force energy. Meanwhile, Iris starts working as a journalist and realizes that she is hired to write about the Flash.",
+    "title": "The Sound and the Fury",
+    "date": "January 27, 2015 ",
+    "directed_by": "John F. Showalter",
+    "views": "4.08",
+    "episode": "E11",
+    "season": ""
+  },
+  {
+    "description": "A woman with the ability to teleport to any location she can see breaks into Iron Heights and frees her boyfriend, Clay Parker. The S.T.A.R. Labs team identifies the woman as Shawna Baez. To help Barry, Henry tracks down leads in Iron Heights and finds out that Parker owed money to a local crime boss and is planning a heist to pay it back. Barry learns the location of the heist, finding Baez and Parker and is able to capture her after removing all the lights in a tunnel, effectively making her unable to teleport without being able to see. Parker manages to escape. Meanwhile, Cisco brings Rathaway out of his cell so that the latter can show the truth about Ronnie; Rathaway reveals that Doctor Martin Stein, who developed research into a F.I.R.E.S.T.O.R.M. project focused on transmuting elements, was at S.T.A.R. Labs the day of the explosion. Rathaway reveals that during the explosion Ronnie and Stein merged, before he escapes Cisco's custody. Barry starts dating Iris's colleague, Linda Park. Henry insinuates to Barry that he knows Barry's alter ego. Elsewhere, two city workers are attacked by Grodd.",
+    "title": "Crazy for You",
+    "date": "February 3, 2015 ",
+    "directed_by": "Rob Hardy",
+    "views": "3.60",
+    "episode": "E12",
+    "season": ""
+  },
+  {
+    "description": "The team attempts to track Stein's whereabouts after he attacks a scientist. They convince Stein into coming back to S.T.A.R. Labs for testing. Wells discovers that Ronnie and Stein's atoms are in conflict, and if it continues they will become nuclear. Stein leaves for a secluded location to safely explode without casualties. Barry and Caitlin arrive and use a device Wells made from the tachyon to separate the bodies, but it apparently does not work, and the duo escapes the explosion, which alerts Eiling, who orders a team to recover \"Firestorm\". Meanwhile, Joe enlists Cisco's help to identify Nora's murderer. The duo searches the house and finds blood from two people behind some new wallpaper. Joe asks Cisco to compare the blood to Wells'. Cisco runs the blood and informs Joe that while neither is from Wells, one is from an adult Barry. In the meantime Linda believes Barry to be still in love with Iris, but he proves to Linda that he now loves her not Iris.",
+    "title": "The Nuclear Man",
+    "date": "February 10, 2015 ",
+    "directed_by": "Glen Winter",
+    "views": "3.66",
+    "episode": "E13",
+    "season": ""
+  },
+  {
+    "description": "Barry and Caitlin find Ronnie and Stein alive and separated, which Eiling also finds out. Joe reveals his findings to Barry. Ronnie and Stein realize that their minds are partially connected. Wells visits Eiling, who reveals that he knows Barry's alter ego and demands the F.I.R.E.S.T.O.R.M. project. Wells gives up Stein, who is tortured by Eiling until Barry and Ronnie save him. Ronnie and Stein reunite by the tachyon piece to survive the military onslaught. The duo gains enough control to be able to merge and separate on command. They decide to leave Central City to stay ahead of Eiling and learn more about their new powers. As the Reverse-Flash, Wells kidnaps Eiling and brings him to the sewers. He reveals himself to Eiling, and allows Grodd, who is displaying psychic abilities, to drag Eiling deeper into the sewer. Meanwhile, Iris's colleague, Mason Bridge tells her his belief that Wells deliberately caused the S.T.A.R. Labs explosion. Iris suspects Caitlin's activities and decides to help Mason with his investigation. Barry tells Joe that he will travel back in time again to save Nora, but intends to succeed by learning the mistakes in his previous attempt.",
+    "title": "Fallout",
+    "date": "February 17, 2015 ",
+    "directed_by": "Steve Surjik",
+    "views": "4.01",
+    "episode": "E14",
+    "season": ""
+  },
+  {
+    "description": "Mark Mardon, Clyde's brother, returns to Central City to avenge Clyde's death. Eddie and Linda get jealous of the intimacy between Barry and Iris. Mason shares his knowledge that Wells killed Stagg with Iris and Barry, who tells Caitlin and Cisco, who begins to believe Joe was right about Wells, so he rechecks the containment field that failed to hold the Reverse-Flash. Wells arrives and reveals himself to be Eobard Thawne, a relative of Eddie's and a man from the future who came back in time to kill Barry, and has since been stranded in the present day. Thawne also explains that he is pushing Barry to get stronger so that he can use Barry's powers to return to his time, and he murders Cisco to protect his secret. Mardon kidnaps Joe and forces him to watch as Mardon creates a tsunami in order to kill Iris. Barry reveals his secret identity to Iris, just after they admit to romantic feelings for each other, in order to save the city. Barry runs back and forth across the coastline to create a barrier against the tsunami, but he runs so fast that he travels back in time to the day before.",
+    "title": "Out of Time",
+    "date": "March 17, 2015 ",
+    "directed_by": "Thor Freudenthal",
+    "views": "3.69",
+    "episode": "E15",
+    "season": ""
+  },
+  {
+    "description": "Thawne warns Barry not to change any event for fear that he will create a bigger problem. Barry does not listen and instead captures Mardon and puts him in the particle accelerator. Snart and Rory return to Central City. Snart sends his sister, Lisa after Cisco, whom they force to rebuild the cold and heat guns, and a third gun shooting gold for Lisa, by threatening to kill Cisco's brother. Iris rejects Barry's romantic approach and later Eddie punches him. Barry realizes that Thawne was right about not to manipulate the timeline. Cisco returns and reveals that Snart forced him to reveal the Flash's true identity. Barry goes after Snart, and the two come to a truce: Snart will not reveal Barry's identity, will no longer kill innocent people, and stay away from Barry's loved ones in exchange for Barry not locking him away in the particle accelerator. Caitlin tells Eddie and Iris that Barry is suffering from psychosis as a result of the lightning, making the duo reconcile with him and settling the tension. The Reverse-Flash kills Mason and destroys the evidence linking Thawne to Stagg's death. Mason's vanishing causes Barry to accept Joe was right about \"Wells\".",
+    "title": "Rogue Time",
+    "date": "March 24, 2015 ",
+    "directed_by": "John Behring",
+    "views": "3.33",
+    "episode": "E16",
+    "season": ""
+  },
+  {
+    "description": "Barry and Joe go after terrorist Axel Walker, under the alias Trickster. Walker sets a diversion for the Flash and breaks James Jesse, the original Trickster from 20 years prior, out of prison. Jesse and Walker attempt to extort patrons of fundraiser by poisoning them and ransoming the antidote. When the Flash arrives, Jesse and Walker fit him with a bomb that will detonate if he stops moving. Thawne coaches Barry on how to vibrate his molecules so that he can phase through objects, which removes the bomb. Afterward, Barry provides an antidote to all the patrons before capturing Jasse and Walker. The Flash reveals his identity to Eddie and convinces him to keep Iris from investigating Mason's disappearance. Barry tells Eddie and Joe that \"Wells\" is the Reverse-Flash. In flashbacks, after failing to kill Barry, the Reverse-Flash escapes only to lose his speed. Gideon informs him that travelling through time has drained his powers. Thawne kills Harrison Wells and steals his appearance and identity so he can develop the particle accelerator sooner and return to his timeline.",
+    "title": "Tricksters",
+    "date": "March 31, 2015 ",
+    "directed_by": "Ralph Hemecker",
+    "views": "3.67",
+    "episode": "E17",
+    "season": ""
+  },
+  {
+    "description": "As Barry works in conjunction with Joe and Eddie to stop crimes across the city, an engineering professor is killed by a swarm of bees at a university. While the team searches for a metahuman that can control bees, Felicity arrives with Ray Palmer, looking for assistance to improve his A.T.O.M. suit. The team tracks another bee attack, but Barry is too late and is attacked by the swarm. The team captures one of the bees, which turns out to be a robot and their suspect just a scientist from Mercury Labs named Brie Larvan, who is targeting other former employees. During the next bee attack, Barry goes after Larvan while Ray attempts to stop the bees from killing Dr. Tina McGee. Felicity disables the robots, and Barry captures Larvan. Tina tells Barry that \"Wells\" personality changed after his wife's demise. Iris threatens Eddie to break up if he does not share his secret. Barry informs Caitlin and Cisco about \"Wells\". She does not want believe it, but Cisco does, revealing that he has been having \"dreams\", which show his final moments with Thawne in the alternate timeline.",
+    "title": "All Star Team Up",
+    "date": "April 14, 2015 ",
+    "directed_by": "Kevin Tancharoen",
+    "views": "3.67",
+    "episode": "E18",
+    "season": ""
+  },
+  {
+    "description": "Barry and Eddie track a metahuman named Hannibal Bates, who can shape-shift into anyone he touches. Bates takes Eddie's shape and frames him for murder. Later, Bates knocks Barry unconscious and assumes his form, but Thawne realizes the truth and prevents Bates from killing Caitlin and Iris. Bates manages to escape. Caitlin develops a serum to suppress Bates' power, allowing Barry to defeat him and clear Eddie's name. Iris reconciles with Eddie, who reveals his cooperation with the Flash. Bates is locked in the particle accelerator. Meanwhile, Joe and Cisco decide to investigate the car accident scene in Starling City where Dr. Wells' wife died. With the help of Captain Quentin Lance, Cisco and Joe locate a buried corpse near the crash site. Cisco also modifies a sonic device for Laurel. Joe advises Quentin to reconcile with her. After a series of tests confirm the corpse is the real Dr. Wells, Barry, Caitlin and Cisco locate Thawne's secret room at S.T.A.R. Labs. They find both the Reverse-Flash's costume and the newspaper article from 2024.",
+    "title": "Who Is Harrison Wells?",
+    "date": "April 21, 2015 ",
+    "directed_by": "Wendey Stanzler",
+    "views": "3.75",
+    "episode": "E19",
+    "season": ""
+  },
+  {
+    "description": "Barry talks to Gideon and learns about his battle with the Reverse-Flash in the future, as well as key moments in his life that include marrying Iris, a promotion at the CCPD, and that he created Gideon in the future. With high-tech goggles, the team reawakens Cisco's memories of his alternate-timeline death and the secrets Wells confessed. The team regroups at Joe's house, where Barry reveals his recent time travel and explains his plan to lure Thawne to confess to killing Nora: to trap Thawne Cisco reverses the polarity of his containment field to protect himself from Thawne, while Caitlin films the interaction to capture Thawne's confession. The trap fails, but Joe shoots Thawne before he can kill Cisco. As Thawne dies, his body transforms, revealing himself to be Bates. Thawne himself calls the team, revealing that he was always aware of their actions because he had them under surveillance. Reverse-Flash goes after Iris and Eddie, but Barry arrives, forcing Thawne to kidnap Eddie instead. Iris finds out about the Flash's identity. Thawne reveals his relation to Eddie. Flashbacks reveal the aftermath of Barry being struck by lightning, and Thawne convincing Joe to let him save Barry's life, and promising to a comatose Barry that he will die.",
+    "title": "The Trap",
+    "date": "April 28, 2015 ",
+    "directed_by": "Steve Shill",
+    "views": "3.93",
+    "episode": "E20",
+    "season": ""
+  },
+  {
+    "description": "While looking for Eddie and Thawne, Barry heads to stop a robbery at the gold reserve. When Barry confronts the would-be thief, they are both disoriented by an unknown psychological attack. Back at S.T.A.R. Labs, Iris confronts Barry about being the Flash. He is able to stop the thief, who turns out to be Eiling, whose mind is revealed to be controlled by Grodd. With a lead from Iris, Barry, Joe and Cisco head into the sewers to look for Grodd. The trio realize that Grodd is getting smarter and larger, and during an attack, Joe is kidnapped by Grodd. Cisco and Caitlin build Barry a device that will prevent Grodd's effect. It works, but the device gets damaged in a fight. Barry is able to fight off Grodd's psychic attack and trick him into jumping in front of an on-coming train. Eiling is freed. Iris to have feelings for Barry, but states her choice to be Eddie. Grodd is revealed to be safe and roaming the streets. Meanwhile, Thawne works on a device that will allow him to return to his own time. He reveals to Eddie, Iris and Barry's marriage in the future. Later Thawne completes the device and is revealed to be hiding in a secret chamber inside S.T.A.R. Labs.",
+    "title": "Grodd Lives",
+    "date": "May 5, 2015 ",
+    "directed_by": "Dermott Downs",
+    "views": "3.62",
+    "episode": "E21",
+    "season": ""
+  },
+  {
+    "description": "Cisco discovers that Eobard has been supercharging his speed through his wheelchair, which is why he is so much faster than Barry. The particle accelerator is activated by Eobard, who has managed to repair it. The team is able to find and rescue Eddie, who ends his relationship with Iris. Worried that the metahumans imprisoned inside the particle accelerator will be killed when it reaches full power, the team plans to relocate them to Oliver's prison on Lian Yu. In order to set up a safe transport, Barry requests Leonard's help. Leonard agrees but only after Barry erases all of the former's criminal record. Leonard and Lisa sabotage the transport and allow the metahumans to escape, killing Simmons however. Eobard arrives back at the lab just as the accelerator fully charges. Barry, Firestorm and Oliver all meet outside to fight Reverse-Flash. They coordinate their efforts; Oliver stops him with a nanite injection that disables Eobard's speed and knocks him out. Oliver leaves after informing Barry of an upcoming help request.",
+    "title": "Rogue Air",
+    "date": "May 12, 2015 ",
+    "directed_by": "Doug Aarniokoski",
+    "views": "3.65",
+    "episode": "E22",
+    "season": ""
+  },
+  {
+    "description": "Barry visits Thawne in the particle accelerator prison, where he reveals he killed Nora because of hating the Flash, whose future self saved him. Eobard requests Barry to help create a wormhole where Thawne can return to his time, while also allowing Barry to save Nora. Caitlin and Ronnie get married. Eobard tells Cisco that the latter's ability to recall events of alternate timelines was acquired from the particle accelerator explosion. Barry decides to go through with Thanwe's offer. The latter states that Barry will have only a short time, or else the wormhole will become a black hole. Barry travels back in time, but his future self signals him not to save Nora. The present Barry returns and stops Thawne from returning to his time. The two fight, while the team shuts down the wormhole. Thawne eventually prevails, but before he can kill Barry, Eddie shoots himself, causing Thawne's existence to cease. The wormhole reappears, and the team is unable to prevent it from becoming a black hole. As the black hole begins to tear the city apart, pulling Eddie inside, Barry speeds into it in an effort to stop it.",
+    "title": "Fast Enough",
+    "date": "May 19, 2015 ",
+    "directed_by": "Dermott Downs",
+    "views": "3.87",
+    "episode": "E23",
+    "season": ""
+  },
+  {
+    "description": "Ronnie and Stein turn into Firestorm and destroy the singularity, but at the cost of Ronnie's life. Six months later, while using his speed to repair the ruined Central City, Barry operates on his own, being considered a hero and a savior by the public and the local government; Cisco works in the police department alongside Joe, and Caitlin works at Mercury Labs. Barry works evaluates a crime scene with a victim named Al Rothstein. At a ceremony, the Flash is attacked by Atom-Smasher, whose strength and size manipulation prove too much for Barry to handle, but manages to force his mask off. Underneath the mask Atom-Smasher is revealed to look exactly like Rothstein. He is convinced by Joe and the others that he needs help in taking down certain metahumans and Barry defeats Rothstein by allowing him to absorb too much radiation. As he dies, Rothstein tells Barry that he was sent to kill him by a person called Zoom. Barry also receives a flash memory from Thawne's lawyer containing Eobard's confession to killing Nora. Henry is exonerated and released from prison, and decides to leave Central City so that Barry can focus on being the Flash. A man arrives at S.T.A.R. Labs and, introducing himself as Jay Garrick, tells the team their world is in danger.",
+    "title": "The Man Who Saved Central City",
+    "date": "October 6, 2015 ",
+    "directed_by": "Ralph Hemecker",
+    "views": "3.58",
+    "season": "S02",
+    "episode": "E01"
+  },
+  {
+    "description": "Jay explains to everyone that he is the Flash on a parallel Earth and that he was in a battle with a demonic speedster named Zoom when the singularity brought him to this Earth without his powers. Stein confirms the claim, describing their world as \"Earth-1\" and Jay's as \"Earth-2\". Zoom brings another metahuman from Earth-2 called Sand Demon, later identified as Eddie Slick, to kill the Flash. Cisco analyzes the \"sand\" left behind and has a vision of the previous fight, frightening him. After Slick kidnaps Officer Patty Spivot, Jay teaches Barry how to hurl lightning. Cisco uses his power to find Patty's location. Barry uses the lightning blast to turn Sand Demon's particles to glass, killing him. Patty reveals to Joe that Mark Mardon killed her father. She joins Joe's metahuman task force. Cisco divulges his ability to Stein, and convinces him not to tell anyone. Stein and Cisco are able to locate 52 breaches with the Earth-2, with the largest one being within S.T.A.R. Labs itself. Joe's estranged wife, Francine, pays him a visit. Stein collapses while talking. On Earth-2 it's revealed that the Harrison Wells of this world is alive and in charge of S.T.A.R. Labs.",
+    "title": "Flash of Two Worlds",
+    "date": "October 13, 2015 ",
+    "directed_by": "Jesse Warn",
+    "views": "3.49",
+    "episode": "E02",
+    "season": ""
+  },
+  {
+    "description": "Jay creates a device that stabilizes the singularity and will allow him to return home, but he opts to stay to help Barry stop Zoom. Meanwhile, Lisa Snart shows up asking for Flash's help in rescuing Leonard, whom she believes was kidnapped. Barry tracks down Snart, who is revealed not to be kidnapped but is working with his father, Lewis. Lisa states that Snart would never work with Lewis willingly, because the latter was abusive toward her when she was a child. Eventually, the team determines that Lewis placed a bomb inside of Lisa and threatened to kill her if Snart did not help him with his theft. Barry infiltrates Lewis' crew with assistance from Snart. Cisco successfully removes the bomb from Lisa, so Snart uses his cold gun to kill his father in retaliation. Snart is incarcerated in Iron Heights and Lisa leaves. Joe reveals to Iris that Francine is alive and a former addict. Stein turns into Firestorm, but with blue flames. Earth-2's Wells arrives at the lab through the breach.",
+    "title": "Family of Rogues",
+    "date": "October 20, 2015 ",
+    "directed_by": "John F. Showalter",
+    "views": "3.47",
+    "episode": "E03",
+    "season": ""
+  },
+  {
+    "description": "The team is able to temporarily stabilize Stein. Caitlin states that he needs to merge with a new person in order to survive. She identifies two potential candidates: a scientist named Henry Hewitt and a former high school football star named Jefferson Jackson. Hewitt is excited to merge with Stein, but the attempt fails and Hewitt leaves angrily, not knowing that his own metahuman powers have been activated. Jefferson initially refuses, but agrees when Hewitt goes on rampage. After the successful merger, the new Firestorm joins Barry in helping to take down Hewitt, who is incarcerated. Before departing with Jefferson, Stein encourages Cisco to tell the others about his powers. Meanwhile, Francine reveals that she is suffering from a terminal illness and only has months. Iris later confronts her for hiding the existence of the former's brother. In the meantime, Wells breaks into Mercury Labs and steals an unknown device. Later, Barry is attacked by a humanoid shark monster sent by Zoom, but is saved by Wells.",
+    "title": "The Fury of Firestorm",
+    "date": "October 27, 2015 ",
+    "directed_by": "Stefan Pleszczynski",
+    "views": "3.43",
+    "episode": "E04",
+    "season": ""
+  },
+  {
+    "description": "Wells, who Cisco nicknames \"Harry\" to distinguish him from Thawne, reveals that he is responsible for the creation of the metahumans and Zoom in Earth-2. He states that he plans to help Barry's team stop Zoom and other metahumans. At the same time, a metahuman from Earth-2 called Doctor Light arrives and starts robbing banks. Barry recognizes her as the Earth-2 version of Linda. Later, Light attempts to kill Linda and take over her identity, but accidentally kills Linda's boss and is stopped by Barry's team in the process. Harry reveals Cisco's powers to the team, which Cisco uses to locate Light. Barry defeats her with the help of Harry. After locking Light up, they plan to use her to lure Zoom out and defeat him for good. Jay, who dislikes Harry and vice versa, thinks it is too dangerous and leaves the team. Meanwhile, Barry starts dating Patty while Cisco starts a date with a barista named Kendra Saunders. Cisco picks the nickname \"Vibe\" for himself. Back on Earth-2, it is revealed that Zoom has Harry's daughter captive.",
+    "title": "The Darkness and the Light",
+    "date": "November 3, 2015 ",
+    "directed_by": "Steve Shill",
+    "views": "3.87",
+    "episode": "E05",
+    "season": ""
+  },
+  {
+    "description": "As the team works to find a way to stop Zoom, Linda-2 escapes from her containment cell. Instead, the Earth-1 Linda agrees to help the team by impersonating Linda-2. Barry reveals his alter ego to her. Harry creates a speed dampening serum and the team stages a fight at one of the breaches in order to trick Zoom through. The attempt fails, as Zoom knew the plan. Instead, he goes after Linda, before fighting Barry. Zoom is much faster and easily overpowers Barry, showing him defeated with his unconscious body to the local news and the police station before ultimately returning to S.T.A.R. Labs. Zoom stabs Barry with his hand, but Cisco shoots him with the serum, which hurts Zoom, but still leaves him with enough speed to escape. Later, Harry reveals that Zoom has his daughter, Jesse, and that he came to Earth-1 to stop Zoom. Barry wakes from his injuries and discovers that he can no longer feel his legs.",
+    "title": "Enter Zoom",
+    "date": "November 10, 2015 ",
+    "directed_by": "JJ Makaro",
+    "views": "3.63",
+    "episode": "E06",
+    "season": ""
+  },
+  {
+    "description": "Barry manages to recover from the paralysis, but is unable to use his powers due to the psychological trauma of Zoom exposing the former's defeat to the city. Iris reaches out to Henry, who returns to help Barry overcome his fears. Wells formulates a plan to close all of the breaches, except one, through which Zoom can enter into the trap set for him. Cisco touches Kendra, but leaves after seeing a winged person in a vibe. Grodd returns, using scientists to steal various chemicals in the hopes of creating more gorillas with his level of intelligence. He later kidnaps Caitlin to help him with his plan. Harry dresses up as the Reverse-Flash in order to trick Grodd into thinking that his \"father\" is still alive. The plan works long enough for Harry to rescue Caitlin before they both escape. After Barry is fully recovered, they lure Grodd to one of the dimensional breaches and send him to a jungle sanctuary for gorillas that have been experimented on in Earth-2. Later, Cisco meets Kendra again, this time vibing and seeing her as the winged figure.",
+    "title": "Gorilla Warfare",
+    "date": "November 17, 2015 ",
+    "directed_by": "Dermott Downs",
+    "views": "3.46",
+    "episode": "E07",
+    "season": ""
+  },
+  {
+    "description": "\nVandal Savage arrives in Central City looking to kill Kendra. Barry goes to Star City and enlists the help of Oliver and his team to protect. The team is visited by Malcolm who informs them that Savage is an immortal. Later, Kendra is kidnapped by Hawkman, but is rescued by Barry and Oliver, who capture the man, who introducing himself as Carter Hall, tells them he and Kendra are soulmates who have been connected for millennia. The pair are destined to die, be reborn, and find each other in each lifetime. Carter also reveals that Savage has killed the pair several times, each time growing stronger. Savage acquires the Staff of Horus, a deadly weapon. Kendra unlocks her abilities and the team decides to regroup in Central City, where Oliver witnesses Samantha Clayton with her son, who is also his. Meanwhile, Caitlin and Harry create a serum that will temporarily increase Barry's speed so that he can defeat Zoom. Jay initially refuses to test the serum, but changes his mind to save Harry when the latter is shot by an unaware Patty, whom Joe later informs about the truth. However, Jay advises against using the serum on Barry.\n\nThis episode begins a crossover with Arrow that concludes on \"Legends of Yesterday\". The two episodes also set up Legends of Tomorrow.",
+    "title": "Legends of Today",
+    "date": "December 1, 2015 ",
+    "directed_by": "Ralph Hemecker",
+    "views": "3.94",
+    "episode": "E08",
+    "season": ""
+  },
+  {
+    "description": "Mardon breaks James Jesse and Snart out of Iron Heights in an effort to team up to kill the Flash. Snart declines and alerts Barry. Jesse and Mardon place bombs hidden in Christmas gifts throughout the city, threatening to set them off in family homes if Barry does not sacrifice himself. Wells, Cisco, and Jay find one of the bombs and alter its magnetic polarity; they send it into one of the dimensional breaches, which causes it to attract the remaining bombs, removing them from the city. With them gone, Barry subdues Mardon and Jesse, dissuading Patty from killing Mardon. Meanwhile, Iris and Barry tell Joe about the latter's son named Wally, who later shows up at Joe's. Caitlin and Jay start a romantic relationship. Elsewhere, Zoom is revealed to be sending metahumans in order to help Barry get faster so that the former can take the latter's speed force, which Harry reluctantly agrees to help Zoom with because of his daughter, Jesse.",
+    "title": "Running to Stand Still",
+    "date": "December 8, 2015 ",
+    "directed_by": "Kevin Tancharoen",
+    "views": "3.55",
+    "episode": "E09",
+    "season": ""
+  },
+  {
+    "description": "Cisco presents a new idea to slow Zoom down, telling the team about a metahuman, whom he has dubbed the \"Turtle\", who has the ability to stop the kinetic energy around him and slow everyone to a halt. After Barry fails to stop the Turtle, identified as Russell Glosson, at a diamond unveiling, the team sets a trap at an art exhibit. Barry invites Patty with the intention of telling her his secret, but Glosson is aware of the trap and almost kills Patty before escaping. Later, Glosson kidnaps Patty. The team tracks him down and Barry is able to generate enough speed to move through the kinetic waves to knock him unconscious and save Patty. Patty tells Barry that she is leaving Central City and Harry kills Glosaon by extracting a portion of his brain matter. Meanwhile, Joe struggles to develop a relationship with Wally, who has been street racing in an attempt to earn enough money for Francine's medical bills. Caitlin discovers that Jay is dying of an illness caused by Zoom stealing his speed. They vow to stop Zoom to get Jay's speed back in order to cure Jay.",
+    "title": "Potential Energy",
+    "date": "January 19, 2016 ",
+    "directed_by": "Rob Hardy",
+    "views": "3.41",
+    "episode": "E10",
+    "season": ""
+  },
+  {
+    "description": "The team discovers Turtle's death and Jay suspects Harry. Cisco asks Harry for help in controlling his vibing abilities. The latter determines they are connected to Cisco's fear response and triggers a vibe which alerts the team that Eobard Thawne is back. Harry surmises that this version of Thawne is from a point in the future before he went back in time to kill Nora and was protected from being erased. Cisco has a vibe of the future, and the team learns that Thawne is planning to use tachyons to return to his time. Barry arrives and destroys the machine. After a race around the city, Barry stops Thawne and imprisons him at the particle accelerator. However, his capture causes a rupture in the timeline that threatens to kill Cisco, so Barry sends Thawne back to the future to save his friend. Meanwhile, Patty discovers Barry is the Flash but, when he refuses to acknowledge it, she chooses to leave the city. Iris learns that Francine's death is imminent and reconciles with her. Wally takes her advice to do the same.",
+    "title": "The Reverse-Flash Returns",
+    "date": "January 26, 2016 ",
+    "directed_by": "Michael A. Allowitz",
+    "views": "3.71",
+    "episode": "E11",
+    "season": ""
+  },
+  {
+    "description": "Right before the particle accelerator explosion, Joey Monteleone was thrown into a tar pit and left for dead. Sealed away, he is freed two years later with the ability to turn his body into molten tar. He sets out to get revenge on those who attempted to kill him. Harry creates a device to siphon Barry's speed energy and attaches it to his suit. It steals a portion of Barry's speed. Wells gives the energy to Zoom, who demands the rest. Meanwhile, Wells and Barry also successfully find a way to close the breaches. While going after Joey, Iris is injured when Barry is too slow to save her. Wells tells the team about the device, asking to be returned to Earth-2 and have Barry seal the breaches so Zoom cannot re-enter. After stopping Joey, Barry informs Wells that the team will help the latter to save Jesse. In the meantime, Wally continues racing even after Francine's death.",
+    "title": "Fast Lane",
+    "date": "February 2, 2016 ",
+    "directed_by": "Rachel Talalay",
+    "views": "3.66",
+    "episode": "E12",
+    "season": ""
+  },
+  {
+    "description": "Before heading to Earth-2, Barry closes all but one of the breaches, which is at S.T.A.R. Labs. Using the last breach, Barry, Cisco, and Harry travel to Earth-2, but an energy surge destabilizes the breach and the trio get stuck in Earth-2. Barry decides to impersonate his doppelgänger to get more information on Zoom. He later meets the Iris and Joe of Earth-2 and learns that Iris, who is his doppelganger's wife, works for the CCPD while Joe is a singer. Barry is attacked by Earth-2's Caitlin and Ronnie, known as Killer Frost and Deathstorm respectively. Joe is killed in the attack. Cisco attempts to help the police stop the pair, but is confronted by his own evil doppelgänger, known as \"Reverb\" and revealed to have greater powers, including control over nervous systems and manipulation of vibrations. Barry arrives and is stopped by Reverb and Deathstorm. Zoom arrives, kills Reverb and Deathstorm for harming the Flash, and then imprisons Barry. Meanwhile, a new metahuman named Adam Fells appears in Earth-1 Central City. Jay tells Caitlin that he invented Velocity-6, which is the real reason why he lost his speed. Caitlin develops Velocity-7, which Jay uses to engage Fells, who escapes.",
+    "title": "Welcome to Earth-2",
+    "date": "February 9, 2016 ",
+    "directed_by": "Millicent Shelton",
+    "views": "3.96",
+    "episode": "E13",
+    "season": ""
+  },
+  {
+    "description": "On Earth-2, Zoom issues a demand to Central City to turn Wells in. The former attacks S.T.A.R. Labs to find Wells and Cisco; but the two escape with Barry-2. The trio updates Iris-2 on what happened with Barry-1. They decide to convince Caitlin-2 to help. After a fight, Caitlin-2 agrees to take the team to Zoom. They arrive and rescue Barry-1 and Jesse, but Zoom shows up too. They are able to escape by the help of Caitlin-2, who keeps Zoom frozen and unable to move, but a third unidentified prisoner, who tries to reveal something about Jay, is left behind. Barry-2 and Iris-2 leave Central City to hide from Zoom. Meanwhile on Earth-1, Caitlin-1 creates \"Velocity 9\", which Jay uses to stop Adam, who gets incarcerated in Iron Heights. Caitlin-1 discovers that Velocity 9 can cure Jay. The latter, Caitlin, Iris and Joe stabilize the breach and allow Barry-1, Cisco, Harry, and Jesse to return, but Zoom stabs his arm through Jay and pulls him back through the closing breach to Earth-2.",
+    "title": "Escape from Earth-2",
+    "date": "February 16, 2016 ",
+    "directed_by": "JJ Makaro",
+    "views": "3.90",
+    "episode": "E14",
+    "season": ""
+  },
+  {
+    "description": "While everyone tries to move on, the humanoid shark-monster that Harry stopped, known as \"King Shark,\" escapes A.R.G.U.S. custody and heads for Central City to kill the Flash. John Diggle and Lyla Michaels, the new director, arrive to warn Barry. King Shark, later identified as Shay Lamden, shows up at Barry's home looking for the Flash, tracking Barry's electrical field. A.R.G.U.S. arrives and forces Shay to retreat. Later, Barry forces King Shark to chase him out on the water, where the former creates an electrified underwater cyclone that subdues the latter, and allows A.R.G.U.S. to imprison him again, with Lyla planning to find a cure. Barry vows to open a breach back to Earth-2 to stop Zoom. Meanwhile, Barry and Wally find it hard to develop a relationship. After Caitlin becomes cold due to Jay's death, Cisco becomes scared that she will become Killer Frost; but she assures him that she is only dealing with her grief. Back on Earth-2, it is revealed that, underneath his mask, Zoom looks exactly like Jay.",
+    "title": "King Shark",
+    "date": "February 23, 2016 ",
+    "directed_by": "Hanelle Culpepper",
+    "views": "3.80",
+    "episode": "E15",
+    "season": ""
+  },
+  {
+    "description": "Barry starts training to get faster so that he can stop Zoom. While out with friends at a club for downtime, Barry and the other club patrons are robbed by an unknown speedster, who then escapes. The speedster turns out to be Eliza Harmon, a Mercury Labs employee who developed Velocity-9 from samples Caitlin gave her to help with Jay's illness. Operating under the alias \"Trajectory\", Harmon invades S.T.A.R. Labs, imprisons Barry, and demands more V-9. After she threatens Jesse's life, Wells and Caitlin make more of the drug for Harmon, who then speeds off to wreak havoc on the city. Barry manages to stop her before she injects more V-9 into her system. Barry watches as Harmon's speed becomes so intense that her lightning turns blue and she disintegrates. Jesse decides to leave the city to experience the world on her own and stop Wells from doing harmful things just to protect her. Based on what Barry saw from the overuse of V-9, the similarities between Zoom's speed and Jay's sickness, and Cisco's \"vibe\", the team concludes that Jay is Zoom.",
+    "title": "Trajectory",
+    "date": "March 22, 2016 ",
+    "directed_by": "Glen Winter",
+    "views": "3.00",
+    "episode": "E16",
+    "season": ""
+  },
+  {
+    "description": "Barry travels back in time to when Hartley Rathaway attacked the team, and switches places with his past self, in order to have Thawne help him solve the Speed Force equation. However, after a Time Wraith follows Barry to the past, Thawne deduces Barry's deception. Barry is able to convince Eobard to help the former become faster. The wraith comes to the lab, where Caitlin and Cisco are forced to accept help from Hartley to deter the wraith. Afterward, the Barry from the current time arrives, forcing an explanation of the time travel event. Thawne provides the future Barry with the information about the tachyon technology, so that he can return to his time. As Barry prepares to make the jump through time, the Wraith arrives, forcing the past timeline's Barry to intervene, so that his future self can return. Back in his time, Barry is confronted by the Wraith, but a reformed Hartley arrives with his sonic gauntlets and defeats the wraith. Barry gives Iris a footage of Eddie recorded in the alternate timeline, advising her to move on with her life.",
+    "title": "Flash Back",
+    "date": "March 29, 2016 ",
+    "directed_by": "Alice Troughton",
+    "views": "3.39",
+    "episode": "E17",
+    "season": ""
+  },
+  {
+    "description": "Years earlier on Earth-2, a young Hunter Zolomon watches as his father murders his mother and is subsequently sent to an orphanage. In present day, Barry tests the tachyon accelerator and is able to enhance his speed four times greater than normal. Barry decides to re-open a breach back to Earth-2, and he believes that Cisco's powers are the key to opening the portals. Meanwhile Caitlin reveals that Jay's Earth-1 doppelganger is Zolomon and Wells, shocked to hear this, reveals that Earth-2 Zolomon was a convicted serial killer. Zolomon was receiving electroconvulsive therapy during the explosion, and was one of the many affected. With this revelation, the team confirms that \"Jay\" is Hunter. Cisco opens a breach, and Zoom immediately appears, chasing Barry back to S.T.A.R. Labs. There, Barry uses images of Zolomon's parents as a distraction to trap him, but Hunter escapes, claiming to be \"the darkness\". Zolomon kidnaps Wally and demands Barry's speed in exchange for Wally's life. Barry agrees, so Wells siphons all of his speed force, leaving Barry powerless. Zolomon injects the speed force into himself, and he kidnaps Caitlin with his enhanced speed before escaping.",
+    "title": "Versus Zoom",
+    "date": "April 19, 2016 ",
+    "directed_by": "Stefan Pleszczynski",
+    "views": "3.03",
+    "episode": "E18",
+    "season": ""
+  },
+  {
+    "description": "As Barry adjusts to life without his powers, Wells decides to leave the lab to look for Jesse. Shortly after speaking with her, Wells is attacked and kidnapped by Griffin Grey, believing him to be Thawne, who demands that Wells find a cure for his metahuman abilities. Grey has superhuman strength, but is also aging rapidly. Barry discovers that, when Grey uses his super strength, he accelerates the aging process. Barry, Joe, Cisco and Jesse manipulate Grey into exerting his powers until he ages and dies as a weak, old man; his body then reverts back to its 18-year-old self. To fight Zoom, Wells offers to recreate the circumstances that gave Barry his speed. Meanwhile on Earth-2, Zolomon tells Caitlin that he kidnapped her because he is in love with her. Caitlin encounters her doppelgänger, Killer Frost, who was captured by Zolomon as a reminder of Caitlin. Killer Frost convinces Caitlin to help her escape, but then attempts to kill her. Zoom arrives and kills Killer Frost, then warns Caitlin not to free the man in the iron mask. Later, Hunter decides to conquer the other Earths in the multiverse and takes Caitlin with him back to Earth-1.",
+    "title": "Back to Normal",
+    "date": "April 26, 2016 ",
+    "directed_by": "John F. Showalter",
+    "views": "3.39",
+    "episode": "E19",
+    "season": ""
+  },
+  {
+    "description": "While Barry keeps declining Harrison's offer, the team rigs a hologram of the Flash to stop crime around the city so that no one will know the truth. Henry returns to Central City and joins the team. He argues with Wells on the safety of another explosion. Hunter and Caitlin arrive back on Earth-1 with the former declaring the city under his control. Iris confesses her feelings to Barry. The Earth-2 version of Dante Ramon, called \"Rupture,\" arrives on Earth-1 looking to kill Cisco, believing that Cisco killed his Earth-2 brother. Zolomon sends Dante-2 after the police to send the city a message. Barry and the police stop Dante-2, but Zolomon arrives and kills the officers himself, as well as Dante-2 for failing. He then publicly announces the Flash's disappearance. Cisco and Dante-1 become closer. Barry finally agrees to Harrison's plan. During the process, Barry is seemingly vaporized, while Jesse and Wally are caught in the blast.",
+    "title": "Rupture",
+    "date": "May 3, 2016 ",
+    "directed_by": "Armen V. Kevorkian",
+    "views": "3.34",
+    "episode": "E20",
+    "season": ""
+  },
+  {
+    "description": "Wally regains consciousness, but Jesse remains in a coma. Cisco has a vibe of Barry and realizes that he is still alive and in the Speed Force. Barry meets physical manifestations of the Speed Force in faces familiar to him. The Speed Force informs Barry that he cannot leave unless he catches a mysterious moving figure, thus gaining his speed back. Cisco and Wells create a path into the Speed Force so Barry can escape, but the latter chooses to remain so he can earn his powers back. The Speed Force tells Barry that he cannot become the Flash again until he finally accepts Nora's death. Barry shares a moment with the physical manifestation of Nora, which allows him to finally catch the moving figure himself. With his powers restored and help from Cisco and Iris, Barry returns to S.T.A.R. Labs in time to save the team from the reanimated corpse of Tony Woodward. Afterwards, Barry uses a bit of speed force energy to bring Jesse out of her coma. Across town, Zolomon has assembled an army of metahumans from Earth-2, planning to unleash them on Central City.",
+    "title": "The Runaway Dinosaur",
+    "date": "May 10, 2016 ",
+    "directed_by": "Kevin Smith",
+    "views": "3.52",
+    "episode": "E21",
+    "season": ""
+  },
+  {
+    "description": "Caitlin returns to the team, but not without emotional trauma from being kidnapped. Zoom's army wreaks havoc across the city. Barry puts out several fires and takes out some of the metahumans to help the police. Back at S.T.A.R. Labs, Barry displays a level of confidence in stopping Zoom that concerns the team and each of them attempts to convince him to be more cautious. Among the attackers is Laurel Lance's doppelgänger, \"Black Siren\", who attacks various buildings around Central City using sonic blasts. Wally begins taking on metahumans trying to repay the Flash for saving him. The team creates a sonic amplifier tuned to the frequency of Earth-2. They discharge it and render all Earth-2 natives unconscious, allowing Barry to apprehend them all at once, although Zoom survives by escaping to Earth-2. Meanwhile, Cisco begins having vibes of a future Earth-2 being destroyed. Barry convinces Joe to let Wally be a hero. Later, Zoom returns and kidnaps Henry in front of the team. Barry races after them, revealing his identity to Wally, and is forced to watch Zoom kill Henry.",
+    "title": "Invincible",
+    "date": "May 17, 2016 ",
+    "directed_by": "Jesse Warn",
+    "views": "3.37",
+    "episode": "E22",
+    "season": ""
+  },
+  {
+    "description": "Zolomon manages to escape Barry by creating a time remnant. After Henry's funeral, Hunter challenges Barry to a race to determine who is faster, threatening to kill everyone Barry loves if he refuses. Harrison discovers Hunter is in possession of a magnetar, a device that will destroy every planet in the Multiverse except Earth-1 which requires both their speeds to power. When an enraged and vengeful Barry refuses to back out, the team locks him in the pipeline and forces Zolomon back to Earth-2 themselves; but Hunter abducts Joe in the process. Wally discovers this and frees Barry, who agrees to Zolomon's race. As Barry races Zolomon around the magnetar, he creates a time remnant of himself who frees Joe and destroys the machine, but at the cost of his life. The \"prime\" Barry defeats Zolomon, who is then taken away by Time Wraiths for his crimes against the timeline. Barry rescues the man in the iron mask, who is revealed to be the real Jay Garrick, Henry's Earth-3 doppelganger. Wells and Jesse return to Earth-2 with Jay, who plans to return to Earth-3 from there. Barry, still feeling broken and defeated, travels back in time and stops Thawne from killing Nora.",
+    "title": "The Race of His Life",
+    "date": "May 24, 2016 ",
+    "directed_by": "Antonio Negret",
+    "views": "3.35",
+    "episode": "E23",
+    "season": ""
+  },
+  {
+    "description": "After preventing the murder of Nora Allen, Barry returns with Eobard Thawne to the present and imprisons him in a cage that dampens his speed. In the new timeline, which Thawne dubs \"Flashpoint\", both of Barry's parents are alive; Joe has a poor relationship with Wally and Iris and is chronically in trouble at work; Cisco is a billionaire tech magnate; and Caitlin is a pediatric ophthalmologist. There is also a new Flash in Central City called Kid Flash struggling with his own nemesis, Edward Clariss, known as \"The Rival\". Barry begins losing his memories of the original timeline due to the new timeline becoming permanent. After discovering Kid Flash is Wally, Barry teams up with him and stops Clariss, but Wally is critically injured in the process. Realizing that the new timeline is worse for those closest to him, Barry is forced to let Thawne return to the past and kill Nora, resetting the timeline and restoring Barry's memories. Back in the present, Barry learns that the timeline did not reset exactly. Meanwhile, Clariss is confronted by a mysterious voice and finds the message \"Alchemy\" being scratched into his mirror by an invisible force.",
+    "title": "Flashpoint",
+    "date": "October 4, 2016 ",
+    "directed_by": "Jesse Warn",
+    "views": "3.17",
+    "season": "S03",
+    "episode": "E01"
+  },
+  {
+    "description": "Barry learns of multiple changes to the timeline: Iris has not forgiven Joe for concealing that her mother was alive, Cisco is angry with him for not altering the timeline to save his brother Dante from being killed, and he has a new CSI partner, Julian Albert, who does not like or trust him. Barry decides to travel back to fix the damage, but he is intercepted by Jay Garrick. Jay tells Barry that the timeline never resets exactly and he has to learn to live with his mistakes. Meanwhile, Clariss has visions of \"Flashpoint\" and locates the person responsible, Alchemy, who restores Clariss' powers and full \"Flashpoint\" memories. Barry tells the team about the timeline's alterations before confronting Clariss at an abandoned warehouse. Alchemy is there as well, saying that he is \"preparing this world\" for a future event. Cisco arrives and helps Barry defeat Clariss, who is then incarcerated in Iron Heights. The team determines Alchemy is creating other metahumans from \"Flashpoint\" whom they need to track down. Cisco and Barry reconcile, as do Iris and Joe. Caitlin is secretly revealed to have gained cryokinetic powers. Barry and Iris begin dating, while Clariss is killed by an unseen creature with a metallic arm in his cell.",
+    "title": "Paradox",
+    "date": "October 11, 2016 ",
+    "directed_by": "Ralph Hemecker",
+    "views": "2.80",
+    "episode": "E02",
+    "season": ""
+  },
+  {
+    "description": "Wells and Jesse return to Earth-1, where she reveals she has gained super speed from the second dark matter blast. Wells hopes everyone will dissuade her from using her powers. Elsewhere, foster child Frankie Kane develops metahuman magnetic powers that manifest as an alternate personality, Magenta, who attacks her abusive foster father. Julian confronts Frankie at the station and is nearly killed by Magenta. Barry learns from Magenta that she got her powers from Alchemy. She escapes and later goes to the Central City Hospital to kill her foster father by dropping an oil tanker on the building. Barry creates a vortex to hold the tanker in place, but is unable to confront Magenta simultaneously. Wells sends Jesse to help. She takes over the vortex while Barry talks Kane into gaining control over Magenta. Wally, grappling with disappointment over having no speed, realizes he is also having dreams from \"Flashpoint\". Wells tells Jesse that he will support her decision and presents her with her own speedster costume. Joe later shows Barry and Julian footage of Clariss being killed in his cell by an unseen force, manifesting only a flying ball of white light.",
+    "title": "Magenta",
+    "date": "October 18, 2016 ",
+    "directed_by": "Armen V. Kevorkian",
+    "views": "2.67",
+    "episode": "E03",
+    "season": ""
+  },
+  {
+    "description": "Three years ago, Sam Scudder and Rosalind Dillon, former cohorts of Leonard Snart, were caught in the original particle accelerator explosion. In the present, Barry begins training Jesse on how to use her powers. Wells suggests the team locate a doppleganger of his from another Earth to replace him on the team once he and Jesse leave. Scudder returns from being trapped in a mirror-like dimension with the ability to transport himself and others through reflective surfaces. He reunites with Dillon, who now has vertigo-inducing powers, and they go on a crime spree. Barry and Jesse (as \"Jesse Quick\") confront them but are defeated, and Barry ends up trapped inside a mirror by Scudder. Caitlin secretly uses her emerging ice powers to help Barry free himself from his predicament. He and Jesse then successfully capture Scudder and Dillon. After evaluating the candidates, the team recruits the friendly and eccentric Wells of Earth-19, despite the Earth-2 Wells' misgivings. Jesse and her father then return to Earth-2, with Wells apprising Cisco about Barry's suspicious escape. That night, Caitlin accidentally freezes the water in her shower and her appearance begins showing signs of her Earth-2 doppelgänger, Killer Frost.",
+    "title": "The New Rogues",
+    "date": "October 25, 2016 ",
+    "directed_by": "Stefan Pleszczynski",
+    "views": "2.80",
+    "episode": "E04",
+    "season": ""
+  },
+  {
+    "description": "Without informing the others, Caitlin visits her estranged mother, Carla, at her medical research company to have her powers examined, but leaves after viciously attacking another scientist who intended to exploit her condition. Meanwhile, a gigantic creature repeatedly appears and disappears on the streets of Central City. Cisco grows suspicious of the newly-recruited \"H.R.\" Wells when he does not provide much help in battling the monster. The monster is revealed to be simply a hologram operated by a bullied 15-year-old boy wanting to create fear in others. Barry exposes the deception in time to keep police snipers from harming civilians, and prevent Julian from shooting the boy, whom he mistakes for a metahuman. H.R. is revealed to have no technical knowledge at all. He admits that he is only an \"idea man\" for his tech company on Earth-19, and that he came to Earth-1 primarily to get material for a novel. The team decides to give him a chance to prove his worth as an assistant. A badly shaken Julian reconciles his differences with Barry. Carla informs Caitlin that her powers are increasing and that she needs to stop using them, or her condition will become irreversible.",
+    "title": "Monster",
+    "date": "November 1, 2016 ",
+    "directed_by": "C. Kim Miles",
+    "views": "2.77",
+    "episode": "E05",
+    "season": ""
+  },
+  {
+    "description": "When Wally relates his recent dreams of being Kid Flash, Barry reveals what happened to him during \"Flashpoint\". A metahuman H.R. nicknames \"Shade\" appears and murders a stockbroker. Caitlin reveals her powers to Cisco and has him \"vibe\" her to know her future. Cisco sees himself fighting Killer Frost, causing Caitlin to contemplate leaving for good. Alchemy begins summoning Wally to him, so the team locks him in the particle cells for his own safety. Meanwhile, Barry and the others stop Shade's next attack and capture him using meta-dampening handcuffs. Cisco tells everyone the truth about Caitlin, and Barry privately confesses to her that her powers came from him creating \"Flashpoint\". Wally volunteers to lead the team to Alchemy to capture the villain and stop the memories, which are physically injuring him. Barry, Joe and a S.W.A.T. team locate Alchemy and his followers and surround them. Another speedster, which only Barry can see, suddenly attacks them. As Barry fights it, Alchemy entices Wally to pick up his fallen energy weapon, which encases Wally in a crystal cocoon. Calling itself \"Savitar\", the speedster overpowers Barry and prepares to stab him.",
+    "title": "Shade",
+    "date": "November 15, 2016 ",
+    "directed_by": "JJ Makaro",
+    "views": "3.01",
+    "episode": "E06",
+    "season": ""
+  },
+  {
+    "description": "Savitar opts instead to race Barry across the city, then batters him to demonstrate its superiority. Cisco and Caitlin arrive and rescue Barry, but Savitar flees. Caitlin, now mentally unbalanced, violently interrogates one of Alchemy's followers at CCPD headquarters, then abducts Julian and coerces him to find other acolytes, in order to find Alchemy and have him remove her powers. Barry and Cisco track her down and imprison her, but the team is fractured after she reveals Barry's role in Dante's death by creating \"Flashpoint\". Greatly concerned and disregarding the consequences, Joe breaks Wally out of the cocoon. Wally emerges with unmanageable speed powers and he races away in a confused state. Barry offers his life to Caitlin for her freedom in a successful attempt to restore her sanity and gain her help in treating Wally. Joe and Barry locate Wally and stabilize his condition with Caitlin's serum, and Wally soon embraces his new abilities. Julian forces Barry to resign from the CCPD in exchange for him protecting Caitlin from the police. Julian is later revealed to be unwillingly working for Savitar as Alchemy.",
+    "title": "Killer Frost",
+    "date": "November 22, 2016 ",
+    "directed_by": "Kevin Smith",
+    "views": "2.95",
+    "episode": "E07",
+    "season": ""
+  }
 ]

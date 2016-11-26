@@ -23,6 +23,14 @@ window.less = {
   onReady      : false,
   useFileCache : true
 };
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
 </script>
 
 <script src="javascript/library/less.min.js"></script>

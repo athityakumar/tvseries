@@ -8,12 +8,14 @@ auto/
 
       data/
 
-            arrow.json
             flash.json
+            index (copy).json
             index.json
 
       ruby/
+
             index.rb
+            wiki.rb
 
       segments/
 
@@ -231,7 +233,9 @@ README.md
 RESOURCES.md
 SITEMAP.md
 arrow.html
+deploy.sh
 flash.html
+git.rb
 index.html
 sample_homepage.html
 sample_series.html
