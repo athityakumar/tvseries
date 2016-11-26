@@ -39,7 +39,7 @@ LIST OF TV SERIES' SUPPORTED
 - [ ] Supergirl
 - [ ] Supernatural
 - [ ] The Big Bang Theory
-- [ ] The Flash
+- [x] The Flash
 - [ ] The Walking Dead
 - [ ] Vixen
 

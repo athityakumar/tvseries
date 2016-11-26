@@ -1,6 +1,79 @@
 require 'mechanize'
 require 'json'
 
+def remove_all_between x , c1 , c2
+    for i in 0..x.length-1
+        if x[i] == c1
+            while x[i] != c2
+                x.slice!(i)
+            end
+            x.slice!(i)
+        end
+    end
+    return x
+end
+
+def wiki2_scraper filename
+
+    agent = Mechanize.new()
+
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    page = agent.get(series["scrape_link"])
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    episodes = page.search(".summary").count
+    seasons =  page.search("table")[0].search("tr").last.search("td")[1].text.to_i
+    last_season_index = page.search("table")[0].search("tr").count
+    first_season_index = last_season_index - seasons
+    season_list = []
+    list = []
+    season_list.push(0)
+    for i in (first_season_index..last_season_index-1)
+        season_list.push(season_list.last+page.search("table")[0].search("tr")[2].search("td")[2].text.to_i)
+    end
+
+    for i in (0..episodes-1)
+        data = {}
+        ep_page = agent.get("https://en.wikipedia.org"+page.search(".summary")[i].search("a")[0]["href"])
+        data["description"] = ep_page.search("html").text.split("Plot[edit]")[1].split("Production[edit]")[0].strip.gsub("[edit]","").gsub("\n","<br><br>")
+        data["description"] = remove_all_between(data["description"],"(",")")
+        data["title"] = page.search(".summary")[i].text.gsub("\"","")
+        for j in (0..season_list.count-2)
+            if i > season_list[j] && i < season_list[j+1]
+                data["episode"] = i-season_list[j]+1
+                if data["episode"] < 10
+                    data["episode"] = "E0" + data["episode"].to_s
+                else
+                    data["episode"] = "E" + data["episode"].to_s
+                end
+            end   
+        end
+        if season_list.include? i
+            if season_list.index(i) < 10
+                data["season"] = "S0" + (season_list.index(i)+1).to_s
+            else
+                data["season"] = "S" + (season_list.index(i)+1).to_s
+            end
+            data["episode"] = "E01"
+        else
+            data["season"] = ""
+        end
+        list.push(data)
+    end
+
+    series["imdb_rating"] = imdb_rating.to_s 
+    series["episodes"] = episodes.to_s
+    series["seasons"] = seasons.to_s
+    series["description"] = description
+
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
+
+
+
+end
+
 def wiki_scraper filename
 
     agent = Mechanize.new()
@@ -92,7 +165,23 @@ def generate_html
             if episode["season"] != ""
                 series_text = series_text + '<h2 class="ui dividing header">'+episode["season"]+'</h2>'
             end
-            series_text = series_text + '<div class="no example"><h4 class="ui header">'+episode["episode"]+' - '+episode["title"]+'</h4><div class="ui message"><i class="close icon"></i> <p>This episode aired on '+episode["date"]+'. Directed by '+episode["directed_by"]+'. Recorded '+episode["views"]+' million views. </p></div><div class="ui message"><p>'+episode["description"]+'</p></div></div>'
+            series_text = series_text + '<div class="no example"><h4 class="ui header">'+episode["episode"]+' - '+episode["title"]+'</h4>'
+            if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views") 
+                series_text = series_text + '<div class="ui message"><i class="close icon"></i><p>'
+            end
+            if episode.keys.include? "date" && episode["date"] != ""
+                series_text = series_text + 'This episode aired on '+episode["date"]+'.'
+            end
+            if episode.keys.include? "directed_by" && episode["directed_by"] != ""    
+                series_text = series_text + ' Directed by '+episode["directed_by"]+'.'
+            end
+            if episode.keys.include? "views" && episode["views"] != ""    
+                  series_text = series_text + ' Recorded '+episode["views"]+' million views. '
+            end
+            if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views")   
+                series_text = series_text + '</p></div>'
+            end
+            series_text = series_text + '<div class="ui message"><p>'+episode["description"]+'</p></div></div>'
         end  
         series_text = series_text + ((File.exists? $series_html_segment[3]) ? File.read($series_html_segment[3]) : '')   
         File.open(series_html, "w") { |file| file.write(series_text) }

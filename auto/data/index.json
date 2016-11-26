@@ -12,5 +12,19 @@
     "episodes": "53",
     "image": "images/series/flash.png",
     "time": "2014 - now"
+  },
+  {
+    "name": "Game of Thrones",
+    "description": "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise to power.",
+    "filename": "got",
+    "imdb_rating": "9.5",
+    "imdb_link": "http://www.imdb.com/title/tt0944947/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Game_of_Thrones",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes",
+    "scrape_script": "wiki2",
+    "seasons": "6",
+    "episodes": "60",
+    "image": "images/series/got.png",
+    "time": "2011 - now"
   }
 ]

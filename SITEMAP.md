@@ -9,13 +9,12 @@ auto/
       data/
 
             flash.json
+            got.json
             index (copy).json
             index.json
 
       ruby/
-
             index.rb
-            wiki.rb
 
       segments/
 
@@ -111,6 +110,7 @@ images/
 
             arrow.png
             flash.png
+            got.png
 
       logo.png
 
@@ -236,6 +236,7 @@ arrow.html
 deploy.sh
 flash.html
 git.rb
+got.html
 index.html
 sample_homepage.html
 sample_series.html
