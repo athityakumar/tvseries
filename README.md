@@ -1,23 +1,19 @@
 TV SERIES
 ---------
 TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and show in one place with a user-friendly navigation UI.
+<br>Website is accessible at https://athityakumar.github.io/tvseries/index.html 
 
 TO-DO LIST
 ----------
 - [x] Add UI Sample Templates
-    - [x] [Sample Home page] (https://athityakumar.github.io/tvseries/sample_homepage.html)
-    - [x] [Sample Series page] (https://athityakumar.github.io/tvseries/sample_series.html) 
 - [x] Generate SITEMAP markup file automatically with ruby script
-    - [x] [SITEMAP] (https://github.com/athityakumar/tvseries/blob/master/SITEMAP.md)
 - [x] Generate RESOURCES markup file automatically with ruby script
-    - [x] [RESOURCES] (https://github.com/athityakumar/tvseries/blob/master/RESOURCES.md)
 - [x] Add JSON files with proper structure
-- [ ] Add scraping script
+- [ ] Add scraping script (WIP)
 - [x] Add HTML pages generator script
-    - [x] [Auto-generated Home page] (https://athityakumar.github.io/tvseries/index.html)
-    - [x] [Auto-generated Series page] (https://athityakumar.github.io/tvseries/flash.html) 
 - [x] Add master shell-script that runs all scripts, and pushes changes into this repository
-    - [x] [deploy.sh] (https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
+    - [x] Shell-script to deploy : [deploy.sh] (https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
+    - [x] Ruby git program for smart auto-commit messages : [git.rb] (https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
 - [ ] Add a cron job for the master shell-script
 
 LIST OF TV SERIES' SUPPORTED 
@@ -44,6 +40,14 @@ LIST OF TV SERIES' SUPPORTED
 - [ ] Vixen
 
 <br>Feel free to add more series' to the list by sending Pull Requests.
+
+SITEMAP
+-------
+Have a look at the auto-generated [SITEMAP.md] (https://github.com/athityakumar/tvseries/blob/master/SITEMAP.md) file.
+
+RESOURCES OF TV SERIES'
+-----------------------
+Have a look at the auto-generated [RESOURCES.md] (https://github.com/athityakumar/tvseries/blob/master/RESOURCES.md) file.
 
 
 CONTRIBUTION
