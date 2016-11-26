@@ -23,11 +23,11 @@ TO-DO LIST
 LIST OF TV SERIES' SUPPORTED 
 ----------------------------
 - [ ] Arrow
-- [ ] Breaking Bad
+- [x] Breaking Bad
 - [ ] Castle
 - [ ] DC's Legends of Tomorrow
 - [ ] Friends
-- [ ] Game of Thrones
+- [x] Game of Thrones
 - [ ] Gotham
 - [ ] How I Met your Mother
 - [ ] Marvel's Agents of S.H.I.E.L.D

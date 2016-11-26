@@ -26,5 +26,19 @@
     "episodes": "60",
     "image": "images/series/got.png",
     "time": "2011 - now"
+  },
+  {
+    "name": "Breaking Bad",
+    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+    "filename": "bb",
+    "imdb_rating": "9.5",
+    "imdb_link": "http://www.imdb.com/title/tt0903747/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Breaking_Bad",
+    "scrape_link": "http://breakingbad.wikia.com/wiki/Pilot",
+    "scrape_script": "wiki3",
+    "seasons": "5",
+    "episodes": "62",
+    "image": "images/series/bb.png",
+    "time": "2008 - now"
   }
 ]

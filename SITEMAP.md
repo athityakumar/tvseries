@@ -8,6 +8,7 @@ auto/
 
       data/
 
+            bb.json
             flash.json
             got.json
             index (copy).json
@@ -109,6 +110,7 @@ images/
       series/
 
             arrow.png
+            bb.png
             flash.png
             got.png
 
@@ -233,6 +235,7 @@ README.md
 RESOURCES.md
 SITEMAP.md
 arrow.html
+bb.html
 deploy.sh
 flash.html
 git.rb

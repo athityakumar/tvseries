@@ -10,3 +10,9 @@
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Game_of_Thrones)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0944947/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
+
+ 
+###Breaking Bad 
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Breaking_Bad)
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt0903747/)
+- [ ] [Episode Synopsis Link] (http://breakingbad.wikia.com/wiki/Pilot)
