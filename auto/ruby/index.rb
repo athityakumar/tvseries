@@ -104,9 +104,7 @@ def wiki_scraper filename
         data["date"] = page.search(".vevent")[i].search("td")[4].text.split("(")[0]
         data["directed_by"] = page.search(".vevent")[i].search("td")[2].text
         data["views"] = page.search(".vevent")[i].search("td")[6].text
-        if data["views"].include? "["
-            data["views"] = data["views"].split("[")[0]
-        end
+        data["views"] = remove_all_between(data["views"],"[","]")
         for j in (0..season_list.count-2)
             if i > season_list[j] && i < season_list[j+1]
                 data["episode"] = i-season_list[j]+1
@@ -169,13 +167,13 @@ def generate_html
             if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views") 
                 series_text = series_text + '<div class="ui message"><i class="close icon"></i><p>'
             end
-            if episode.keys.include? "date" && episode["date"] != ""
+            if episode.keys.include? "date"
                 series_text = series_text + 'This episode aired on '+episode["date"]+'.'
             end
-            if episode.keys.include? "directed_by" && episode["directed_by"] != ""    
+            if episode.keys.include? "directed_by" 
                 series_text = series_text + ' Directed by '+episode["directed_by"]+'.'
             end
-            if episode.keys.include? "views" && episode["views"] != ""    
+            if episode.keys.include? "views"   
                   series_text = series_text + ' Recorded '+episode["views"]+' million views. '
             end
             if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views")   
