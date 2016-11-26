@@ -49,6 +49,15 @@ RESOURCES OF TV SERIES'
 -----------------------
 Have a look at the auto-generated [RESOURCES.md] (https://github.com/athityakumar/tvseries/blob/master/RESOURCES.md) file.
 
+HOW THIS STUFF WORKS
+--------------------
+The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
+<br> (1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
+<br> (2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
+<br> (3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
+<br> (4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
+<br> (5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
+<br><br> Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
 
 CONTRIBUTION
 ------------
