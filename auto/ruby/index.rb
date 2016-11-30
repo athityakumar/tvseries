@@ -313,7 +313,22 @@ $sitemap = "../../SITEMAP.md"
 $resources_segment = ["../segments/md/resources/1.md"]
 $resources = "../../RESOURCES.md"
 
-assign_scraper()
+def internet_connection_test website
+    agent = Mechanize.new()
+    begin
+        agent.get(website)
+        puts "Connection"
+        return true
+    rescue Exception => e
+        puts "No connection"
+        return false
+    end
+end
+
+if internet_connection_test("https://www.google.com/")
+    assign_scraper()
+end
+
 generate_html()
 generate_resources()
 generate_sitemap()
