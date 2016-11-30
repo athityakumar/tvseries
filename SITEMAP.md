@@ -170,6 +170,13 @@ javascript/
       validate-form.js
       visibility.js
 
+series/
+
+      bb.html
+      flash.html
+      got.html
+      lot.html
+
 src/
 
       definitions/
