@@ -66,103 +66,34 @@
 <div class="ui center aligned container">
 <div class="ui special cards">
  
-    <div class="ui centered card">
+  <% series_list.each do |series| %>
+  <div class="ui centered card">
     <div class="image">
-        <img src="images/series/flash.png" style="height: 250px;">
+        <img src="images/series/<%= series["filename"] %>.png" style="height: 250px;">
        <div class="ui black ribbon label">
-        <i class="clock icon"></i> 2014 - now      </div>
+        <i class="clock icon"></i> <%= series["time"] %>
+      </div>
       </div>
     <div class="content">
-      <a href="series/flash.html" class="header">The Flash</a>
+      <a href="series/<%= series["filename"] %>.html" class="header"><%= series["name"] %></a>
       <div class="meta">
       <div class="ui label">
   Seasons
-  <div class="detail">3</div>
+  <div class="detail"><%= series["seasons"] %></div>
 </div>
 <div class="ui label">
   Episodes
-  <div class="detail">54</div>
+  <div class="detail"><%= series["episodes"] %></div>
 </div>
       </div>
     </div> 
-    <a href="series/flash.html"><div class="ui bottom attached button blue">
+    <a href="series/<%= series["filename"] %>.html"><div class="ui bottom attached button blue">
       <i class="unhide icon"></i>
       View more
     </div></a>
   </div>
-      <div class="ui centered card">
-    <div class="image">
-        <img src="images/series/got.png" style="height: 250px;">
-       <div class="ui black ribbon label">
-        <i class="clock icon"></i> 2011 - now      </div>
-      </div>
-    <div class="content">
-      <a href="series/got.html" class="header">Game of Thrones</a>
-      <div class="meta">
-      <div class="ui label">
-  Seasons
-  <div class="detail">6</div>
-</div>
-<div class="ui label">
-  Episodes
-  <div class="detail">60</div>
-</div>
-      </div>
-    </div> 
-    <a href="series/got.html"><div class="ui bottom attached button blue">
-      <i class="unhide icon"></i>
-      View more
-    </div></a>
-  </div>
-      <div class="ui centered card">
-    <div class="image">
-        <img src="images/series/bb.png" style="height: 250px;">
-       <div class="ui black ribbon label">
-        <i class="clock icon"></i> 2008 - now      </div>
-      </div>
-    <div class="content">
-      <a href="series/bb.html" class="header">Breaking Bad</a>
-      <div class="meta">
-      <div class="ui label">
-  Seasons
-  <div class="detail">5</div>
-</div>
-<div class="ui label">
-  Episodes
-  <div class="detail">62</div>
-</div>
-      </div>
-    </div> 
-    <a href="series/bb.html"><div class="ui bottom attached button blue">
-      <i class="unhide icon"></i>
-      View more
-    </div></a>
-  </div>
-      <div class="ui centered card">
-    <div class="image">
-        <img src="images/series/lot.png" style="height: 250px;">
-       <div class="ui black ribbon label">
-        <i class="clock icon"></i> 2016 - now      </div>
-      </div>
-    <div class="content">
-      <a href="series/lot.html" class="header">DC's Legends of Tomorrow</a>
-      <div class="meta">
-      <div class="ui label">
-  Seasons
-  <div class="detail">2</div>
-</div>
-<div class="ui label">
-  Episodes
-  <div class="detail">23</div>
-</div>
-      </div>
-    </div> 
-    <a href="series/lot.html"><div class="ui bottom attached button blue">
-      <i class="unhide icon"></i>
-      View more
-    </div></a>
-  </div>
-    
+    <% end %>
+
 
 </div>
 </div>

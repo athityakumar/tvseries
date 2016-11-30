@@ -34,6 +34,9 @@ auto/
                         3.html
                         4.html
 
+                  index.html.erb
+                  series.html.erb
+
             md/
 
                   readme/
@@ -243,14 +246,11 @@ LICENSE.md
 README.md
 RESOURCES.md
 SITEMAP.md
-arrow.html
-bb.html
 deploy.sh
-flash.html
 git.rb
-got.html
 index.html
-lot.html
+make.html.erb
+make.rb
 sample_homepage.html
 sample_series.html
 
