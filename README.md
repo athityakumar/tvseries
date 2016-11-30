@@ -21,7 +21,7 @@ LIST OF TV SERIES' SUPPORTED
 - [ ] Arrow
 - [x] Breaking Bad
 - [ ] Castle
-- [ ] DC's Legends of Tomorrow
+- [x] DC's Legends of Tomorrow
 - [ ] Friends
 - [x] Game of Thrones
 - [ ] Gotham
