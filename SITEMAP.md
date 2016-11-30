@@ -13,6 +13,7 @@ auto/
             got.json
             index (copy).json
             index.json
+            lot.json
 
       ruby/
             index.rb
@@ -113,6 +114,7 @@ images/
             bb.png
             flash.png
             got.png
+            lot.png
 
       logo.png
 
@@ -241,6 +243,7 @@ flash.html
 git.rb
 got.html
 index.html
+lot.html
 sample_homepage.html
 sample_series.html
 

@@ -13,7 +13,7 @@ def remove_all_between x , c1 , c2
     return x
 end
 
-def wiki3_scraper filename
+def bb_scraper filename
 
     agent = Mechanize.new()
 
@@ -71,7 +71,7 @@ end
 
 
 
-def wiki2_scraper filename
+def got_scraper filename
 
     agent = Mechanize.new()
 
@@ -132,7 +132,7 @@ def wiki2_scraper filename
 
 end
 
-def wiki_scraper filename
+def flash_scraper filename
 
     agent = Mechanize.new()
 
@@ -149,7 +149,7 @@ def wiki_scraper filename
     list = []
     season_list.push(0)
     for i in (first_season_index..last_season_index-1)
-    season_list.push(season_list.last+page.search("table")[0].search("tr")[2].search("td")[2].text.to_i)
+        season_list.push(season_list.last+page.search("table")[0].search("tr")[2].search("td")[2].text.to_i)
     end
     while page.search(".vevent")[episodes].search("td")[5].text == "TBA"
         episodes = episodes - 1
@@ -197,10 +197,76 @@ def wiki_scraper filename
 
 end
 
+def lot_scraper filename
+
+    agent = Mechanize.new()
+
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    page = agent.get(series["scrape_link"])
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    episodes = page.search(".description").count
+    seasons =  page.search("table")[1].search("tr").last.search("td")[1].text.to_i
+    last_season_index = page.search("table")[0].search("tr").count
+    first_season_index = last_season_index - seasons
+    season_list = []
+    list = []
+    season_list.push(0)
+    for i in (first_season_index..last_season_index-1)
+        season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
+    end
+    while page.search(".vevent")[episodes].search("td")[6].text == "TBD"
+        episodes = episodes - 1
+    end
+
+    for i in (0..episodes-1)
+        data = {}
+        data["description"] = page.search(".description")[i].text
+        data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","").gsub(",","")
+        data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
+        data["directed_by"] = page.search(".vevent")[i+1].search("td")[2].text
+        data["views"] = page.search(".vevent")[i+1].search("td")[6].text
+        data["views"] = remove_all_between(data["views"],"[","]")
+        for j in (0..season_list.count-2)
+            if i > season_list[j] && i < season_list[j+1]
+                data["episode"] = i-season_list[j]+1
+                if data["episode"] < 10
+                    data["episode"] = "E0" + data["episode"].to_s
+                else
+                    data["episode"] = "E" + data["episode"].to_s
+                end
+            end   
+        end
+        if season_list.include? i
+            if season_list.index(i) < 10
+                data["season"] = "S0" + (season_list.index(i)+1).to_s
+            else
+                data["season"] = "S" + (season_list.index(i)+1).to_s
+            end
+            data["episode"] = "E01"
+        else
+            data["season"] = ""
+        end
+        list.push(data)
+    end
+
+    series["imdb_rating"] = imdb_rating.to_s 
+    series["episodes"] = (episodes+1).to_s
+    series["seasons"] = seasons.to_s
+    series["description"] = description
+
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
+
+
+end
+
+
 def assign_scraper 
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
     series_list.each do |series|
-        send(:"#{series["scrape_script"]}_scraper",series["filename"])
+        send(:"#{series["filename"]}_scraper",series["filename"])
     end
 end
 
@@ -208,11 +274,11 @@ def generate_html
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
     master_text = (File.exists? $master_html_segment[0]) ? File.read($master_html_segment[0]) : ''
     series_list.each do |series|
-        master_text = master_text + '<div class="ui centered card"><div class="image"><img src="'+series["image"]+'" style="height: 250px;"><div class="ui black ribbon label"><i class="clock icon"></i>'+series["time"]+'</div></div><div class="content"><a  href="'+series["filename"]+'.html" class="header">'+series["name"]+'</a><div class="meta"><div class="ui label">Seasons<div class="detail">'+series["seasons"]+'</div></div><div class="ui label">Episodes<div class="detail">'+series["episodes"]+'</div></div></div></div><a href="'+series["filename"]+'.html"><div class="ui bottom attached button blue"><i class="unhide icon"></i>View more</div></a></div>'
+        master_text = master_text + '<div class="ui centered card"><div class="image"><img src="images/series/'+series["filename"]+'.png" style="height: 250px;"><div class="ui black ribbon label"><i class="clock icon"></i>'+series["time"]+'</div></div><div class="content"><a  href="'+series["filename"]+'.html" class="header">'+series["name"]+'</a><div class="meta"><div class="ui label">Seasons<div class="detail">'+series["seasons"]+'</div></div><div class="ui label">Episodes<div class="detail">'+series["episodes"]+'</div></div></div></div><a href="'+series["filename"]+'.html"><div class="ui bottom attached button blue"><i class="unhide icon"></i>View more</div></a></div>'
         series_text = (File.exists? $series_html_segment[0]) ? File.read($series_html_segment[0]) : ''
         series_text = series_text + series["name"]
         series_text = series_text + ((File.exists? $series_html_segment[1]) ? File.read($series_html_segment[1]) : '')
-        series_text = series_text + series["name"] + '</h1><div class="ui hidden divider"></div><a href="'+series["wiki_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">Wiki</div><div class="visible content"><i class="wikipedia icon"></i></div></div></a><a href="'+series["imdb_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">IMDb</div><div class="visible content"><i class="info icon"></i></div></div></a><div class="ui floating theme basic button">IMDb rating : '+series["imdb_rating"]+' / 10</div><br><p>'+series["description"]+'</p></div><br><br><br><br><br><br><div class="advertisement"><div class="ui massive centered rounded bordered image"><img src="'+series["image"]+'">'
+        series_text = series_text + series["name"] + '</h1><div class="ui hidden divider"></div><a href="'+series["wiki_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">Wiki</div><div class="visible content"><i class="wikipedia icon"></i></div></div></a><a href="'+series["imdb_link"]+'" target="_blank"><div class="ui animated black vertical button" tabindex="0"><div class="hidden content">IMDb</div><div class="visible content"><i class="info icon"></i></div></div></a><div class="ui floating theme basic button">IMDb rating : '+series["imdb_rating"]+' / 10</div><br><p>'+series["description"]+'</p></div><br><br><br><br><br><br><div class="advertisement"><div class="ui massive centered rounded bordered image"><img src="images/series/'+series["filename"]+'.png">'
         series_text = series_text + ((File.exists? $series_html_segment[2]) ? File.read($series_html_segment[2]) : '')        
         series_json = "../data/" + series["filename"] + ".json"
         series_html = "../../" + series["filename"] + ".html"
@@ -317,12 +383,13 @@ def internet_connection_test website
     agent = Mechanize.new()
     begin
         agent.get(website)
-        puts "Connection"
-        return true
+        
     rescue Exception => e
         puts "No connection"
         return false
     end
+    puts "Connection"
+    return true
 end
 
 if internet_connection_test("https://www.google.com/")

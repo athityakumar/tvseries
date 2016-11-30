@@ -16,3 +16,9 @@
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Breaking_Bad)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0903747/)
 - [ ] [Episode Synopsis Link] (http://breakingbad.wikia.com/wiki/Pilot)
+
+ 
+###DC's Legends of Tomorrow 
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt4532368/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
