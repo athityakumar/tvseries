@@ -285,13 +285,22 @@ def generate_html
     File.open($master_html, "w") { |file| file.write(master_text) }
 end
 
+def generate_readme
+
+    sitemap_text , resources_text = generate_sitemap() , generate_resources()
+    readme_text = (File.exists? $readme_template) ? ERB.new(File.open($readme_template).read, 0, '>').result(binding) : ""             
+    File.open($readme, "w") { |file| file.write(readme_text) }
+
+
+end
+
 def generate_resources
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
-    text = (File.exists? $resources_segment[0]) ? File.read($resources_segment[0]) : ''
+    text = ""
     series_list.each do |series|
         text = text + "\n \n###" + series["name"] + " \n- [ ] [Wikipedia Link] (" + series["wiki_link"] + ")\n- [ ] [IMDb Link] (" + series["imdb_link"] + ")\n- [ ] [Episode Synopsis Link] (" + series["scrape_link"] + ")\n"
     end
-    File.open($resources, "w") { |file| file.write(text) }
+    return text
 end
 
 def generate_sitemap_sort array
@@ -334,22 +343,18 @@ def generate_sitemap_travel repo , spacing , extra_spacing, text
 end
 
 def generate_sitemap
-    text = (File.exists? $sitemap_segment[0]) ? File.read($sitemap_segment[0]) : ''
     Dir.chdir("../../")
-    text = text + generate_sitemap_travel(".","","      ","")
+    text = generate_sitemap_travel(".","","      ","")
     Dir.chdir("auto/ruby")
-    text = text + ((File.exists? $sitemap_segment[1]) ? File.read($sitemap_segment[1]) : '')
-    File.open($sitemap, "w") { |file| file.write(text) }
+    return text
 end
 
 $master_json = "../data/index.json"
 $master_html = "../../index.html"
 $master_html_template = "../segments/html/index.html.erb"
 $series_html_template = "../segments/html/series.html.erb"
-$sitemap_segment = ["../segments/md/sitemap/1.md","../segments/md/sitemap/2.md"]
-$sitemap = "../../SITEMAP.md"
-$resources_segment = ["../segments/md/resources/1.md"]
-$resources = "../../RESOURCES.md"
+$readme = "../../README.md"
+$readme_template = "../segments/md/README.md.erb"
 
 def internet_connection_test website
     agent = Mechanize.new()
@@ -369,5 +374,4 @@ if internet_connection_test("https://www.google.com/")
 end
 
 generate_html()
-generate_resources()
-generate_sitemap()
+generate_readme()
