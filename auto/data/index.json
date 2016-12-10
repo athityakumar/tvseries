@@ -12,6 +12,18 @@
     "time": "2014 - now"
   },
   {
+    "name": "Gotham",
+    "description": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
+    "filename": "gotham",
+    "imdb_rating": "8.0",
+    "imdb_link": "http://www.imdb.com/title/tt3749900/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Gotham_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_Gotham_episodes",
+    "seasons": "3",
+    "episodes": "55",
+    "time": "2014 - now"
+  },
+  {
     "name": "Game of Thrones",
     "description": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.",
     "filename": "got",
