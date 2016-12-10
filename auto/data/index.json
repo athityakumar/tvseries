@@ -8,12 +8,12 @@
     "wiki_link": "https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29",
     "scrape_link": "https://en.wikipedia.org/wiki/List_of_The_Flash_episodes",
     "seasons": "3",
-    "episodes": "54",
+    "episodes": "55",
     "time": "2014 - now"
   },
   {
     "name": "Game of Thrones",
-    "description": "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise to power.",
+    "description": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.",
     "filename": "got",
     "imdb_rating": "9.5",
     "imdb_link": "http://www.imdb.com/title/tt0944947/",
@@ -44,7 +44,19 @@
     "wiki_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
     "scrape_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
     "seasons": "2",
-    "episodes": "23",
+    "episodes": "25",
     "time": "2016 - now"
+  },
+  {
+    "name": "Sherlock",
+    "description": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+    "filename": "sherlock",
+    "imdb_rating": "9.2",
+    "imdb_link": "http://www.imdb.com/title/tt1475582/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_Sherlock_episodes",
+    "seasons": "4",
+    "episodes": "13",
+    "time": "2010-present"
   }
 ]
