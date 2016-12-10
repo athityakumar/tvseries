@@ -84,6 +84,12 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
  
+###Gotham 
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Gotham_(TV_series))
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt3749900/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
+
+ 
 ###Game of Thrones 
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Game_of_Thrones)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0944947/)
@@ -122,6 +128,7 @@ auto/
             bb.json
             flash.json
             got.json
+            gotham.json
             index (copy).json
             index.json
             lot.json
@@ -212,6 +219,7 @@ images/
             bb.png
             flash.png
             got.png
+            gotham.png
             lot.png
             sherlock.png
 
@@ -275,6 +283,7 @@ series/
       bb.html
       flash.html
       got.html
+      gotham.html
       lot.html
       sherlock.html
 

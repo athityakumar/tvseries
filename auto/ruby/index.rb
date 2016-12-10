@@ -26,12 +26,12 @@ def bb_scraper filename
     list = []
     episodes = 0
     seasons = 0
-    link_list = [] 
+    link_list = []
     scrape_link = series["scrape_link"].gsub("http://breakingbad.wikia.com/","")
     while !link_list.include? scrape_link
         data = {}
         link_list.push(scrape_link)
-        episodes = episodes + 1 
+        episodes = episodes + 1
         puts episodes.to_s
         page = agent.get("http://breakingbad.wikia.com/"+scrape_link)
         data["description"] = page.search("html").text.split("Teaser")[1].split("Summary")[0].strip.gsub("[edit]","").gsub("\n","<br><br>")
@@ -59,7 +59,7 @@ def bb_scraper filename
         scrape_link = page.search(".bgbb td a").last["href"]
     end
 
-    series["imdb_rating"] = imdb_rating.to_s 
+    series["imdb_rating"] = imdb_rating.to_s
     series["episodes"] = episodes.to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
@@ -106,7 +106,7 @@ def got_scraper filename
                 else
                     data["episode"] = "E" + data["episode"].to_s
                 end
-            end   
+            end
         end
         if season_list.include? i
             if season_list.index(i) < 10
@@ -121,7 +121,7 @@ def got_scraper filename
         list.push(data)
     end
 
-    series["imdb_rating"] = imdb_rating.to_s 
+    series["imdb_rating"] = imdb_rating.to_s
     series["episodes"] = episodes.to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
@@ -172,7 +172,7 @@ def flash_scraper filename
                 else
                     data["episode"] = "E" + data["episode"].to_s
                 end
-            end   
+            end
         end
         if season_list.include? i
             if season_list.index(i) < 10
@@ -187,7 +187,72 @@ def flash_scraper filename
         list.push(data)
     end
 
-    series["imdb_rating"] = imdb_rating.to_s 
+    series["imdb_rating"] = imdb_rating.to_s
+    series["episodes"] = (episodes+1).to_s
+    series["seasons"] = seasons.to_s
+    series["description"] = description
+
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
+
+
+end
+
+def gotham_scraper filename
+
+    agent = Mechanize.new()
+
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    page = agent.get(series["scrape_link"])
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    episodes = page.search(".description").count - 1
+    seasons =  page.search("table")[0].search("tr").last.search("td")[1].text.to_i
+    last_season_index = page.search("table")[0].search("tr").count
+    first_season_index = last_season_index - seasons
+    season_list = []
+    list = []
+    season_list.push(0)
+    for i in (first_season_index..last_season_index-1)
+        season_list.push(season_list.last+page.search("table")[0].search("tr")[2].search("td")[2].text.to_i)
+    end
+    while page.search(".vevent")[episodes].search("td")[5].text == "TBA"
+        episodes = episodes - 1
+    end
+
+    for i in (0..episodes)
+        data = {}
+        data["description"] = page.search(".description")[i].text
+        data["title"] = page.search(".vevent")[i].search("td")[1].text.gsub("\"","")
+        data["date"] = page.search(".vevent")[i].search("td")[4].text.split("(")[0]
+        data["directed_by"] = page.search(".vevent")[i].search("td")[2].text
+        data["views"] = page.search(".vevent")[i].search("td")[6].text
+        data["views"] = remove_all_between(data["views"],"[","]")
+        for j in (0..season_list.count-2)
+            if i > season_list[j] && i < season_list[j+1]
+                data["episode"] = i-season_list[j]+1
+                if data["episode"] < 10
+                    data["episode"] = "E0" + data["episode"].to_s
+                else
+                    data["episode"] = "E" + data["episode"].to_s
+                end
+            end
+        end
+        if season_list.include? i
+            if season_list.index(i) < 10
+                data["season"] = "S0" + (season_list.index(i)+1).to_s
+            else
+                data["season"] = "S" + (season_list.index(i)+1).to_s
+            end
+            data["episode"] = "E01"
+        else
+            data["season"] = ""
+        end
+        list.push(data)
+    end
+
+    series["imdb_rating"] = imdb_rating.to_s
     series["episodes"] = (episodes+1).to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
@@ -237,7 +302,7 @@ def lot_scraper filename
                 else
                     data["episode"] = "E" + data["episode"].to_s
                 end
-            end   
+            end
         end
         if season_list.include? i
             if season_list.index(i) < 10
@@ -252,7 +317,7 @@ def lot_scraper filename
         list.push(data)
     end
 
-    series["imdb_rating"] = imdb_rating.to_s 
+    series["imdb_rating"] = imdb_rating.to_s
     series["episodes"] = (episodes+1).to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
@@ -299,7 +364,7 @@ def sherlock_scraper filename
                 else
                     data["episode"] = "E" + data["episode"].to_s
                 end
-            end   
+            end
         end
         if season_list.include? i
             if season_list.index(i) < 10
@@ -329,7 +394,7 @@ def sherlock_scraper filename
                 else
                     data["episode"] = "E" + data["episode"].to_s
                 end
-            end   
+            end
         end
         if season_list.include? i
             if season_list.index(i) < 10
@@ -345,7 +410,7 @@ def sherlock_scraper filename
     end
 
 
-    series["imdb_rating"] = imdb_rating.to_s 
+    series["imdb_rating"] = imdb_rating.to_s
     series["episodes"] = (episodes+1).to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
@@ -358,21 +423,21 @@ end
 
 
 
-def assign_scraper 
+def assign_scraper
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
     series_list.each do |series|
         send(:"#{series["filename"]}_scraper",series["filename"])
     end
 end
 
-def generate_html 
+def generate_html
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
     master_text = (File.exists? $master_html_template) ? ERB.new(File.open($master_html_template).read, 0, '>').result(binding) : ""
     series_list.each do |series|
         series_json = "../data/" + series["filename"] + ".json"
         series_html = "../../series/" + series["filename"] + ".html"
-        episodes_list = (File.exists? series_json) ? JSON.parse(File.read(series_json)) : [ ]   
-        series_text = (File.exists? $series_html_template) ? ERB.new(File.open($series_html_template).read, 0, '>').result(binding) : ""             
+        episodes_list = (File.exists? series_json) ? JSON.parse(File.read(series_json)) : [ ]
+        series_text = (File.exists? $series_html_template) ? ERB.new(File.open($series_html_template).read, 0, '>').result(binding) : ""
         File.open(series_html, "w") { |file| file.write(series_text) }
 
     end
@@ -382,7 +447,7 @@ end
 def generate_readme
 
     sitemap_text , resources_text = generate_sitemap() , generate_resources()
-    readme_text = (File.exists? $readme_template) ? ERB.new(File.open($readme_template).read, 0, '>').result(binding) : ""             
+    readme_text = (File.exists? $readme_template) ? ERB.new(File.open($readme_template).read, 0, '>').result(binding) : ""
     File.open($readme, "w") { |file| file.write(readme_text) }
 
 
@@ -423,7 +488,7 @@ def generate_sitemap_travel repo , spacing , extra_spacing, text
                 text = text + "\n\n" + spacing + l
             else
                 text = text + "\n" + spacing + l
-            end    
+            end
         else
             if l == list.first
                 text = text + "\n\n" + spacing + l +"/"
@@ -454,7 +519,7 @@ def internet_connection_test website
     agent = Mechanize.new()
     begin
         agent.get(website)
-        
+
     rescue Exception => e
         puts "No connection"
         return false
