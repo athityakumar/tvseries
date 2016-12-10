@@ -140,6 +140,8 @@ auto/
             md/
                   README.md.erb
 
+      .DS_Store
+
 dist/
 
       components/
@@ -205,6 +207,7 @@ images/
 
       series/
 
+            .DS_Store
             arrow.png
             bb.png
             flash.png
@@ -212,6 +215,7 @@ images/
             lot.png
             sherlock.png
 
+      .DS_Store
       logo.png
 
 javascript/
@@ -336,6 +340,7 @@ stylesheets/
       rtl.css
       shape.css
 
+.DS_Store
 README.md
 deploy.sh
 git.rb
