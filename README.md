@@ -100,6 +100,12 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt4532368/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
+
+ 
+###Sherlock 
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Sherlock_(TV_series))
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt1475582/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
     
 
 <div id = "sitemap"> <br> </div>
@@ -119,6 +125,7 @@ auto/
             index (copy).json
             index.json
             lot.json
+            sherlock.json
 
       ruby/
             index.rb
@@ -203,6 +210,7 @@ images/
             flash.png
             got.png
             lot.png
+            sherlock.png
 
       logo.png
 
@@ -264,6 +272,7 @@ series/
       flash.html
       got.html
       lot.html
+      sherlock.html
 
 src/
 

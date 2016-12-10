@@ -142,7 +142,7 @@ def flash_scraper filename
     page = agent.get(series["scrape_link"])
     imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
     description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    episodes = page.search(".description").count
+    episodes = page.search(".description").count - 1
     seasons =  page.search("table")[0].search("tr").last.search("td")[1].text.to_i
     last_season_index = page.search("table")[0].search("tr").count
     first_season_index = last_season_index - seasons
@@ -270,7 +270,7 @@ def sherlock_scraper filename
     page = agent.get(series["scrape_link"])
     imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
     description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    episodes = page.search(".description").count
+    episodes = page.search(".description").count - 1
     seasons =  page.search("table")[0].search("tr").last.search("td")[1].text.to_i
     last_season_index = page.search("table")[0].search("tr").count
     first_season_index = last_season_index - seasons
@@ -284,14 +284,13 @@ def sherlock_scraper filename
         episodes = episodes - 1
     end
 
-    for i in (0..episodes)
+    for i in (0..5)
         data = {}
         data["description"] = page.search(".description")[i].text
+        data["description"] = remove_all_between(data["description"],"[","]")
         data["title"] = page.search(".vevent")[i].search("td")[1].text.gsub("\"","")
+        data["title"] = remove_all_between(data["title"],"[","]")
         data["date"] = page.search(".vevent")[i].search("td")[4].text.split("(")[0]
-        data["directed_by"] = page.search(".vevent")[i].search("td")[2].text
-        data["views"] = page.search(".vevent")[i].search("td")[6].text
-        data["views"] = remove_all_between(data["views"],"[","]")
         for j in (0..season_list.count-2)
             if i > season_list[j] && i < season_list[j+1]
                 data["episode"] = i-season_list[j]+1
@@ -314,6 +313,37 @@ def sherlock_scraper filename
         end
         list.push(data)
     end
+
+    for i in (6..episodes-1)
+        data = {}
+        data["description"] = page.search(".description")[i+1].text
+        data["description"] = remove_all_between(data["description"],"[","]")
+        data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","")
+        data["title"] = remove_all_between(data["title"],"[","]")
+        data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
+        for j in (0..season_list.count-2)
+            if i > season_list[j] && i < season_list[j+1]
+                data["episode"] = i-season_list[j]+1
+                if data["episode"] < 10
+                    data["episode"] = "E0" + data["episode"].to_s
+                else
+                    data["episode"] = "E" + data["episode"].to_s
+                end
+            end   
+        end
+        if season_list.include? i
+            if season_list.index(i) < 10
+                data["season"] = "S0" + (season_list.index(i)+1).to_s
+            else
+                data["season"] = "S" + (season_list.index(i)+1).to_s
+            end
+            data["episode"] = "E01"
+        else
+            data["season"] = ""
+        end
+        list.push(data)
+    end
+
 
     series["imdb_rating"] = imdb_rating.to_s 
     series["episodes"] = (episodes+1).to_s
