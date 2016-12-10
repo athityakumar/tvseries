@@ -47,4 +47,16 @@
     "episodes": "23",
     "time": "2016 - now"
   }
+  {
+    "name": "Sherlock",
+    "description" : "A modern update of the famous detective,Sherlock Holmes and his companion, John Watson solving crimes in 21st century London.",
+    "filename" : "sherlock",
+    "imdb_rating" : "9.2",
+    "imdb_link" : "http://www.imdb.com/title/tt1475582/?ref_=tt_ov_inf",
+    "wiki-link" : "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+    "scrape-link": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+    "seasons" : "3",
+    "episodes" : "10",
+    "time" : "2010-present"
+  }
 ]
