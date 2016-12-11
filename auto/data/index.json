@@ -70,5 +70,17 @@
     "seasons": "4",
     "episodes": "13",
     "time": "2010-present"
+  },
+  {
+    "name": "Firefly",
+    "description": "Five hundred years in the future, a renegade crew aboard a small spacecraft tries to survive as they travel the unknown parts of the galaxy and evade warring factions as well as authority agents out to get them.",
+    "filename": "firefly",
+    "imdb_rating": "9.1",
+    "imdb_link": "http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1",
+    "wiki_link": "https://en.wikipedia.org/wiki/Firefly_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/Firefly_(TV_series)",
+    "seasons": "1",
+    "episodes": "14",
+    "time": "2002-2003"
   }
 ]

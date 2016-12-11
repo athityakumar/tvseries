@@ -41,6 +41,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] Breaking Bad
 - [ ] Castle
 - [x] DC's Legends of Tomorrow
+- [x] Firefly
 - [ ] Friends
 - [x] Game of Thrones
 - [ ] Gotham
@@ -50,6 +51,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Narcos
 - [ ] Person of Interest
 - [ ] Prisonbreak
+- [x] Sherlock
 - [ ] Suits
 - [ ] Supergirl
 - [ ] Supernatural
@@ -112,6 +114,12 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Sherlock_(TV_series))
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt1475582/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
+
+
+###Firefly
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt0303461/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
     
 
 <div id = "sitemap"> <br> </div>
@@ -126,6 +134,7 @@ auto/
       data/
 
             bb.json
+            firefly.json
             flash.json
             got.json
             gotham.json
@@ -217,6 +226,7 @@ images/
             .DS_Store
             arrow.png
             bb.png
+            firefly.png
             flash.png
             got.png
             gotham.png
@@ -281,6 +291,7 @@ javascript/
 series/
 
       bb.html
+      firefly.html
       flash.html
       got.html
       gotham.html
