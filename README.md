@@ -41,7 +41,6 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] Breaking Bad
 - [ ] Castle
 - [x] DC's Legends of Tomorrow
-- [x] Firefly
 - [ ] Friends
 - [x] Game of Thrones
 - [ ] Gotham
@@ -51,7 +50,6 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Narcos
 - [ ] Person of Interest
 - [ ] Prisonbreak
-- [x] Sherlock
 - [ ] Suits
 - [ ] Supergirl
 - [ ] Supernatural
@@ -115,10 +113,10 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt1475582/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
 
-
-###Firefly
+ 
+###Firefly 
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt0303461/)
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
     
 
@@ -155,8 +153,6 @@ auto/
 
             md/
                   README.md.erb
-
-      .DS_Store
 
 dist/
 
@@ -223,7 +219,6 @@ images/
 
       series/
 
-            .DS_Store
             arrow.png
             bb.png
             firefly.png
@@ -233,7 +228,6 @@ images/
             lot.png
             sherlock.png
 
-      .DS_Store
       logo.png
 
 javascript/
@@ -360,7 +354,6 @@ stylesheets/
       rtl.css
       shape.css
 
-.DS_Store
 README.md
 deploy.sh
 git.rb
