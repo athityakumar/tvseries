@@ -82,5 +82,17 @@
     "seasons": "1",
     "episodes": "15",
     "time": "2002-2003"
+  },
+  {
+    "name": "Top of the Lake",
+    "description": "A mystery drama series that deals with the investigation of the disappearance of a 12-year old pregnant girl",
+    "filename": "totl",
+    "imdb_rating": "7.6",
+    "imdb_link": "http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1",
+    "wiki_link": "https://en.wikipedia.org/wiki/Top_of_the_Lake",
+    "scrape_link": "https://en.wikipedia.org/wiki/Top_of_the_Lake",
+    "seasons": "1",
+    "episodes": "7",
+    "time": "2013-present"
   }
 ]
