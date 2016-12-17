@@ -12,6 +12,18 @@
     "time": "2014 - now"
   },
   {
+    "name": "Person of Interest",
+    "description": "An ex-assassin and a wealthy programmer save lives via a surveillance AI that sends them the identities of civilians involved in impending crimes. However, the details of the crimes--including the civilians' roles--are left a mystery.",
+    "filename": "poi",
+    "imdb_rating": "8.5",
+    "imdb_link": "http://www.imdb.com/title/tt1839578/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes",
+    "seasons": "5",
+    "episodes": "103",
+    "time": "2011 - 2016"
+  },
+  {
     "name": "Gotham",
     "description": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
     "filename": "gotham",
@@ -25,7 +37,7 @@
   },
   {
     "name": "Game of Thrones",
-    "description": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race, hell-bent on destruction, returns after being dormant for thousands of years.",
+    "description": "Nine noble families fight for control over the mythical lands of Westeros. Meanwhile, a forgotten race hell-bent on destruction returns after being dormant for thousands of years.",
     "filename": "got",
     "imdb_rating": "9.5",
     "imdb_link": "http://www.imdb.com/title/tt0944947/",
@@ -68,7 +80,7 @@
     "wiki_link": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
     "scrape_link": "https://en.wikipedia.org/wiki/List_of_Sherlock_episodes",
     "seasons": "4",
-    "episodes": "13",
+    "episodes": "14",
     "time": "2010-present"
   },
   {
