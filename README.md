@@ -1,12 +1,12 @@
 <h1> <u> TV SERIES </u> </h1>
 
-TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI. 
-    
+TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI.
+
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 <div id = "top"> <br>
 <h1> <u> LIST OF CONTENTS </u> </h1>
-<ul> 
+<ul>
 <li> <a href = "#todo"> To-do </a> </li>
 <li> <a href = "#supported"> Supported TV Series' </a> </li>
 <li> <a href = "#working"> Working of the scripts </a> </li>
@@ -41,14 +41,15 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] Breaking Bad
 - [ ] Castle
 - [x] DC's Legends of Tomorrow
+- [x] Firefly
 - [ ] Friends
 - [x] Game of Thrones
-- [ ] Gotham
+- [x] Gotham
 - [ ] How I Met your Mother
 - [ ] Marvel's Agents of S.H.I.E.L.D
 - [ ] Modern Family
 - [ ] Narcos
-- [ ] Person of Interest
+- [x] Person of Interest
 - [ ] Prisonbreak
 - [ ] Suits
 - [ ] Supergirl
@@ -57,6 +58,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] The Flash
 - [ ] The Walking Dead
 - [ ] Vixen
+- [x] White Collar
 
 <br>Feel free to add more series' to the list by sending Pull Requests.
 
@@ -77,54 +79,60 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 <i><a href = "#top"> Back to contents </a></i>
 <br><br>
 
- 
-###The Flash 
+
+###The Flash
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt3107288/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
- 
-###Person of Interest 
+
+###Person of Interest
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt1839578/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes)
 
- 
-###Gotham 
+
+###Gotham
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Gotham_(TV_series))
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt3749900/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
 
- 
-###Game of Thrones 
+
+###Game of Thrones
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Game_of_Thrones)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0944947/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
 
- 
-###Breaking Bad 
+
+###White Collar
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/White_Collar_(TV_series))
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt1358522/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
+
+
+###Breaking Bad
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Breaking_Bad)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0903747/)
 - [ ] [Episode Synopsis Link] (http://breakingbad.wikia.com/wiki/Pilot)
 
- 
-###DC's Legends of Tomorrow 
+
+###DC's Legends of Tomorrow
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt4532368/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 
- 
-###Sherlock 
+
+###Sherlock
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Sherlock_(TV_series))
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt1475582/)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
 
- 
-###Firefly 
+
+###Firefly
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
-    
+
 
 <div id = "sitemap"> <br> </div>
 <h1> <u> Sitemap </u> </h1>
@@ -147,6 +155,7 @@ auto/
             lot.json
             poi.json
             sherlock.json
+            whitecollar.json
 
       ruby/
             index.rb
@@ -238,6 +247,7 @@ images/
             lot.png
             poi.png
             sherlock.png
+            whitecollar.png
 
       .DS_Store
       logo.png
@@ -304,6 +314,7 @@ series/
       lot.html
       poi.html
       sherlock.html
+      whitecollar.html
 
 src/
 
@@ -375,16 +386,16 @@ index.html
 sample_homepage.html
 sample_series.html
 </pre>
-    
+
 <div id = "contribute"> <br> </div>
 <h1> <u> How to contribute </u> </h1>
 <i><a href = "#top"> Back to contents </a></i>
 <br><br>
-The work flow is the same as that of any other repository. 
+The work flow is the same as that of any other repository.
 <br> (1) Fork / clone the repository.
 <br> (2) Create a new branch , say `my-changes` and make your changes in this branch.
 <br> (3) Commit your changes and send a Pull request (PR) to this repository.
-<br> Active contributors would be rewarded with the tag of "Collabrators"
+<br> Active contributors would be rewarded with the tag of "Collaborators"
 <br> Bug fixes , Issues , Issue solutions , Optimizations & Enhancements are always welcome.
 
 <div id = "license"> <br> </div>
@@ -412,4 +423,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-    
