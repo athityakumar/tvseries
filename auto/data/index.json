@@ -48,6 +48,18 @@
     "time": "2011 - now"
   },
   {
+    "name": "White Collar",
+    "description": "A white collar criminal agrees to help the FBI catch other white collar criminals using his expertise as an art and securities thief, counterfeiter, and conman.",
+    "filename": "whitecollar",
+    "imdb_rating": "8.3",
+    "imdb_link": "http://www.imdb.com/title/tt1358522/",
+    "wiki_link": "https://en.wikipedia.org/wiki/White_Collar_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_White_Collar_episodes",
+    "seasons": "6",
+    "episodes": "81",
+    "time": "2009 - 2014"
+  },
+  {
     "name": "Breaking Bad",
     "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
     "filename": "bb",

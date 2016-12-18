@@ -102,6 +102,12 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
 
  
+###White Collar 
+- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/White_Collar_(TV_series))
+- [ ] [IMDb Link] (http://www.imdb.com/title/tt1358522/)
+- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
+
+ 
 ###Breaking Bad 
 - [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Breaking_Bad)
 - [ ] [IMDb Link] (http://www.imdb.com/title/tt0903747/)
@@ -147,6 +153,7 @@ auto/
             lot.json
             poi.json
             sherlock.json
+            whitecollar.json
 
       ruby/
             index.rb
@@ -238,6 +245,7 @@ images/
             lot.png
             poi.png
             sherlock.png
+            whitecollar.png
 
       .DS_Store
       logo.png
@@ -304,6 +312,7 @@ series/
       lot.html
       poi.html
       sherlock.html
+      whitecollar.html
 
 src/
 
