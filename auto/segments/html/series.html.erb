@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<link rel="icon" type="image/jpeg" href="../images/logo.png" />
+
+<!-- Site Properities -->
+<meta name="generator" content="DocPad v6.78.4" />
+<title>TV Series | <%= series["name"] %></title>
+
+<meta name="description" content="<%= series["name"]%> - <%= series["description"] %>" />
+  
+<script src="../javascript/library/jquery.min.js"></script>
+<script src="../javascript/library/clipboard.min.js"></script>
+<script src="../javascript/library/cookie.min.js"></script>
+<script src="../javascript/library/easing.min.js"></script>
+<script src="../javascript/library/highlight.min.js"></script>
+<script src="../javascript/library/history.min.js"></script>
+<script src="../javascript/library/tablesort.min.js"></script>
+<script src="../dist/semantic.min.js"></script>
+<script src="../javascript/docs.js"></script>
+<link rel="stylesheet" type="text/css" class="ui" href="../dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/docs.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/rtl.css">
+<script type="text/javascript">
+  window.liveSettings = {
+    api_key    : '9ede3015b9f84c1aabc81ab839c55d74',
+    parse_attr : [
+      'data-title',
+      'data-content'
+    ],
+    detectlang   : false,
+    autocollect  : true,
+    ignore_tags  : ['i', 'code', 'pre'],
+    parse_attr   : ['data-title', 'data-content', 'data-text'],
+    ignore_class : ['code', 'anchor']
+  };
+</script>
+<script type="text/javascript" src="http://cdn.transifex.com/live.js"></script>
+
+</head>
+<body id="example" class="modal-page" ontouchstart="">
+  
+<div class="ui black big launch right attached fixed button">
+  <i class="content icon"></i>
+  <span class="text">Menu</span>
+</div>
+<div class="ui fixed inverted main menu">
+  <div class="ui container">
+      <div class="item" style="color: white;">
+       You're here : &nbsp;  <div class="ui breadcrumb">
+  <a href="../index.html" class="section" style="color: white;"><u>Home</u></a>
+  <i class="right arrow icon divider" style="color: white;"></i>
+  <div class="active section"><%= series["name"] %></div>
+</div>
+      </div>
+    
+
+  </div>
+</div>
+
+  <div class="pusher">
+    <div class="full height">
+
+      <div class="article">
+        <link rel="stylesheet/less" type="text/css" href="../src/definitions/modules/modal.less" />
+
+
+
+<div class="ui masthead vertical tab segment">
+  <div class="ui container">
+    <div class="introduction">
+      <div class="ui hidden divider"></div>
+
+      <h1 class="ui header">
+        <%= series["name"] %>
+        
+      </h1>
+
+      <div class="ui hidden divider"></div>
+
+      
+      <a href="<%= series["wiki_link"] %>" target="_blank"><div class="ui animated black vertical button" tabindex="0">
+  <div class="hidden content">Wiki</div>
+  <div class="visible content">
+    <i class="wikipedia icon"></i>
+  </div>
+</div></a>
+<a href="<%= series["imdb_link"] %>" target="_blank"><div class="ui animated black vertical button" tabindex="0">
+  <div class="hidden content">IMDb</div>
+  <div class="visible content">
+    <i class="info icon"></i>
+  </div>
+</div></a>
+      <div class="ui floating theme basic button">
+        IMDb rating : <%= series["imdb_rating"] %> / 10
+      </div>
+      <br>
+      <p><%= series["description"] %></p>
+      
+      
+    </div>
+    <div class="advertisement">
+<div class="ui massive centered rounded bordered image">
+  <img src="../images/series/<%= series["filename"] %>.png">
+</div>
+    </div>
+     
+      <div class="ui four item stackable tabs menu">
+        
+          <a class="active item" data-tab="episodes">Synopsis of Episodes</a>
+          
+        
+<!--           <a class="item" data-tab="examples">Examples</a>
+          
+        
+          <a class="item" data-tab="usage">Usage</a>
+          
+        
+          <a class="item" data-tab="settings">Settings</a> -->
+          
+        
+      </div>
+    
+  </div>
+</div>
+
+
+<div class="main ui container">
+
+  <div class="ui active tab" data-tab="episodes">
+
+  <% episodes_list.each do |episode| %>
+            <% if episode["season"] != "" %>
+                <h2 class="ui dividing header"><%= episode["season"] %></h2>
+            <% end %>
+            <div class="no example"><h4 class="ui header"><%= episode["episode"] %> - <%= episode["title"].gsub(",","") %> </h4>
+            <% if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views") %>
+                <div class="ui message"><i class="close icon"></i><p>
+            <% end %>
+            <% if episode.keys.include? "date" %>
+                This episode aired on <%= episode["date"] %> .
+            <% end %>
+            <% if episode.keys.include? "directed_by" %>
+                Directed by <%= episode["directed_by"] %> .
+            <% end %>
+            <% if episode.keys.include? "views" %>
+                  Recorded <%= episode["views"] %> million views.
+            <% end %>
+            <% if (((episode.keys.include? "date") or (episode.keys.include? "directed_by")) or episode.keys.include? "views") %>
+                </p></div>
+            <% end %>
+            <div class="ui message"><p><%= episode["description"] %></p></div></div>
+  <%  end %> 
+
+ </div>
+
+</div>
+      </div>
+    </div>
+
+<div class="ui black inverted vertical footer segment">
+  <div class="ui center aligned container">
+    <div class="ui horizontal inverted small divided link list">
+      <a class="item" href="https://semantic-ui.com/" target="_blank">Built with Semantic-UI</a>
+    </div>
+  </div>
+</div> 
+  </div>
+
+
+
+  <script>
+window.less = {
+  async        : true,
+  environment  : 'production',
+  fileAsync    : false,
+  onReady      : false,
+  useFileCache : true
+};
+</script>
+
+<script src="../javascript/library/less.min.js"></script>
+
+
+</body>
+
+</html>

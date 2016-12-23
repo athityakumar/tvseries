@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "The Flash",
+        "description" : "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming a superhero, The Flash, fighting crime in Central City.",
+        "filename" :  "flash",
+        "imdb_rating" : "8.2",
+        "imdb_link" : "http://www.imdb.com/title/tt3107288/",
+        "wiki_link" : "https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29",
+        "scrape_link" : "https://en.wikipedia.org/wiki/List_of_The_Flash_episodes",
+        "scrape_script" : "",
+        "seasons" : "3",
+        "episodes" : "53",
+        "image" : "images/series/flash.png",
+        "time" : "2014 - now"
+    },
+    {
+        "name" : "The Arrow",
+        "description" : "Spoiled billionaire playboy Oliver Queen is missing and presumed dead when his yacht is lost at sea. He returns five years later a changed man, determined to clean up the city as a hooded vigilante armed with a bow.",
+        "filename" :  "arrow",
+        "imdb_rating" : "7.9",
+        "imdb_link" : "http://www.imdb.com/title/tt2193021/?ref_=tt_ov_inf",
+        "wiki_link" : "https://en.wikipedia.org/wiki/Arrow_(TV_series)",
+        "scrape_link" : "https://en.wikipedia.org/wiki/List_of_Arrow_episodes",
+        "scrape_script" : "",
+        "seasons" : "5",
+        "episodes" : "99",
+        "image" : "images/series/arrow.png",
+        "time" : "2012 - now"
+    }
+]
