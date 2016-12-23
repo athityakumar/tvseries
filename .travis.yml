@@ -8,4 +8,7 @@ env:
   - TAG_FILTER=~js DB=postgres RAILS_ENV=test
   - TAG_FILTER=js DB=postgres RAILS_ENV=test
 
+before_deploy:
+  - rvm 1.9.3 do gem install mime-types -v 2.6.2
+
 script: "bundle exec rspec auto/ruby/index.rb"
