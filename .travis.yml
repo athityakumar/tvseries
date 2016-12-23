@@ -2,4 +2,7 @@ language: ruby
 rvm:
   - 2.2
   - jruby
-  - rbx-2		
+  - rbx-2
+  
+env:
+    - JRUBY_OPTS=--2.0		
