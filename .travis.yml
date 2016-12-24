@@ -11,4 +11,4 @@ before_deploy:
 
 script: 
   - bundle update
-  - bundle exec rspec ~auto/ruby/index.rb
+  - bundle exec rspec auto/ruby/index.rb
