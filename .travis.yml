@@ -11,5 +11,5 @@ before_deploy:
 
 before_script: 
   - bundle update
-script: 'auto/ruby/index.rb'
+script: 'ruby auto/ruby/index.rb'
 
