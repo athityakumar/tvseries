@@ -9,6 +9,7 @@ env:
 before_deploy:
   - gem install mime-types-data -v '3.2016.0521'
 
-script: 
+before_script: 
   - bundle update
-  - bundle exec rspec auto/ruby/index.rb
+script: 'auto/ruby/index.rb'
+
