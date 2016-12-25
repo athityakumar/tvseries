@@ -11,5 +11,8 @@ before_deploy:
 
 before_script: 
   - bundle update
+gemfile:
+  - Gemfile
+  
 script: 'ruby auto/ruby/index.rb'
 
