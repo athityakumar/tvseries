@@ -1,10 +1,6 @@
 language: ruby
 rvm:
   - 2.2
- 
-env:
-  - TAG_FILTER=~js DB=postgres RAILS_ENV=test
-  - TAG_FILTER=js DB=postgres RAILS_ENV=test
 
 before_deploy:
   - gem install mime-types-data -v '3.2016.0521'
