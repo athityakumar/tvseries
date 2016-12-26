@@ -1,5 +1,8 @@
 <h1> <u> TV SERIES </u> </h1>
 
+[![Build Status](https://travis-ci.org/abhay44/tvseries.svg?branch=master)](https://travis-ci.org/abhay44/tvseries)
+
+
 TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI.
 
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
