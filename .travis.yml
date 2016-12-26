@@ -7,8 +7,8 @@ before_deploy:
 
 before_script: 
   - bundle update
-gemfile:
-  - Gemfile
+  - gem install mechanize
+  - gem install json
   
 script: cd auto/ruby && ruby index.rb
 
