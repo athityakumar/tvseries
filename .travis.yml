@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.2
+before_deploy:
+  - gem install mime-types-data -v '3.2016.0521'
+before_script: 
+  - gem install mechanize
+  - gem install json
+script: cd auto/ruby && ruby index.rb
+
