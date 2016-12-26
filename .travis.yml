@@ -10,5 +10,5 @@ before_script:
 gemfile:
   - Gemfile
   
-script: 'ruby auto/ruby/index.rb'
+script: cd auto/ruby && ruby index.rb
 
