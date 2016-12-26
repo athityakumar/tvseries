@@ -6,7 +6,6 @@ before_deploy:
   - gem install mime-types-data -v '3.2016.0521'
 
 before_script: 
-  - bundle update
   - gem install mechanize
   - gem install json
   
