@@ -1,14 +1,14 @@
 [
   {
     "name": "The Flash",
-    "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming a superhero, The Flash, fighting crime in Central City.",
+    "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.",
     "filename": "flash",
     "imdb_rating": "8.2",
     "imdb_link": "http://www.imdb.com/title/tt3107288/",
     "wiki_link": "https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29",
     "scrape_link": "https://en.wikipedia.org/wiki/List_of_The_Flash_episodes",
     "seasons": "3",
-    "episodes": "55",
+    "episodes": "56",
     "time": "2014 - now"
   },
   {
@@ -32,7 +32,7 @@
     "wiki_link": "https://en.wikipedia.org/wiki/Gotham_(TV_series)",
     "scrape_link": "https://en.wikipedia.org/wiki/List_of_Gotham_episodes",
     "seasons": "3",
-    "episodes": "55",
+    "episodes": "57",
     "time": "2014 - now"
   },
   {
@@ -80,7 +80,7 @@
     "wiki_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
     "scrape_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
     "seasons": "2",
-    "episodes": "25",
+    "episodes": "26",
     "time": "2016 - now"
   },
   {
@@ -109,7 +109,7 @@
   },
   {
     "name": "Top of the Lake",
-    "description": "A mystery drama series that deals with the investigation of the disappearance of a 12-year old pregnant girl",
+    "description": "When pregnant, 12-year-old Tui tries to kill herself in a freezing New Zealand lake, Detective Robin Griffin has plenty of questions for the girl. But when Tui suddenly disappears, Griffin finds herself knee-deep in small-town secrets.",
     "filename": "totl",
     "imdb_rating": "7.6",
     "imdb_link": "http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1",
