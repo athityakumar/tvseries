@@ -1,30 +1,28 @@
-<h1> <u> TV SERIES </u> </h1>
+# TV Series
+
 
 TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI. 
     
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
-<div id = "top"> <br>
 
 # List of contents
 
-- [To-do](#todo)
-- [Supported TV Series](#supported)
-- [Working of the scripts](#working)
+- [To-do](#to-do)
+- [Supported TV Series](#supported-tv-series)
+- [Working of the scripts](#working-of-the-scripts)
 - [Resources](#resources)
 - [Sitemap](#sitemap)
-- [How to contribute](#contribute)
+- [How to contribute](#how-to-contribute)
 - [License](#license)
 
-</div>
-
-<div id = "todo"> <br> </div>
-<h1> <u> To-do </u> </h1>
 
 
+## To-do
 
-[Back to contents](#top)
-<br><br>
+
+[Back to contents](#list-of-contents)
+
 - [x] Add UI Sample Templates
 - [x] Generate SITEMAP markup file automatically with ruby script
 - [x] Generate RESOURCES markup file automatically with ruby script
@@ -36,11 +34,9 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
     - [x] Ruby git program for smart auto-commit messages : [git.rb] (https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
 - [ ] Add a cron job for the master shell-script
 
-<div id = "supported"> <br> </div>
-<h1> <u> Supported TV Series' </u> </h1>
+## Supported TV Series'
 
-[Back to contents](#top)
-<br><br>
+[Back to contents](#list-of-contents)
 
 - [ ] Arrow
 - [x] Breaking Bad
@@ -65,11 +61,11 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 <br>Feel free to add more series' to the list by sending Pull Requests.
 
-<div id = "working"> <br> </div>
-<h1> <u> Working of the scripts </u> </h1>
 
-[Back to contents](#top)
-<br><br>
+## Working of the scripts
+
+[Back to contents](#list-of-contents)
+
 The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
 <br> (1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
 <br> (2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
@@ -78,11 +74,8 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 <br> (5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
 <br><br> Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
 
-<div id = "resources"> <br> </div>
-<h1> <u> Resources </u> </h1>
-
-[Back to contents](#top)
-<br><br>
+## Resources
+[Back to contents](#list-of-contents)
 
  
 ### The Flash 
@@ -145,14 +138,12 @@ The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial pl
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
     
 
-<div id = "sitemap"> <br> </div>
-<h1> <u> Sitemap </u> </h1>
+## Sitemap
 
-[Back to contents](#top)
-<br><br>
-<pre>
+[Back to contents](#list-of-contents)
 
 
+```
 auto/
 
       data/
@@ -262,6 +253,7 @@ images/
 
       logo.png
 
+     
 javascript/
 
       library/
@@ -396,25 +388,27 @@ git.rb
 index.html
 sample_homepage.html
 sample_series.html
-</pre>
-    
-<div id = "contribute"> <br> </div>
-<h1> <u> How to contribute </u> </h1>
 
-[Back to contents](#top)
-<br><br>
+```
+
+## How To Contribute
+
+[Back to contents](#list-of-contents)
+
+
 The work flow is the same as that of any other repository. 
-<br> (1) Fork / clone the repository.
-<br> (2) Create a new branch , say `my-changes` and make your changes in this branch.
-<br> (3) Commit your changes and send a Pull request (PR) to this repository.
-<br> Active contributors would be rewarded with the tag of "Collabrators"
-<br> Bug fixes , Issues , Issue solutions , Optimizations & Enhancements are always welcome.
+(1) Fork / clone the repository.
+(2) Create a new branch , say `my-changes` and make your changes in this branch.
+(3) Commit your changes and send a Pull request (PR) to this repository.
+Active contributors would be rewarded with the tag of "Collabrators"
+Bug fixes,Issues , Issue solutions , Optimizations , Enhancements are always welcome.
 
-<div id = "license"> <br> </div>
-<h1> <u> License </u> </h1>
 
-[Back to contents](#top)
-<br><br>
+
+## License
+
+[Back to contents](#list-of-contents)
+ 
 The MIT License (MIT)
 
 Copyright (c) 2016 Athitya Kumar
