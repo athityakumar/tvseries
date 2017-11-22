@@ -30,8 +30,8 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Add scraping script (WIP)
 - [x] Add HTML pages generator script
 - [x] Add master shell-script that runs all scripts, and pushes changes into this repository
-    - [x] Shell-script to deploy : [deploy.sh] (https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
-    - [x] Ruby git program for smart auto-commit messages : [git.rb] (https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
+    - [x] Shell-script to deploy : [deploy.sh](https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
+    - [x] Ruby git program for smart auto-commit messages : [git.rb](https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
 - [ ] Add a cron job for the master shell-script
 
 ## Supported TV Series'
@@ -59,7 +59,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] The Walking Dead
 - [ ] Vixen
 
-<br>Feel free to add more series' to the list by sending Pull Requests.
+Feel free to add more series' to the list by sending Pull Requests.
 
 
 ## Working of the scripts
