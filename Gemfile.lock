@@ -1,6 +1,0 @@
-GEM
-  remote:  http://rubygems.org/
-  specs:
-    mechanize (2.7.5)
-    json      (2.0.3)
-    
