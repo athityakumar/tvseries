@@ -1,26 +1,28 @@
-<h1> <u> TV SERIES </u> </h1>
+# TV Series
+
 
 TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI. 
     
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
-<div id = "top"> <br>
-<h1> <u> LIST OF CONTENTS </u> </h1>
-<ul> 
-<li> <a href = "#todo"> To-do </a> </li>
-<li> <a href = "#supported"> Supported TV Series' </a> </li>
-<li> <a href = "#working"> Working of the scripts </a> </li>
-<li> <a href = "#resources"> Resources </a> </li>
-<li> <a href = "#sitemap"> Sitemap </a> </li>
-<li> <a href = "#contribute"> How to contribute </a> </li>
-<li> <a href = "#license"> License </a> </li>
-</ul>
-</div>
 
-<div id = "todo"> <br> </div>
-<h1> <u> To-do </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
+# List of contents
+
+- [To-do](#to-do)
+- [Supported TV Series](#supported-tv-series)
+- [Working of the scripts](#working-of-the-scripts)
+- [Resources](#resources)
+- [Sitemap](#sitemap)
+- [How to contribute](#how-to-contribute)
+- [License](#license)
+
+
+
+## To-do
+
+
+[Back to contents](#list-of-contents)
+
 - [x] Add UI Sample Templates
 - [x] Generate SITEMAP markup file automatically with ruby script
 - [x] Generate RESOURCES markup file automatically with ruby script
@@ -28,14 +30,13 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Add scraping script (WIP)
 - [x] Add HTML pages generator script
 - [x] Add master shell-script that runs all scripts, and pushes changes into this repository
-    - [x] Shell-script to deploy : [deploy.sh] (https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
-    - [x] Ruby git program for smart auto-commit messages : [git.rb] (https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
+    - [x] Shell-script to deploy : [deploy.sh](https://github.com/athityakumar/tvseries/blob/master/deploy.sh)
+    - [x] Ruby git program for smart auto-commit messages : [git.rb](https://github.com/athityakumar/tvseries/blob/master/git.rb.sh)
 - [ ] Add a cron job for the master shell-script
 
-<div id = "supported"> <br> </div>
-<h1> <u> Supported TV Series' </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
+## Supported TV Series'
+
+[Back to contents](#list-of-contents)
 
 - [ ] Arrow
 - [x] Breaking Bad
@@ -58,93 +59,96 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] The Walking Dead
 - [ ] Vixen
 
-<br>Feel free to add more series' to the list by sending Pull Requests.
+Feel free to add more series' to the list by sending Pull Requests.
 
-<div id = "working"> <br> </div>
-<h1> <u> Working of the scripts </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
+
+## Working of the scripts
+
+[Back to contents](#list-of-contents)
+
 The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
-<br> (1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
-<br> (2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
-<br> (3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
-<br> (4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
-<br> (5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
-<br><br> Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
+(1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
 
-<div id = "resources"> <br> </div>
-<h1> <u> Resources </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
+(2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
 
- 
-###The Flash 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29)
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt3107288/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
+(3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
+
+(4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
+
+(5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
+
+Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
+
+## Resources
+[Back to contents](#list-of-contents)
 
  
-###Person of Interest 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt1839578/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes)
+### The Flash 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29)
+- [ ] [IMDb Link](http://www.imdb.com/title/tt3107288/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
  
-###Gotham 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Gotham_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt3749900/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
+### Person of Interest 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt1839578/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes)
 
  
-###Game of Thrones 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Game_of_Thrones)
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt0944947/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
+### Gotham 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Gotham_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt3749900/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
 
  
-###White Collar 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/White_Collar_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt1358522/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
+### Game of Thrones 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Game_of_Thrones)
+- [ ] [IMDb Link](http://www.imdb.com/title/tt0944947/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
 
  
-###Breaking Bad 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Breaking_Bad)
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt0903747/)
-- [ ] [Episode Synopsis Link] (http://breakingbad.wikia.com/wiki/Pilot)
+### White Collar 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/White_Collar_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt1358522/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
 
  
-###DC's Legends of Tomorrow 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt4532368/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
+### Breaking Bad 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Breaking_Bad)
+- [ ] [IMDb Link](http://www.imdb.com/title/tt0903747/)
+- [ ] [Episode Synopsis Link](http://breakingbad.wikia.com/wiki/Pilot)
 
  
-###Sherlock 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Sherlock_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt1475582/)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
+### DC's Legends of Tomorrow 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
+- [ ] [IMDb Link](http://www.imdb.com/title/tt4532368/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 
  
-###Firefly 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Firefly_(TV_series))
+### Sherlock 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Sherlock_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt1475582/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
 
  
-###Top of the Lake 
-- [ ] [Wikipedia Link] (https://en.wikipedia.org/wiki/Top_of_the_Lake)
-- [ ] [IMDb Link] (http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
-- [ ] [Episode Synopsis Link] (https://en.wikipedia.org/wiki/Top_of_the_Lake)
+### Firefly 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
+
+ 
+### Top of the Lake 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
+- [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
     
 
-<div id = "sitemap"> <br> </div>
-<h1> <u> Sitemap </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
-<pre>
+## Sitemap
+
+[Back to contents](#list-of-contents)
 
 
+```
 auto/
 
       data/
@@ -254,6 +258,7 @@ images/
 
       logo.png
 
+     
 javascript/
 
       library/
@@ -388,42 +393,27 @@ git.rb
 index.html
 sample_homepage.html
 sample_series.html
-</pre>
-    
-<div id = "contribute"> <br> </div>
-<h1> <u> How to contribute </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
+
+```
+
+## How To Contribute
+
+[Back to contents](#list-of-contents)
+
+
 The work flow is the same as that of any other repository. 
-<br> (1) Fork / clone the repository.
-<br> (2) Create a new branch , say `my-changes` and make your changes in this branch.
-<br> (3) Commit your changes and send a Pull request (PR) to this repository.
-<br> Active contributors would be rewarded with the tag of "Collabrators"
-<br> Bug fixes , Issues , Issue solutions , Optimizations & Enhancements are always welcome.
+(1) Fork / clone the repository.
+(2) Create a new branch , say `my-changes` and make your changes in this branch.
+(3) Commit your changes and send a Pull request (PR) to this repository.
+Active contributors would be rewarded with the tag of "Collabrators"
+Bug fixes,Issues , Issue solutions , Optimizations , Enhancements are always welcome.
 
-<div id = "license"> <br> </div>
-<h1> <u> License </u> </h1>
-<i><a href = "#top"> Back to contents </a></i>
-<br><br>
-The MIT License (MIT)
 
-Copyright (c) 2016 Athitya Kumar
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## License
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+[Back to contents](#list-of-contents)
+ 
+The MIT License Copyright (c) 2017 - [Athitya Kumar](https://github.com/athityakumar).
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-    
+Please have a look at the [LICENSE.md](LICENSE.md) for more details
