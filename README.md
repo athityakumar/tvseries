@@ -88,6 +88,11 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 - [ ] [IMDb Link](http://www.imdb.com/title/tt3107288/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
+### The Arrow 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Arrow_(TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt2193021/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Arrow_episodes)
+
  
 ### Person of Interest 
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
