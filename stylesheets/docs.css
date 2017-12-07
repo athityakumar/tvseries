@@ -2359,3 +2359,8 @@ code .chunk {
   }
 
 }
+
+/* Removing inactive close button in series pages */
+#example .pusher .ui.message>.close.icon {
+	display:none;
+}
