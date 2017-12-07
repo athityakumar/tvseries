@@ -145,7 +145,7 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 
 ## Sitemap
 
-[Go to sitemap](blob/master/SITEMAP.md)
+[Go to sitemap](SITEMAP.md)
 
 
 ## How To Contribute
