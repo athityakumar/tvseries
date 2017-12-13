@@ -41,7 +41,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] Breaking Bad
 - [ ] Castle
 - [x] DC's Legends of Tomorrow
-- [ ] Friends
+- [x] Friends
 - [x] Game of Thrones
 - [ ] Gotham
 - [ ] How I Met your Mother

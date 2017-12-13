@@ -60,27 +60,15 @@
     "time": "2009 - 2014"
   },
   {
-    "name": "Breaking Bad",
-    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
-    "filename": "bb",
-    "imdb_rating": "9.5",
-    "imdb_link": "http://www.imdb.com/title/tt0903747/",
-    "wiki_link": "https://en.wikipedia.org/wiki/Breaking_Bad",
-    "scrape_link": "http://breakingbad.wikia.com/wiki/Pilot",
-    "seasons": "5",
-    "episodes": "62",
-    "time": "2008 - now"
-  },
-  {
     "name": "DC's Legends of Tomorrow",
     "description": "Focuses on time-traveling rogue Rip Hunter, who has to recruit a rag-tag team of heroes and villains to help prevent an apocalypse that could impact not only Earth, but all of time.",
     "filename": "lot",
-    "imdb_rating": "7.1",
+    "imdb_rating": "7.0",
     "imdb_link": "http://www.imdb.com/title/tt4532368/",
     "wiki_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
     "scrape_link": "https://en.wikipedia.org/wiki/Legends_of_Tomorrow",
-    "seasons": "2",
-    "episodes": "26",
+    "seasons": "3",
+    "episodes": "1",
     "time": "2016 - now"
   },
   {
@@ -106,6 +94,18 @@
     "seasons": "1",
     "episodes": "15",
     "time": "2002-2003"
+  },  
+  {
+    "name": "Breaking Bad",
+    "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+    "filename": "bb",
+    "imdb_rating": "9.5",
+    "imdb_link": "http://www.imdb.com/title/tt0903747/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Breaking_Bad",
+    "scrape_link": "http://breakingbad.wikia.com/wiki/Pilot",
+    "seasons": "5",
+    "episodes": "62",
+    "time": "2008 - now"
   },
   {
     "name": "Top of the Lake",
@@ -124,11 +124,12 @@
     "description": "Follows the personal and professional lives of six 20 to 30-something-year-old friends living in Manhattan.",
     "filename": "friends",
     "imdb_rating": "8.9",
-    "imdb_link": "",
-    "wiki_link": "",
-    "scrape_link": "",
+    "imdb_link": "http://www.imdb.com/title/tt0108778/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Friends",
+    "scrape_link": "https://en.wikipedia.org/wiki/Friends_(season_",
     "seasons": "10",
     "episodes": "236",
-    "time": "1994-2004"
+    "time": "1994-2004",
+    "season": "10"
   }
 ]
