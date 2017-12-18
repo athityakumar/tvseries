@@ -1,5 +1,17 @@
 [
   {
+    "name": "Suits",
+    "description": "On the run from a drug deal gone bad, Mike Ross, a brilliant college-dropout, finds himself a job working with Harvey Specter, one of New York City's best lawyers.",
+    "filename": "suits",
+    "imdb_rating": "8.6",
+    "imdb_link": "http://www.imdb.com/title/tt1632701/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Suits_(U.S._TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/Suits_(season_",
+    "seasons": "7",
+    "episodes": "102",
+    "time": "2011 - now"
+  },
+  {
     "name": "The Flash",
     "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.",
     "filename": "flash",
