@@ -1,8 +1,8 @@
 # TV Series
 
 
-TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI. 
-    
+TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI.
+
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 
@@ -51,7 +51,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Narcos
 - [ ] Person of Interest
 - [ ] Prisonbreak
-- [ ] Suits
+- [x] Suits
 - [ ] Supergirl
 - [ ] Supernatural
 - [ ] The Big Bang Theory
@@ -82,66 +82,72 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 ## Resources
 [Back to contents](#list-of-contents)
 
- 
-### The Flash 
+
+### Suits
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Suits_(U.S._TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt1632701/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Suits_episodes)
+
+
+### The Flash
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt3107288/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
- 
-### Person of Interest 
+
+### Person of Interest
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1839578/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes)
 
- 
-### Gotham 
+
+### Gotham
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Gotham_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt3749900/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
 
- 
-### Game of Thrones 
+
+### Game of Thrones
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Game_of_Thrones)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0944947/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
 
- 
-### White Collar 
+
+### White Collar
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/White_Collar_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1358522/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
 
- 
-### Breaking Bad 
+
+### Breaking Bad
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Breaking_Bad)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0903747/)
 - [ ] [Episode Synopsis Link](http://breakingbad.wikia.com/wiki/Pilot)
 
- 
-### DC's Legends of Tomorrow 
+
+### DC's Legends of Tomorrow
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt4532368/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 
- 
-### Sherlock 
+
+### Sherlock
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Sherlock_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1475582/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
 
- 
-### Firefly 
+
+### Firefly
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
 
- 
-### Top of the Lake 
+
+### Top of the Lake
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
-    
+
 
 ## Sitemap
 
@@ -163,6 +169,7 @@ auto/
             lot.json
             poi.json
             sherlock.json
+            suits.json
             totl.json
             whitecollar.json
 
@@ -253,12 +260,13 @@ images/
             lot.png
             poi.png
             sherlock.png
+            suits.png
             tofl.png
             whitecollar.png
 
       logo.png
 
-     
+
 javascript/
 
       library/
@@ -321,6 +329,7 @@ series/
       lot.html
       poi.html
       sherlock.html
+      suits.html
       totl.html
       whitecollar.html
 
@@ -401,7 +410,7 @@ sample_series.html
 [Back to contents](#list-of-contents)
 
 
-The work flow is the same as that of any other repository. 
+The work flow is the same as that of any other repository.
 (1) Fork / clone the repository.
 (2) Create a new branch , say `my-changes` and make your changes in this branch.
 (3) Commit your changes and send a Pull request (PR) to this repository.
@@ -413,7 +422,7 @@ Bug fixes,Issues , Issue solutions , Optimizations , Enhancements are always wel
 ## License
 
 [Back to contents](#list-of-contents)
- 
+
 The MIT License Copyright (c) 2017 - [Athitya Kumar](https://github.com/athityakumar).
 
 Please have a look at the [LICENSE.md](LICENSE.md) for more details

@@ -14,6 +14,7 @@ def remove_all_between x , c1 , c2
     return x
 end
 
+
 def bb_scraper filename
 
     agent = Mechanize.new()
@@ -68,7 +69,6 @@ def bb_scraper filename
     File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
 
 end
-
 
 def poi_scraper filename
 
@@ -326,6 +326,7 @@ def whitecollar_scraper filename
 
 end
 
+
 def gotham_scraper filename
 
     agent = Mechanize.new()
@@ -392,8 +393,6 @@ def gotham_scraper filename
 end
 
 
-
-
 def lot_scraper filename
 
     agent = Mechanize.new()
@@ -458,6 +457,8 @@ def lot_scraper filename
 
 
 end
+
+
 def sherlock_scraper filename
     agent = Mechanize.new()
 
@@ -553,8 +554,6 @@ def sherlock_scraper filename
 end
 
 
-
-
 def firefly_scraper filename
 
     agent = Mechanize.new()
@@ -602,8 +601,9 @@ def firefly_scraper filename
     File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
     File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
 
-
 end
+
+
 def totl_scraper filename
     agent = Mechanize.new()
     master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
@@ -649,6 +649,56 @@ def totl_scraper filename
     File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
     File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
 
+end
+
+
+def suits_scraper filename
+    agent = Mechanize.new()
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    total_episodes = 102
+    seasons = 7
+    season_list = []
+    list = []
+    for season_count in(0..6)
+        page = agent.get(series["scrape_link"] + (season_count + 1).to_s + ")")
+        episodes = page.search(".description").count - 1
+        for i in (0..episodes)
+            data = {}
+            data["description"] = page.search(".description")[i].text
+            data["description"] = remove_all_between(data["description"],"[","]")
+            data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","")
+            data["title"] = remove_all_between(data["title"],"[","]")
+            data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
+            data["episode"] = i + 1
+            if data["episode"] < 10
+                data["episode"] = "E0" + data["episode"].to_s
+            else
+                data["episode"] = "E" + data["episode"].to_s
+            end
+            for j in(0..season_count)
+                if season_list.include? j
+                    data["season"] = ""
+                else
+                    season_list.push(j)
+                    if season_list.index(j) < 9
+                        data["season"] = "S0" + (season_list.index(j)+1).to_s
+                    else
+                        data["season"] = "S" + (season_list.index(j)+1).to_s
+                    end
+                end
+            end
+            list.push(data)
+        end
+    end
+    series["imdb_rating"] = imdb_rating.to_s
+    series["episodes"] = (total_episodes).to_s
+    series["seasons"] = (seasons).to_s
+    series["description"] = description
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
 
 end
 
@@ -656,9 +706,11 @@ end
 
 def assign_scraper
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+
     series_list.each do |series|
         send(:"#{series["filename"]}_scraper",series["filename"])
     end
+
 end
 
 def generate_html
