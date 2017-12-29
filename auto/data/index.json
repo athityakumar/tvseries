@@ -1,5 +1,17 @@
 [
   {
+    "name": "Supernatural",
+    "description": "Two brothers follow their father's footsteps as \"hunters\", fighting evil supernatural beings of many kinds, including monsters, demons, and gods that roam the earth.",
+    "filename": "supern",
+    "imdb_rating": "8.5",
+    "imdb_link": "http://www.imdb.com/title/tt0460681/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Supernatural_(U.S._TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/Supernatural_(season_ ",
+    "seasons": "13",
+    "episodes": "273",
+    "time": "2005 - now"
+  },
+  {
     "name": "The Flash",
     "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.",
     "filename": "flash",
