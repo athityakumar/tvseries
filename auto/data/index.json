@@ -1,5 +1,17 @@
 [
   {
+  "name": "Narcos",
+  "description": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+  "filename": "narcos",
+  "imdb_rating": "8.9",
+  "imdb_link": "http://www.imdb.com/title/tt2707408/",
+  "wiki_link": "https://en.wikipedia.org/wiki/Narcos",
+  "scrape_link": "https://en.wikipedia.org/wiki/Narcos_(season_",
+  "seasons": "3",
+  "episodes": "30",
+  "time": "2015 - now"
+  },
+  {
     "name": "The Flash",
     "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.",
     "filename": "flash",
