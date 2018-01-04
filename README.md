@@ -149,6 +149,7 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
 
 
+<<<<<<< HEAD
 ## Sitemap
 
 [Back to contents](#list-of-contents)
@@ -404,6 +405,9 @@ sample_homepage.html
 sample_series.html
 
 ```
+=======
+## Sitemap at SITEMAP.md
+>>>>>>> c742d61a5ec07cb7978fb04cf52702a3525c2774
 
 ## How To Contribute
 
