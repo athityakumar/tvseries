@@ -1,8 +1,8 @@
 # TV Series
 
 
-TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI. 
-    
+TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from websites like Wikipedia / IMDb and shows it all in one single place, with a better user-friendly navigation UI.
+
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 
@@ -51,7 +51,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Narcos
 - [ ] Person of Interest
 - [ ] Prisonbreak
-- [ ] Suits
+- [x] Suits
 - [ ] Supergirl
 - [ ] Supernatural
 - [ ] The Big Bang Theory
@@ -82,75 +82,339 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 ## Resources
 [Back to contents](#list-of-contents)
 
- 
-### The Flash 
+
+### Suits
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Suits_(U.S._TV_series))
+- [ ] [IMDb Link](http://www.imdb.com/title/tt1632701/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Suits_episodes)
+
+
+### The Flash
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt3107288/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_The_Flash_episodes)
 
- 
-### Person of Interest 
+
+### Person of Interest
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1839578/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes)
 
- 
-### Gotham 
+
+### Gotham
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Gotham_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt3749900/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Gotham_episodes)
 
- 
-### Game of Thrones 
+
+### Game of Thrones
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Game_of_Thrones)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0944947/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes)
 
- 
-### White Collar 
+
+### White Collar
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/White_Collar_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1358522/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_White_Collar_episodes)
 
- 
-### Breaking Bad 
+
+### Breaking Bad
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Breaking_Bad)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0903747/)
 - [ ] [Episode Synopsis Link](http://breakingbad.wikia.com/wiki/Pilot)
 
- 
-### DC's Legends of Tomorrow 
+
+### DC's Legends of Tomorrow
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt4532368/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Legends_of_Tomorrow)
 
- 
-### Sherlock 
+
+### Sherlock
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Sherlock_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt1475582/)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Sherlock_episodes)
 
- 
-### Firefly 
+
+### Firefly
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
 - [ ] [IMDb Link](http://www.imdb.com/title/tt0303461/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Firefly_(TV_series))
 
- 
-### Top of the Lake 
+
+### Top of the Lake
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
-    
 
+
+<<<<<<< HEAD
+## Sitemap
+
+[Back to contents](#list-of-contents)
+
+
+```
+auto/
+
+      data/
+
+            bb.json
+            firefly.json
+            flash.json
+            got.json
+            gotham.json
+            index (copy).json
+            index.json
+            lot.json
+            poi.json
+            sherlock.json
+            suits.json
+            totl.json
+            whitecollar.json
+
+      ruby/
+            index.rb
+
+      segments/
+
+            html/
+
+                  index.html.erb
+                  series.html.erb
+
+            md/
+                  README.md.erb
+
+dist/
+
+      components/
+
+            button.css
+            card.css
+            container.css
+            dimmer.css
+            dimmer.js
+            divider.css
+            dropdown.css
+            dropdown.js
+            form.css
+            form.js
+            grid.css
+            header.css
+            icon.css
+            image.css
+            input.css
+            label.css
+            list.css
+            menu.css
+            message.css
+            popup.css
+            popup.js
+            rating.css
+            rating.js
+            reset.css
+            reveal.css
+            segment.css
+            sidebar.css
+            sidebar.js
+            site.css
+            table.css
+            transition.css
+            transition.js
+            visibility.js
+
+      themes/
+
+            default/
+
+                  assets/
+
+                        fonts/
+
+                              icons.eot
+                              icons.eot?
+                              icons.svg
+                              icons.ttf
+                              icons.woff
+                              icons.woff2
+
+                        images/
+                              flags.png
+
+      semantic.css
+      semantic.js
+      semantic.min.css
+      semantic.min.js
+
+images/
+
+      series/
+
+            arrow.png
+            bb.png
+            firefly.png
+            flash.png
+            got.png
+            gotham.png
+            lot.png
+            poi.png
+            sherlock.png
+            suits.png
+            tofl.png
+            whitecollar.png
+
+      logo.png
+
+
+javascript/
+
+      library/
+
+            clipboard.min.js
+            cookie.min.js
+            easing.min.js
+            highlight.min.js
+            history.min.js
+            jquery.min.js
+            less.min.js
+            serialize-object.js
+            sinon.js
+            tablesort.js
+            tablesort.min.js
+
+      accordion.js
+      api.js
+      button.js
+      card.js
+      checkbox.js
+      container.js
+      dimmer.js
+      docs.js
+      dropdown.js
+      embed.js
+      form.js
+      grid.js
+      header.js
+      home.js
+      icon.js
+      input.js
+      item.js
+      menu.js
+      message.js
+      modal.js
+      new.js
+      popup.js
+      progress.js
+      rating.js
+      search.js
+      shape.js
+      sidebar.js
+      started.js
+      sticky.js
+      tab.js
+      table.js
+      theming.js
+      transition.js
+      validate-form.js
+      visibility.js
+
+series/
+
+      bb.html
+      firefly.html
+      flash.html
+      got.html
+      gotham.html
+      lot.html
+      poi.html
+      sherlock.html
+      suits.html
+      totl.html
+      whitecollar.html
+
+src/
+
+      definitions/
+
+            collections/
+
+                  breadcrumb.less
+                  form.less
+                  grid.less
+                  menu.less
+                  message.less
+                  table.less
+
+            elements/
+
+                  button.less
+                  container.less
+                  divider.less
+                  flag.less
+                  header.less
+                  input.less
+                  label.less
+                  list.less
+                  loader.less
+                  rail.less
+                  segment.less
+                  step.less
+
+            globals/
+
+                  reset.less
+                  site.less
+
+            modules/
+
+                  accordion.less
+                  checkbox.less
+                  dimmer.less
+                  dropdown.less
+                  modal.less
+                  popup.less
+                  progress.less
+                  rating.less
+                  search.less
+                  shape.less
+                  sidebar.less
+
+            views/
+
+                  card.less
+                  comment.less
+                  feed.less
+                  item.less
+                  statistic.less
+
+stylesheets/
+
+      docs.css
+      home.css
+      rtl.css
+      shape.css
+
+.travis.yml
+README.md
+deploy.sh
+git.rb
+index.html
+sample_homepage.html
+sample_series.html
+
+```
+=======
 ## Sitemap at SITEMAP.md
+>>>>>>> c742d61a5ec07cb7978fb04cf52702a3525c2774
 
 ## How To Contribute
 
 [Back to contents](#list-of-contents)
 
 
-The work flow is the same as that of any other repository. 
+The work flow is the same as that of any other repository.
 (1) Fork / clone the repository.
 (2) Create a new branch , say `my-changes` and make your changes in this branch.
 (3) Commit your changes and send a Pull request (PR) to this repository.
@@ -162,7 +426,7 @@ Bug fixes,Issues , Issue solutions , Optimizations , Enhancements are always wel
 ## License
 
 [Back to contents](#list-of-contents)
- 
+
 The MIT License Copyright (c) 2017 - [Athitya Kumar](https://github.com/athityakumar).
 
 Please have a look at the [LICENSE.md](LICENSE.md) for more details
