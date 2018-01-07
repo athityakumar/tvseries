@@ -659,11 +659,11 @@ def bbt_scraper filename
     series = master_list.find { |x| x["filename"] == filename }
     imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
     description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    total_episodes = 102
-    seasons = 7
+    total_episodes = 243  #has to be changed when updated
+    seasons = 11  #has to be changed when updated
     season_list = []
     list = []
-    for season_count in(0..6)
+    for season_count in(0..(seasons-1))
         page = agent.get(series["scrape_link"] + (season_count + 1).to_s + ")")
         episodes = page.search(".description").count - 1
         for i in (0..episodes)
