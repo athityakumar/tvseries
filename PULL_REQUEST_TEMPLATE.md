@@ -1,14 +1,13 @@
-# Contribution Guidelines
+# Contribution
 
-Please ensure your pull request adheres to the following guidelines:
+Thanks for contributing this pull request. Add a brief description of what this PR is about. Do tag the relevant Issue(s) and PR(s) below
 
-- Search previous suggestions before making a new one, as yours may be a duplicate.
-- Make an individual pull request for each series.
-- The title should be short but well enough to explain the PR
-- Other comments should be mentioned in below in the comments section
-- New categories or improvements to the existing code are welcome. 
-- Check your spelling and grammar.
-- Make sure your editor is set to remove trailing whitespace.
-- The pull request and commit should have a useful title.
 
-Thank you for your suggestions!
+- Relevant Issues : (none)
+- Relevant PRs : (none)
+- Type of change :
+  - [ ] New TV series
+  - [ ] Bug fix for existing feature
+  - [ ] Code quality improvement
+  - [ ] New feature
+  - [ ] Addition or Improvement of documentation
