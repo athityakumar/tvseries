@@ -1,4 +1,4 @@
-## Do you wish a TV series?
+## Do you wish to add a TV series?
 
 > If yes, name the series and the year in which it started broadcasting. For example Young Sheldon(2017-present)
 
