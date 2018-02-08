@@ -61,22 +61,6 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 Feel free to add more series' to the list by sending Pull Requests.
 
-
-## Working of the scripts
-
-[Back to contents](#list-of-contents)
-
-The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
-(1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
-
-(2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
-
-(3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
-
-(4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
-
-(5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
-
 Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
 
 ## Resources
