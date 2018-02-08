@@ -6,7 +6,7 @@ Do you wish to
 2. Enhance the code?
 3. Solve bugs?
 
-We heartily welcome you! :tada:
+We heartily welcome you! :heart:
 
 You can see the issues [here](https://github.com/athityakumar/tvseries/issues). The workflow is given in the [README.md](https://github.com/athityakumar/tvseries/blob/master/README.md). 
 Now making a pull request is very easy! :pizza:
@@ -16,4 +16,4 @@ Now making a pull request is very easy! :pizza:
 3. Make your changes in the branch
 4. Commit your changes and send a pull request
 
-And :tada:! You have contributed to this cool project!
+And you have contributed to this cool project! :tada: 
