@@ -1,4 +1,4 @@
-## How to contribute?
+Firstly, thanks for contributing to the project. :smile:
 
 Do you wish to
 
@@ -8,7 +8,28 @@ Do you wish to
 
 We heartily welcome you! :heart:
 
-You can see the issues [here](https://github.com/athityakumar/tvseries/issues). The workflow is given in the [README.md](https://github.com/athityakumar/tvseries/blob/master/README.md). 
+### Workflow
+
+The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
+(1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
+
+(2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
+
+(3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
+
+(4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
+
+(5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
+
+### Before contributing
+
+- Please make sure the issue is unassigned or assigned **to you**.
+- If no such issue exists, make a new one and get yourself assigned.
+
+
+### Contributing
+
+You can see the issues [here](https://github.com/athityakumar/tvseries/issues).
 Now making a pull request is very easy! :pizza:
 
 1. Fork or clone this repository
