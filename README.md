@@ -12,9 +12,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
 - [To-do](#to-do)
 - [Supported TV Series](#supported-tv-series)
-- [Working of the scripts](#working-of-the-scripts)
 - [Resources](#resources)
-- [Sitemap](#sitemap)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
 
@@ -128,8 +126,6 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 - [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
     
-
-## Sitemap at SITEMAP.md
 
 ## How To Contribute
 
