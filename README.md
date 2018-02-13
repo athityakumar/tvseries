@@ -5,6 +5,8 @@ TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from we
     
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
+> Maintainers - [Athitya Kumar](https://github.com/athityakumar), [Dhruv Apte](https://github.com/the-ethan-hunt)
+
 
 # List of contents
 
