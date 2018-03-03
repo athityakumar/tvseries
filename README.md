@@ -51,6 +51,9 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Narcos
 - [ ] Person of Interest
 - [ ] Prisonbreak
+- [ ] Scandal
+- [ ] Seinfeld
+- [ ] Sherlock
 - [ ] Suits
 - [ ] Supergirl
 - [ ] Supernatural
@@ -58,6 +61,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] The Flash
 - [ ] The Walking Dead
 - [ ] Vixen
+- [ ] Young Sheldon
 
 Feel free to add more series' to the list by sending Pull Requests.
 
