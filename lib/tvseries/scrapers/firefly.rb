@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Firefly_(TV_series)'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt0303461/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/Firefly_(TV_series)'.freeze
-      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'firefly.json').freeze
+      JSON_FILE_PATH = File.join(TVSeries::SERIES_JSON_PATH, 'firefly.json').freeze
       SHORT_NAME     = 'firefly'.freeze
 
       def scrape

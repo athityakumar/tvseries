@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Breaking_Bad'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt0903747/'.freeze
       SCRAPE_LINK    = 'http://breakingbad.wikia.com/wiki/Pilot'.freeze
-      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'breaking_bad.json').freeze
+      JSON_FILE_PATH = File.join(TVSeries::SERIES_JSON_PATH, 'breaking_bad.json').freeze
       SHORT_NAME     = 'bb'.freeze
 
       def scrape

@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Gotham_(TV_series)'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt3749900/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_Gotham_episodes'.freeze
-      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'gotham.json').freeze
+      JSON_FILE_PATH = File.join(TVSeries::SERIES_JSON_PATH, 'gotham.json').freeze
       SHORT_NAME     = 'gothem'.freeze
 
       def scrape

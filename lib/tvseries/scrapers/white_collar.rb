@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/White_Collar_(TV_series)'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt1358522/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_White_Collar_episodes'.freeze
-      JSON_FILE_PATH = File.join(::JSON_FILE_PATH, 'white_collar.json').freeze
+      JSON_FILE_PATH = File.join(TVSeries::JSON_FILE_PATH, 'white_collar.json').freeze
       SHORT_NAME     = 'whitecollar'.freeze
 
       def scrape
