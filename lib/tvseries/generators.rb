@@ -2,6 +2,7 @@ require 'erb'
 
 module TVSeries
   class Generators
+    MASTER_JSON_PATH          = File.join(File.dirname(__FILE__), '../assets/base.json')
     MASTER_HTML_TEMPLATE_PATH = File.join(File.dirname(__FILE__), '../templates/index.html.erb')
     SERIES_HTML_TEMPLATE_PATH = File.join(File.dirname(__FILE__), '../templates/series.html.erb')
 

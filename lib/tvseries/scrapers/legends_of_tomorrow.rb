@@ -1,72 +1,52 @@
-def lot_scraper filename
+module TVSeries
+  module Scrapers
+    class TheFlash < Base
+      WIKI_LINK      = 'https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29'.freeze
+      IMDB_LINK      = 'http://www.imdb.com/title/tt3107288/'.freeze
+      SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_The_Flash_episodes'.freeze
+      JSON_FILE_PATH = File.join(File.dirname(__FILE__), '../../assets/the_flash.json').freeze
+      SHORT_NAME     = 'flash'.freeze
 
-    agent = Mechanize.new()
+      def scrape
+        @season_list = [0, 16, 32, 44]
+        @n_episodes -= 1 while @page.search('.vevent')[episodes].search('td')[6].text == 'TBD'
 
-    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
-    series = master_list.find { |x| x["filename"] == filename }
-    page = agent.get(series["scrape_link"])
-    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
-    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    episodes = page.search(".description").count
-    seasons =  page.search("table")[1].search("tr").last.search("td")[1].text.to_i rescue 3
-    last_season_index = page.search("table")[0].search("tr").count
-    first_season_index = last_season_index - seasons
-    season_list = []
-    list = []
-    season_list.push(0)
-    season_list.push(16)
-    season_list.push(32)
-    season_list.push(44)
-    # for i in (first_season_index..last_season_index-1)
-    #     season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
-    # end
-    while page.search(".vevent")[episodes].search("td")[6].text == "TBD"
-        episodes = episodes - 1
-    end
+        (0...@n_episodes).each do |i|
+          data = collect_data(@page, i)
+          data = collect_proper_texts(data, i+1)
+          @episodes.push(data)
+        end
 
-    for i in (0..episodes-1)
-        data = {}
-        begin
-          data["description"] = page.search(".description")[i].text
-          data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","").gsub(",","")
-          data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
-          data["directed_by"] = page.search(".vevent")[i+1].search("td")[2].text
-          data["views"] = page.search(".vevent")[i+1].search("td")[6].text
-          data["views"] = remove_all_between(data["views"],"[","]")
-          for j in (0..season_list.count-2)
-              if i > season_list[j] && i < season_list[j+1]
-                  data["episode"] = i-season_list[j]+1
-                  if data["episode"] < 10
-                      data["episode"] = "E0" + data["episode"].to_s
-                  else
-                      data["episode"] = "E" + data["episode"].to_s
-                  end
-              end
-          end
-          if season_list.include? i
-              if season_list.index(i) < 10
-                  data["season"] = "S0" + (season_list.index(i)+1).to_s
-              else
-                  data["season"] = "S" + (season_list.index(i)+1).to_s
-              end
-              data["episode"] = "E01"
-          else
-              data["season"] = ""
-          end
-          list.push(data)
-      rescue Exception => e
-        puts "Legends of Tomorrow scraper - episode #{episodes} - error #{e} rescued"
-        next
+        @n_seasons = @season_list.count
+        post_process
+      end
+
+      private
+
+      def collect_data(page, i)
+        {
+          'description' => page.search('.description')[i-1].text,
+          'title'       => page.search('.vevent')[i].search('td')[1].text.delete('\"').delete(','),
+          'directed_by' => page.search('.vevent')[i].search('td')[2].text,
+          'date'        => page.search('.vevent')[i].search('td')[4].text.split('(')[0],
+          'views'       => remove_all_between(page.search('.vevent')[i].search('td')[6].text, '[', ']'),
+          'episode'     => i,
+          'season'      => ''
+        }
+      end
+
+      def collect_proper_texts(data, i)
+        (0..@season_list.count-2).each do |j|
+          data['episode'] = get_episode_text(i-@season_list[j]+1) if i > @season_list[j] && i < @season_list[j+1]
+        end
+
+        if @season_list.include? i
+          data['season']  = get_season_text(@season_list.index(i)+1)
+          data['episode'] = 'E01'
+        end
+
+        data
       end
     end
-
-    series["imdb_rating"] = imdb_rating.to_s
-    series["episodes"] = (episodes+1).to_s
-    series["seasons"] = seasons.to_s
-    series["description"] = description
-
-    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
-    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
-
-
+  end
 end

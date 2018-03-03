@@ -16,13 +16,12 @@ module TVSeries
   end
 
   # Define TVSeries::BreakingBad to access data stored in assets/bb.json
-  # Like, 
+  # Like,
   # TVSeries::BreakingBad.episodes.first
   # TVSeries::BreakingBad.seasons.first.episodes
   # TVSeries::BreakingBad.imdb_rating
   # TVSeries::BreakingBad.time
 end
-
 
 TVSeries::SERIES_KEYWORD_MAPPINGS.each do |short_name, class_name|
   TVSeries.const_set class_name, 'TVSeries::Accessors'.to_class.new(class_name, short_name)
