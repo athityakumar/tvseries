@@ -2,11 +2,11 @@ AllCops:
   Include:
     - 'lib/**/*'
   Exclude:
-    - 'vendor/**/*'
-    - 'benchmarks/*'
+    - 'docs/*'
+    - 'exe/*'
     - 'profile/*'
-    - 'lib/yaml/*'
-    - 'lib/**/*.sh'
+    - 'lib/assets/*'
+    - 'lib/templates/*'
   DisplayCopNames: true
   TargetRubyVersion: 2.1
 
@@ -35,10 +35,6 @@ Layout/AlignParameters:
 
 Style/EmptyElse:
   EnforcedStyle: empty
-
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
 
 Metrics/LineLength:
   Max: 120
