@@ -1,11 +1,11 @@
 module TVSeries
   module Scrapers
-    class TheFlash < Base
-      WIKI_LINK      = 'https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29'.freeze
-      IMDB_LINK      = 'http://www.imdb.com/title/tt3107288/'.freeze
-      SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_The_Flash_episodes'.freeze
-      JSON_FILE_PATH = File.join(File.dirname(__FILE__), '../../assets/the_flash.json').freeze
-      SHORT_NAME     = 'flash'.freeze
+    class LegendsOfTomorrow < Base
+      WIKI_LINK      = 'https://en.wikipedia.org/wiki/Legends_of_Tomorrow'.freeze
+      IMDB_LINK      = 'http://www.imdb.com/title/tt4532368/'.freeze
+      SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_Legends_of_Tomorrow_episodes'.freeze
+      JSON_FILE_PATH = File.join(SERIES_JSON_PATH, 'legends_of_tomorrow.json').freeze
+      SHORT_NAME     = 'lot'.freeze
 
       def scrape
         @season_list = [0, 16, 32, 44]

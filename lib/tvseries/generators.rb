@@ -2,51 +2,40 @@ require 'erb'
 
 module TVSeries
   class Generators
-    MASTER_JSON_PATH          = File.join(File.dirname(__FILE__), '../assets/base.json')
-    MASTER_HTML_TEMPLATE_PATH = File.join(File.dirname(__FILE__), '../templates/index.html.erb')
-    SERIES_HTML_TEMPLATE_PATH = File.join(File.dirname(__FILE__), '../templates/series.html.erb')
-
-    def initialize(series_short_name)
-      @series_short_name = series_short_name
-      @series_class_name = ::SERIES_KEYWORD_MAPPINGS[series_short_name]
+    def initialize(series_name)
+      @series_name          = series_name
+      @series_class_name    = @series_name.underscore_to_camelcase
+      @series_scraper_class = "TVSeries::Scrapers::#{@series_class_name}".to_class
+      @series_json_filepath = File.join(SERIES_JSON_PATH, "#{@series_name}.html")
+      @series_html_filepath = File.join(SERIES_HTML_PATH, "#{@series_name}.json")
     end
 
     def update
       delete
+      @series_scraper_class.new.scrape
       create
     end
 
     def create
-      # Scrape from beginning
-      # Create series html file
-      # Update main index html file
-      # Update json files
+      series_list   = File.exist? MASTER_JSON_PATH ? JSON.parse(File.read(MASTER_JSON_PATH)) : []
+      episodes_list = File.exist? @series_json_filepath ? JSON.parse(File.read(@series_json_filepath)) : []
+
+      master_text = File.exist? MASTER_HTML_TEMPLATE_PATH ? ERB.new(File.open(MASTER_HTML_TEMPLATE_PATH).read, 0, '>').result(binding) : ''
+      series_text = File.exist? SERIES_HTML_TEMPLATE_PATH ? ERB.new(File.open(SERIES_HTML_TEMPLATE_PATH).read, 0, '>').result(binding) : ''
+
+      File.open(@series_html_filepath, 'w') { |file| file.write(series_text) }
+      File.open(MASTER_HTML_PATH, 'w')      { |file| file.write(master_text) }
+
+      # Scrape from beginning - Done
+      # Create series html file - Done
+      # Update main index html file - Done
+      # Update json files - Done in scraping part
     end
 
     def delete
+      File.delete(MASTER_HTML_PATH) if File.exist?(MASTER_HTML_PATH)
+      File.delete(@series_html_filepath) if File.exist?(@series_html_filepath)
       # Delete the series html file
     end
   end
 end
-
-def generate_html
-    series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
-    master_text = (File.exists? $master_html_template) ? ERB.new(File.open($master_html_template).read, 0, '>').result(binding) : ""
-    series_list.each do |series|
-        series_json = "../data/" + series["filename"] + ".json"
-        series_html = "../../series/" + series["filename"] + ".html"
-        episodes_list = (File.exists? series_json) ? JSON.parse(File.read(series_json)) : [ ]
-        series_text = (File.exists? $series_html_template) ? ERB.new(File.open($series_html_template).read, 0, '>').result(binding) : ""
-        File.open(series_html, "w") { |file| file.write(series_text) }
-
-    end
-    File.open($master_html, "w") { |file| file.write(master_text) }
-end
-
-
-$master_json = "../data/index.json"
-$master_html = "../../index.html"
-$master_html_template = "../segments/html/index.html.erb"
-$series_html_template = "../segments/html/series.html.erb"
-
-

@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Sherlock_(TV_series)'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt1475582/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_Sherlock_episodes'.freeze
-      JSON_FILE_PATH = File.join(File.dirname(__FILE__), '../../assets/sherlock.json').freeze
+      JSON_FILE_PATH = File.join(JSON_FILE_PATH, 'sherlock.json').freeze
       SHORT_NAME     = 'sherlock'.freeze
 
       def scrape

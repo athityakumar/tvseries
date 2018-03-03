@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Top_of_the_Lake'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt2103085/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/Top_of_the_Lake'.freeze
-      JSON_FILE_PATH = File.join(File.dirname(__FILE__), '../../assets/top_of_the_lake.json').freeze
+      JSON_FILE_PATH = File.join(JSON_FILE_PATH, 'top_of_the_lake.json').freeze
       SHORT_NAME     = 'totl'.freeze
 
       def scrape

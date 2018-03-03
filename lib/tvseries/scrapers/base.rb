@@ -3,8 +3,6 @@ require 'mechanize'
 module TVSeries
   module Scrapers
     class Base
-      MASTER_JSON_PATH = File.join(File.dirname(__FILE__), '../../assets/base.json')
-
       def initialize
         @episodes    = []
         @season_list = []
@@ -21,6 +19,17 @@ module TVSeries
 
         @imdb_rating = @agent.get(IMDB_LINK).search('.ratingValue').text.strip.delete('/10')
         @description = @agent.get(IMDB_LINK).search('.summary_text').text.strip
+      end
+
+      def self.internet_connection_exists?(website='https://www.google.com/')
+        begin
+          @agent.get(website)
+        rescue
+          puts 'No internet connection found, aborting.'
+          return false
+        end
+        puts 'Internet connection successful, starting the scraping process.'
+        true
       end
 
       def post_process
@@ -42,17 +51,6 @@ module TVSeries
       end
 
       private
-
-      def internet_connection_exists?(website='https://www.google.com/')
-        begin
-          @agent.get(website)
-        rescue
-          puts 'No internet connection found, aborting.'
-          return false
-        end
-        puts 'Internet connection successful, starting the scraping process.'
-        true
-      end
 
       def get_season_text(season)
         season < 10 ? "S0#{season}" : "S#{season}"
