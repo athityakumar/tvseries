@@ -10,11 +10,9 @@ Gem::Specification.new do |spec|
   spec.summary       = "A Ruby CLI gem that scrapes TV Series information from various sources, and builds web-view."
   spec.homepage      = 'https://github.com/athityakumar/tvseries'
   spec.license       = 'MIT'
-
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-
   spec.bindir        = 'exe'
   spec.executables   = 'tvseries'
   spec.require_paths = ['lib']

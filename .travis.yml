@@ -12,7 +12,7 @@ script:
   - bundle exec rubocop
   - bundle exec rspec
   - rake install
-  - tvseries bb
+  # - tvseries bb
 
 
 install:
