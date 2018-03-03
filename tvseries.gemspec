@@ -19,7 +19,6 @@ Gem::Specification.new do |spec|
   spec.executables   = 'tvseries'
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'erb'
   spec.add_runtime_dependency 'mechanize'
 
   spec.add_development_dependency 'bundler', '~> 1.15'

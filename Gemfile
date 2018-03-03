@@ -1,3 +1,2 @@
 source "https://rubygems.org/"
-  
-gem "mechanize", "2.7.5"
+gemspec
