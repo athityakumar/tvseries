@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK = 'https://en.wikipedia.org/wiki/Game_of_Thrones'.freeze
       IMDB_LINK = 'http://www.imdb.com/title/tt0944947/'.freeze
       SCRAPE_LINK = 'https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_episodes'.freeze
-      JSON_FILE_PATH = File.join(SERIES_JSON_PATH, 'game_of_thrones.json').freeze
+      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'game_of_thrones.json').freeze
       SHORT_NAME = 'got'.freeze
 
       def scrape

@@ -7,12 +7,12 @@ module TVSeries
         @episodes    = []
         @season_list = []
 
-        @master_list = JSON.parse(File.read(MASTER_JSON_PATH))
+        @master_list = JSON.parse(File.read(::MASTER_JSON_PATH))
         @series      = @master_list.find { |series| series['filename'] == SHORT_NAME }
         @agent       = Mechanize.new
         @page        = @agent.get(SCRAPE_LINK)
-        @n_episodes = @page.search('.description').count - 1 rescue 0
-        @n_seasons  = @page.search('table')[0].search('tr').last.search('td')[1].text.to_i rescue 0
+        @n_episodes  = @page.search('.description').count - 1 rescue 0
+        @n_seasons   = @page.search('table')[0].search('tr').last.search('td')[1].text.to_i rescue 0
 
         @last_season_index  = @page.search('table')[0].search('tr').count
         @first_season_index = @last_season_index - @n_seasons
@@ -47,7 +47,7 @@ module TVSeries
       end
 
       def update_global_json
-        File.open(MASTER_JSON_PATH, 'w') { |file| file.write(JSON.pretty_generate(@master_list)) }
+        File.open(::MASTER_JSON_PATH, 'w') { |file| file.write(JSON.pretty_generate(@master_list)) }
       end
 
       private

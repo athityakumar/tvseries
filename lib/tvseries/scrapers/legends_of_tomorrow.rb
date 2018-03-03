@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Legends_of_Tomorrow'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt4532368/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_Legends_of_Tomorrow_episodes'.freeze
-      JSON_FILE_PATH = File.join(SERIES_JSON_PATH, 'legends_of_tomorrow.json').freeze
+      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'legends_of_tomorrow.json').freeze
       SHORT_NAME     = 'lot'.freeze
 
       def scrape

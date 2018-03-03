@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/The_Flash_%282014_TV_series%29'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt3107288/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_The_Flash_episodes'.freeze
-      JSON_FILE_PATH = File.join(JSON_FILE_PATH, 'the_flash.json').freeze
+      JSON_FILE_PATH = File.join(::JSON_FILE_PATH, 'the_flash.json').freeze
       SHORT_NAME     = 'flash'.freeze
 
       def scrape

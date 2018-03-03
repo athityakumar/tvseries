@@ -4,7 +4,7 @@ module TVSeries
       WIKI_LINK      = 'https://en.wikipedia.org/wiki/Person_of_Interest_(TV_series)'.freeze
       IMDB_LINK      = 'http://www.imdb.com/title/tt1839578/'.freeze
       SCRAPE_LINK    = 'https://en.wikipedia.org/wiki/List_of_Person_of_Interest_episodes'.freeze
-      JSON_FILE_PATH = File.join(SERIES_JSON_PATH, 'person_of_interest.json').freeze
+      JSON_FILE_PATH = File.join(::SERIES_JSON_PATH, 'person_of_interest.json').freeze
       SHORT_NAME     = 'poi'.freeze
 
       def scrape
