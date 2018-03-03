@@ -1,10 +1,20 @@
-language: ruby
-rvm:
-  - 2.2
-before_deploy:
-  - gem install mime-types-data -v '3.2016.0521'
-before_script: 
-  - gem install mechanize
-  - gem install json
-script: cd auto/ruby && ruby index.rb
+language:
+  ruby
 
+rvm:
+  - '2.1'
+  - '2.2'
+  - '2.3.0'
+  - '2.4.0'
+  - '2.5.0'
+
+script:
+  - bundle exec rubocop
+  - bundle exec rspec
+  - rake install
+  # - tvseries bb
+
+
+install:
+  - gem install bundler
+  - bundle install

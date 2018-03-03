@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'tvseries'
+
+list_of_series = *ARGV
+list_of_series = TVSeries::LIST_OF_SERIES if list_of_series.empty?
+list_of_series.each { |series| TVSeries::Generators.new(series).update }
+true
