@@ -5,14 +5,14 @@ TV Series is a tool that scrapes Episode Synopsis' of popular TV Series' from we
 
 Website is accessible at https://athityakumar.github.io/tvseries/index.html
 
+> Maintainers - [Athitya Kumar](https://github.com/athityakumar), [Dhruv Apte](https://github.com/the-ethan-hunt)
+
 
 # List of contents
 
 - [To-do](#to-do)
 - [Supported TV Series](#supported-tv-series)
-- [Working of the scripts](#working-of-the-scripts)
 - [Resources](#resources)
-- [Sitemap](#sitemap)
 - [How to contribute](#how-to-contribute)
 - [License](#license)
 
@@ -60,22 +60,6 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [ ] Vixen
 
 Feel free to add more series' to the list by sending Pull Requests.
-
-
-## Working of the scripts
-
-[Back to contents](#list-of-contents)
-
-The `auto/ruby/index.rb` and the `auto/data/index.json` files are the crucial players here. This is the step-by-step working of this repository :
-(1) `auto/ruby/index.rb` reads the `auto/data/index.json` file and knows which website(s) to look up for which series.  
-
-(2) `auto/ruby/index.rb` then visits these websites and scrapes required data from these websites.
-
-(3) The scraped data is stored back into `auto/data/index.json` and other json files in `auto/data` directory.
-
-(4) `auto/ruby/index.rb` again reads all these json files and creates respective html files, that result in the webpages you view.
-
-(5) Simultaneously, `auto/ruby/index.rb` also automatically updates the `SITEMAP.md` and `RESOURCES.md` markup files.
 
 Like the way it is automated? Star, fork and clone this repository. Contributions are always welcome.
 
@@ -148,6 +132,7 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 - [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ## Sitemap
@@ -409,6 +394,8 @@ sample_series.html
 ## Sitemap at SITEMAP.md
 >>>>>>> e4062ce9c1f1b82fd4a7bc21446e74d6340a338c
 
+=======
+>>>>>>> 3fa3069640cdf5f12aff5ab1aae93d9c21f02690
 ## How To Contribute
 
 [Back to contents](#list-of-contents)
