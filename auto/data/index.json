@@ -1,5 +1,17 @@
 [
   {
+  "name": "The Big Bang Theory",
+  "description": "A woman who moves into an apartment across the hall from two brilliant but socially awkward physicists shows them how little they know about life outside of the laboratory.",
+  "filename": "bbt",
+  "imdb_rating": "8.3",
+  "imdb_link": "http://www.imdb.com/title/tt0898266/",
+  "wiki_link": "https://en.wikipedia.org/wiki/The_Big_Bang_Theory",
+  "scrape_link": "https://en.wikipedia.org/wiki/The_Big_Bang_Theory_(season_",
+  "seasons": "11",
+  "episodes": "243",
+  "time": "2007 - now"
+  },
+  {
     "name": "The Flash",
     "description": "After being struck by lightning, Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash, fighting crime in Central City.",
     "filename": "flash",
