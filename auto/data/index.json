@@ -12,6 +12,18 @@
     "time": "2014 - now"
   },
   {
+    "name": "Silicon Valley",
+    "description": "Follows the struggle of Richard Hendricks, a Silicon Valley engineer trying to build his own company called Pied Piper.",
+    "filename": "silval",
+    "imdb_rating": "8.5",
+    "imdb_link": "https://www.imdb.com/title/tt2575988/",
+    "wiki_link": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+    "scrape_link": "https://en.wikipedia.org/wiki/List_of_Silicon_Valley_episodes",
+    "seasons": "5",
+    "episodes": "46",
+    "time": "2014 - now"
+  },
+  {
     "name": "Person of Interest",
     "description": "An ex-assassin and a wealthy programmer save lives via a surveillance AI that sends them the identities of civilians involved in impending crimes. However, the details of the crimes--including the civilians' roles--are left a mystery.",
     "filename": "poi",
