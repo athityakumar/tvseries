@@ -34,11 +34,11 @@ def bb_scraper filename
         episodes = episodes + 1
         puts episodes.to_s
         page = agent.get("http://breakingbad.wikia.com/"+scrape_link)
-        data["description"] = page.search("html").text.split("Teaser")[1].split("Summary")[0].strip.gsub("[edit]","").gsub("\n","<br><br>")
-        data["title"] = page.search(".bgbb .textshadow").text.gsub(".","").gsub("'","")
-        data["episode"] = page.search(".bgbb td")[3].text.to_i
+        data["description"] = page.search("html").text.split("Teaser")[1].split("Act I")[0].strip.gsub("[edit]","").gsub("\n","<br><br>").gsub("\t", "")
+        data["title"] = page.search(".page-header__title").text
+        data["episode"] = page.search(".portable-infobox td")[1].text.to_i
         if data["episode"] == 1
-            data["season"] = page.search(".bgbb td")[2].text.to_i
+            data["season"] = page.search(".portable-infobox td")[0].text.to_i
             seasons = data["season"]
             if data["season"] < 10
                 data["season"] = "S0" + data["season"].to_s
@@ -53,10 +53,11 @@ def bb_scraper filename
         else
             data["episode"] = "E" + data["episode"].to_s
         end
-        data["date"] = page.search(".bgbb td")[5].text
+        data["directed_by"] = page.search(".portable-infobox .pi-data-value")[3].text
+        data["date"] = page.search(".portable-infobox .pi-data-value")[6].text
 
         list.push(data)
-        scrape_link = page.search(".bgbb td a").last["href"]
+        scrape_link = page.search(".portable-infobox td a").last["href"][1..-1]
     end
 
     series["imdb_rating"] = imdb_rating.to_s
@@ -157,7 +158,7 @@ def got_scraper filename
 
     for i in (0..episodes-1)
         data = {}
-        ep_page = agent.get("https://en.wikipedia.org"+page.search(".summary")[i].search("a")[0]["href"])
+        ep_page = agent.get("https://en.wikipedia.org"+page.search(".summary")[i].search("a")[0]["href"]) rescue next
         data["description"] = ep_page.search("html").text.split("Plot[edit]")[1].split("Production[edit]")[0].strip.gsub("[edit]","").gsub("\n","<br><br>")
         data["description"] = remove_all_between(data["description"],"(",")")
         data["title"] = page.search(".summary")[i].text.gsub("\"","")
@@ -404,48 +405,56 @@ def lot_scraper filename
     imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
     description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
     episodes = page.search(".description").count
-    seasons =  page.search("table")[1].search("tr").last.search("td")[1].text.to_i
+    seasons =  page.search("table")[1].search("tr").last.search("td")[1].text.to_i rescue 3
     last_season_index = page.search("table")[0].search("tr").count
     first_season_index = last_season_index - seasons
     season_list = []
     list = []
     season_list.push(0)
-    for i in (first_season_index..last_season_index-1)
-        season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
-    end
+    season_list.push(16)
+    season_list.push(32)
+    season_list.push(44)
+    # for i in (first_season_index..last_season_index-1)
+    #     season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
+    # end
     while page.search(".vevent")[episodes].search("td")[6].text == "TBD"
         episodes = episodes - 1
     end
 
     for i in (0..episodes-1)
         data = {}
-        data["description"] = page.search(".description")[i].text
-        data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","").gsub(",","")
-        data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
-        data["directed_by"] = page.search(".vevent")[i+1].search("td")[2].text
-        data["views"] = page.search(".vevent")[i+1].search("td")[6].text
-        data["views"] = remove_all_between(data["views"],"[","]")
-        for j in (0..season_list.count-2)
-            if i > season_list[j] && i < season_list[j+1]
-                data["episode"] = i-season_list[j]+1
-                if data["episode"] < 10
-                    data["episode"] = "E0" + data["episode"].to_s
-                else
-                    data["episode"] = "E" + data["episode"].to_s
-                end
-            end
-        end
-        if season_list.include? i
-            if season_list.index(i) < 10
-                data["season"] = "S0" + (season_list.index(i)+1).to_s
-            else
-                data["season"] = "S" + (season_list.index(i)+1).to_s
-            end
-            data["episode"] = "E01"
-        else
-            data["season"] = ""
-        end
-        list.push(data)
+        begin
+          data["description"] = page.search(".description")[i].text
+          data["title"] = page.search(".vevent")[i+1].search("td")[1].text.gsub("\"","").gsub(",","")
+          data["date"] = page.search(".vevent")[i+1].search("td")[4].text.split("(")[0]
+          data["directed_by"] = page.search(".vevent")[i+1].search("td")[2].text
+          data["views"] = page.search(".vevent")[i+1].search("td")[6].text
+          data["views"] = remove_all_between(data["views"],"[","]")
+          for j in (0..season_list.count-2)
+              if i > season_list[j] && i < season_list[j+1]
+                  data["episode"] = i-season_list[j]+1
+                  if data["episode"] < 10
+                      data["episode"] = "E0" + data["episode"].to_s
+                  else
+                      data["episode"] = "E" + data["episode"].to_s
+                  end
+              end
+          end
+          if season_list.include? i
+              if season_list.index(i) < 10
+                  data["season"] = "S0" + (season_list.index(i)+1).to_s
+              else
+                  data["season"] = "S" + (season_list.index(i)+1).to_s
+              end
+              data["episode"] = "E01"
+          else
+              data["season"] = ""
+          end
+          list.push(data)
+      rescue Exception => e
+        puts "Legends of Tomorrow scraper - episode #{episodes} - error #{e} rescued"
+        next
+      end
     end
 
     series["imdb_rating"] = imdb_rating.to_s
@@ -552,6 +561,59 @@ def sherlock_scraper filename
 
 end
 
+
+
+
+def firefly_scraper filename
+
+    agent = Mechanize.new()
+
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    page = agent.get(series["scrape_link"])
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    episodes = page.search(".description").count - 1
+    seasons =  1 # Change this later when seasons > 1
+    last_season_index = page.search("table")[0].search("tr").count
+    first_season_index = last_season_index - seasons
+    season_list = []
+    list = []
+    season_list.push(0)
+    # for i in (first_season_index..last_season_index-1)
+    #     season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
+    # end
+    # while page.search(".vevent")[episodes].search("td")[6].text == "TBD"
+    #     episodes = episodes - 1
+    # end
+
+    for i in (0..episodes-1)
+        data = {}
+        data["description"] = page.search(".description")[i].text
+        data["title"] = page.search(".vevent")[i+1].search("td")[0].text.gsub("\"","").gsub(",","")
+        data["date"] = page.search(".vevent")[i+1].search("td")[3].text
+        data["directed_by"] = page.search(".vevent")[i+1].search("td")[1].text
+        data["season"] = (i==0) ? "S01" : ""
+        data["episode"] = i+1
+        if data["episode"] < 10
+            data["episode"] = "E0" + data["episode"].to_s
+        else
+            data["episode"] = "E" + data["episode"].to_s
+        end
+        list.push(data)
+    end
+
+    series["imdb_rating"] = imdb_rating.to_s
+    series["episodes"] = (episodes+1).to_s
+    series["seasons"] = seasons.to_s
+    series["description"] = description
+
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
+
+
+end
+
 def silval_scraper filename
 
     agent = Mechanize.new()
@@ -616,56 +678,6 @@ def silval_scraper filename
     File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
 end
 
-
-def firefly_scraper filename
-
-    agent = Mechanize.new()
-
-    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
-    series = master_list.find { |x| x["filename"] == filename }
-    page = agent.get(series["scrape_link"])
-    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
-    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    episodes = page.search(".description").count - 1
-    seasons =  1 # Change this later when seasons > 1
-    last_season_index = page.search("table")[0].search("tr").count
-    first_season_index = last_season_index - seasons
-    season_list = []
-    list = []
-    season_list.push(0)
-    # for i in (first_season_index..last_season_index-1)
-    #     season_list.push(season_list.last+page.search("table")[1].search("tr")[2].search("td")[2].text.to_i)
-    # end
-    # while page.search(".vevent")[episodes].search("td")[6].text == "TBD"
-    #     episodes = episodes - 1
-    # end
-
-    for i in (0..episodes-1)
-        data = {}
-        data["description"] = page.search(".description")[i].text
-        data["title"] = page.search(".vevent")[i+1].search("td")[0].text.gsub("\"","").gsub(",","")
-        data["date"] = page.search(".vevent")[i+1].search("td")[3].text
-        data["directed_by"] = page.search(".vevent")[i+1].search("td")[1].text
-        data["season"] = (i==0) ? "S01" : ""
-        data["episode"] = i+1
-        if data["episode"] < 10
-            data["episode"] = "E0" + data["episode"].to_s
-        else
-            data["episode"] = "E" + data["episode"].to_s
-        end
-        list.push(data)
-    end
-
-    series["imdb_rating"] = imdb_rating.to_s
-    series["episodes"] = (episodes+1).to_s
-    series["seasons"] = seasons.to_s
-    series["description"] = description
-
-    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
-    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
-
-
-end
 def totl_scraper filename
     agent = Mechanize.new()
     master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
@@ -673,38 +685,58 @@ def totl_scraper filename
     page = agent.get(series["scrape_link"])
     imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
     description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
-    info = page.search(".wikitable")[0]
-    episodes = info.search(".summary").count - 1
-    seasons =  1
-    season_list = []
+    infos = page.search(".wikitable")[0..2]
     list = []
-    season_list.push(0)
-    for i in (0..episodes)
-        data = {}
-        data["description"] = info.search("td")[5*i+4].text
-        data["directed_by"] = info.search("td")[5*i+2].text
-        data["title"] = info.search("td")[5*i].text.gsub("\"","")
-        data["date"] = info.search("td")[5*i+3].children[1].text
-        j = i+1
-        if j < 10
-            data["episode"] = "E0" + j.to_s
-        else
-            data["episode"] = "E" + j.to_s
-        end
-        if season_list.include? i
-            if season_list.index(i) < 10
-                data["season"] = "S0" + (season_list.index(i)+1).to_s
-            else
-                data["season"] = "S" + (season_list.index(i)+1).to_s
-            end
-            data["episode"] = "E01"
-        else
-            data["season"] = ""
-        end
-        list.push(data)
+    season_list = []
+
+    infos.each do |info|
+      episodes = info.search(".summary").count - 1
+      season_list.empty? ? season_list.push(0) : season_list.push(season_list.last+episodes+1)
+      ncols = info.search("tr")[0].search("th").count
+
+      for i in (0..episodes)
+          data = {}
+
+          data["description"] = info.search("td")[ncols*i+ncols-1].text
+          data["directed_by"] = info.search("td")[ncols*i+2].text
+          data["title"] = info.search("td")[ncols*i+1].text.gsub("\"","")
+          data["date"] = info.search("td")[ncols*i+4].children[0].text
+
+          # if ncols == 6
+          # data["description"] = info.search("td")[6*i+5].text
+          # data["directed_by"] = info.search("td")[6*i+2].text
+          # data["title"] = info.search("td")[6*i+1].text.gsub("\"","")
+          # data["date"] = info.search("td")[6*i+4].text
+
+          # elsif ncols == 7
+          # data["description"] = info.search("td")[7*i+6].text
+          # data["directed_by"] = info.search("td")[7*i+2].text
+          # data["title"] = info.search("td")[7*i+1].text.gsub("\"","")
+          # data["date"] = info.search("td")[7*i+4].text
+          # end
+          j = i+1
+          if j < 10
+              data["episode"] = "E0" + j.to_s
+          else
+              data["episode"] = "E" + j.to_s
+          end
+          if season_list.include? i
+              if season_list.count < 10
+                  data["season"] = "S0" + (season_list.count).to_s
+              else
+                  data["season"] = "S" + (season_list.count).to_s
+              end
+              data["episode"] = "E01"
+          else
+              data["season"] = ""
+          end
+          list.push(data)
+      end
     end
+
+    seasons = season_list.count
     series["imdb_rating"] = imdb_rating.to_s
-    series["episodes"] = (episodes+1).to_s
+    series["episodes"] = list.count.to_s
     series["seasons"] = seasons.to_s
     series["description"] = description
 
@@ -718,6 +750,8 @@ end
 
 def assign_scraper
     series_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    # series_list.delete_if { |series| series["filename"] == "totl" }
+    # series_list.delete_if { |series| series["filename"] == "bb" }
     series_list.each do |series|
         send(:"#{series["filename"]}_scraper",series["filename"])
     end
@@ -826,4 +860,7 @@ if internet_connection_test("https://www.google.com/")
 end
 
 generate_html()
-generate_readme()
+# generate_readme()
+
+
+
