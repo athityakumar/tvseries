@@ -651,6 +651,56 @@ def totl_scraper filename
 
 
 end
+def how_i_met_your_mother_scraper filename
+    agent = Mechanize.new()
+
+    master_list = (File.exists? $master_json) ? JSON.parse(File.read($master_json)) : [ ]
+    series = master_list.find { |x| x["filename"] == filename }
+    page = agent.get(series["scrape_link"])
+    imdb_rating = agent.get(series["imdb_link"]).search(".ratingValue").text.strip.gsub("/10","")
+    description = agent.get(series["imdb_link"]).search(".summary_text").text.strip
+    seasons=page.search("table tr").search('td a').count
+    episodes=[]
+    for i in (1..seasons)
+    episodes.push(page.search("table tr")[i+1].search('td')[2].text.to_i)
+    end
+    for i in (1..seasons)
+	page=agent.get(series["scrape_link"]+"_(season_#{i})")
+	for j in (0..episodes[i-1])	
+	data = {}
+        data["description"] = page.search(".description")[i].text
+        data["title"] = page.search(".vevent")[i].search("td")[1].text.gsub("\"","")
+        data["date"] = page.search(".vevent")[i].search("td")[4].text.split("(")[0]
+        data["directed_by"] = page.search(".vevent")[i].search("td")[2].text
+        data["views"] = page.search(".vevent")[i].search("td")[6].text
+        data["views"] = remove_all_between(data["views"],"[","]")          
+        data["episode"] = j+1
+        if data["episode"] < 10
+                    data["episode"] = "E0" + data["episode"].to_s
+        else
+                    data["episode"] = "E" + data["episode"].to_s
+                
+        end           
+        if i< 10
+	data["season"] = "S0" + i.to_s
+        else
+                data["season"] = "S" + i.to_s
+        end         
+        list.push(data)
+    	end
+    end
+    series["imdb_rating"] = imdb_rating.to_s
+    series["episodes"] = (episodes.sum()).to_s
+    series["seasons"] = seasons.to_s
+    series["description"] = description
+
+    File.open("../data/#{filename}.json", "w") { |file| file.write(JSON.pretty_generate(list)) }
+    File.open($master_json, "w") { |file| file.write(JSON.pretty_generate(master_list)) }
+
+
+end               
+
+
 
 
 
