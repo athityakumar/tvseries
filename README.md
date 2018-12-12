@@ -58,6 +58,7 @@ Website is accessible at https://athityakumar.github.io/tvseries/index.html
 - [x] The Flash
 - [ ] The Walking Dead
 - [ ] Vixen
+- [x] Silicon Valley
 
 Feel free to add more series' to the list by sending Pull Requests.
 
@@ -125,7 +126,11 @@ Like the way it is automated? Star, fork and clone this repository. Contribution
 - [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
 - [ ] [IMDb Link](http://www.imdb.com/title/tt2103085/?ref_=nv_sr_1)
 - [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/Top_of_the_Lake)
-    
+ 
+### Silicon Valley 
+- [ ] [Wikipedia Link](https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series))
+- [ ] [IMDb Link](https://www.imdb.com/title/tt2575988/)
+- [ ] [Episode Synopsis Link](https://en.wikipedia.org/wiki/List_of_Silicon_Valley_episodes)    
 
 ## How To Contribute
 
