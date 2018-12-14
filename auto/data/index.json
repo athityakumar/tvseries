@@ -130,5 +130,13 @@
     "seasons": "3",
     "episodes": "19",
     "time": "2013-present"
-  }
+  },
+ {
+    "name": "How I Met Your Mother",
+    "filename": "himym",
+    "imdb_link": "https://www.imdb.com/title/tt0460649/",
+    "wiki_link": "https://en.wikipedia.org/wiki/How_I_Met_Your_Mother",
+    "scrape_link": "https://en.wikipedia.org/wiki/How_I_Met_Your_Mother",
+    "time": "2005-2014"
+  },
 ]
